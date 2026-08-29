@@ -147,37 +147,43 @@ no logos.
 - 中央に赤い矢印で「料理→人物」の視線誘導
 - 「⁉」記号は娘の顔の横
 
-**画像生成プロンプト①（料理部分）**
+**画像生成プロンプト①（料理部分・引き目バージョン。2画面接合の余白確保のため寄りすぎ厳禁）**
 ```
-Photorealistic close-up food photography of a Japanese "okosama lunch"
-(kids' plate) shaped like a red steam locomotive, served on a wooden
-table. The plate holds a hamburger steak, breaded fried shrimp, small
-broccoli florets, cherry tomatoes, and ketchup-fried rice shaped like a
-small mountain. Soft white steam rises gently from the locomotive's
-smokestack, dry-ice style theatrical smoke effect. A small paper flag
-reading "夢" (dream) is planted in the rice. Beside the plate, a green
-cream soda float with vanilla ice cream, a maraschino cherry, and a
-paper cocktail umbrella. Warm, bright natural window light, shallow
-depth of field with the background softly blurred, appetizing editorial
-food photography, vivid but natural colors. 16:9 aspect ratio, no text,
-no logos.
+Photorealistic food photography of a Japanese "okosama lunch" (kids' plate)
+shaped like a red steam locomotive, served on a wooden table. Medium-wide
+shot showing the entire plate with generous empty table space around it
+on all sides (NOT an extreme close-up — leave enough negative space above,
+below, and to the sides for cropping and compositing). The plate holds a
+hamburger steak, breaded fried shrimp, small broccoli florets, cherry
+tomatoes, and ketchup-fried rice shaped like a small mountain. Soft white
+steam rises gently from the locomotive's smokestack, dry-ice style
+theatrical smoke effect. A small paper flag reading "夢" (dream) is
+planted in the rice. Beside the plate, a green cream soda float with
+vanilla ice cream, a maraschino cherry, and a paper cocktail umbrella.
+Warm, bright natural window light, background softly blurred, appetizing
+editorial food photography, vivid but natural colors. 16:9 aspect ratio,
+no text, no logos.
 ```
 
-**画像生成プロンプト②（家族の反応部分）**
+**画像生成プロンプト②（家族の反応部分・引き目バージョン。2画面接合の余白確保のため寄りすぎ厳禁）**
 ```
 Photorealistic candid documentary-style photo of an American family of
-three reacting with shock and amazement, as if just seeing something
-astonishing off-frame to the left. The mother, attractive woman in her
-late 30s with wavy blonde hair, mouth open in genuine surprise, eyes
-wide. Her daughter, about 6 years old, with twin-tail hairstyle and a
-pink ribbon, has the most exaggerated reaction — both hands pressed to
-her cheeks, mouth wide open, eyes huge with delighted disbelief. The
-father, with a mustache, wearing a denim jacket, is partially cropped
-at the frame edge, also reacting with raised eyebrows and an open mouth.
+three, medium-wide shot from the waist up with generous space around and
+above the subjects (NOT a tight close-up on just faces — leave enough
+negative space on all sides for cropping and compositing). They are
+reacting with shock and amazement, as if just seeing something astonishing
+off-frame to the left. The mother, attractive woman in her late 30s with
+wavy blonde hair, mouth open in genuine surprise, eyes wide. Her daughter,
+about 6 years old, with twin-tail hairstyle and a pink ribbon, has the most
+exaggerated reaction — both hands pressed to her cheeks, mouth wide open,
+eyes huge with delighted disbelief. The father, with a mustache, wearing a
+denim jacket, stands beside them, also reacting with raised eyebrows and
+an open mouth, his full upper body visible rather than cropped at the edge.
 All three genuinely emotional, candid real-photo skin texture, avoid
-airbrushed CGI look, avoid uncanny valley. Soft indoor restaurant
-lighting, warm and bright, blurred cozy background. Shot on 85mm lens,
-shallow depth of field. 16:9 aspect ratio, no text, no logos.
+airbrushed CGI look, avoid uncanny valley. Soft indoor restaurant lighting,
+warm and bright, blurred cozy background. Shot on 50mm lens for a wider
+natural field of view, moderate depth of field. 16:9 aspect ratio, no
+text, no logos.
 ```
 
 **紐づく台本**: 「だから子連れで日本へ行くなって言ったのに…」（報道記者レイチェル・モリソンと娘エラの日本橋お子様ランチエピソード）
