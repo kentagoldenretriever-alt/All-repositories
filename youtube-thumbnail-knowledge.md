@@ -138,6 +138,62 @@ no logos.
 
 ---
 
+## パターン3: 料理×家族リアクション 左右分割型
+
+**元ネタ画像の特徴**
+- これまでの2パターンと違い、左右で別々の画像を合成する構図
+- 左半分: 赤い機関車型のお子様ランチプレートのクローズアップ（湯気の演出、ハンバーグ・エビフライ・ブロッコリー・プチトマト・ケチャップライス、「夢」の小旗、緑のクリームソーダを添える）
+- 右半分: 家族3人の反応ショット。母親（ブロンド、驚いて口を開ける）、娘（ツインテール・ピンクリボン、両手で頬を押さえる最も強い驚き）、父親（口髭、デニムジャケット、画面端に半分見切れる）
+- 中央に赤い矢印で「料理→人物」の視線誘導
+- 「⁉」記号は娘の顔の横
+
+**画像生成プロンプト①（料理部分）**
+```
+Photorealistic close-up food photography of a Japanese "okosama lunch"
+(kids' plate) shaped like a red steam locomotive, served on a wooden
+table. The plate holds a hamburger steak, breaded fried shrimp, small
+broccoli florets, cherry tomatoes, and ketchup-fried rice shaped like a
+small mountain. Soft white steam rises gently from the locomotive's
+smokestack, dry-ice style theatrical smoke effect. A small paper flag
+reading "夢" (dream) is planted in the rice. Beside the plate, a green
+cream soda float with vanilla ice cream, a maraschino cherry, and a
+paper cocktail umbrella. Warm, bright natural window light, shallow
+depth of field with the background softly blurred, appetizing editorial
+food photography, vivid but natural colors. 16:9 aspect ratio, no text,
+no logos.
+```
+
+**画像生成プロンプト②（家族の反応部分）**
+```
+Photorealistic candid documentary-style photo of an American family of
+three reacting with shock and amazement, as if just seeing something
+astonishing off-frame to the left. The mother, attractive woman in her
+late 30s with wavy blonde hair, mouth open in genuine surprise, eyes
+wide. Her daughter, about 6 years old, with twin-tail hairstyle and a
+pink ribbon, has the most exaggerated reaction — both hands pressed to
+her cheeks, mouth wide open, eyes huge with delighted disbelief. The
+father, with a mustache, wearing a denim jacket, is partially cropped
+at the frame edge, also reacting with raised eyebrows and an open mouth.
+All three genuinely emotional, candid real-photo skin texture, avoid
+airbrushed CGI look, avoid uncanny valley. Soft indoor restaurant
+lighting, warm and bright, blurred cozy background. Shot on 85mm lens,
+shallow depth of field. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「だから子連れで日本へ行くなって言ったのに…」（報道記者レイチェル・モリソンと娘エラの日本橋お子様ランチエピソード）
+
+**PhotoScape X 合成・文字入れ指示**
+| 要素 | 内容 | 色 | 位置 |
+|---|---|---|---|
+| レイアウト | 左に料理画像、右に家族画像を配置し中央で接合 | — | 縦分割2枚合成 |
+| 赤い矢印 | 料理→家族の方向 | 赤 | 画面中央 |
+| 上部見出し | 「だから子連れで日本はダメだって!!」 | 黄色＋黒フチ4px | 画面上部、中央揃え |
+| リアクション記号 | ⁉ | 赤 | 娘の顔の右上 |
+| 下段1行目 | 「アメリカ人家族が友人の忠告を無視して来日」 | 白＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「お子様ランチで帰国後が大変!?」 | 赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
