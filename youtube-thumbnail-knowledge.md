@@ -200,6 +200,56 @@ text, no logos.
 
 ---
 
+## パターン4: 同一人物クローン怒り顔・横並び型
+
+**元ネタ画像の特徴**
+- 同一人物とおぼしき若い女性の激怒した顔を4体、横一列に配置（クローン演出）
+- 全員が眉間にしわを寄せ、口を大きく開けて叫んでいる表情
+- 手前2人は人差し指でカメラを指差すポーズ
+- 頭上に赤い漫画的な怒りマーク（角ばった爆発記号）を1体ずつ配置
+- 背景は日本の繁華街（新宿風の交差点）、ぼかした通行人
+- 上部見出し「絶対に許さないから!!」黄色＋黒フチ
+- 下段1行目「中国でブチギレたフランス人」水色＋黒フチ
+- 下段2行目「その後…日本に来た結果」赤＋黒フチ
+
+**制作方式の注意**: AIに同一人物4体を一発生成させるのは困難（毎回別人になりがち）。1〜2種の高品質な顔画像を生成し、PhotoScape Xで複製・トリミング違い・明るさ違いをつけて4体に見せる方式が確実。
+
+**画像生成プロンプト（1人分・複製前提、指差しあり版）**
+```
+Photorealistic candid documentary-style portrait of a furious young
+European woman in her early-to-mid 20s, shot at a slight low angle from
+chest height, medium-wide framing with generous space around her for
+cropping and compositing. She is shouting with intense rage — mouth wide
+open showing teeth, eyebrows sharply furrowed, deep frown lines, eyes
+fierce and confrontational, looking directly at the camera as if yelling
+at the viewer. One arm raised, index finger pointing accusingly toward
+the camera. Long wavy brunette hair, casual beige/cream jacket over a
+light top, small hoop earrings. Natural real-photo skin texture, avoid
+airbrushed CGI look, avoid uncanny valley — must look like a real
+photograph, not rendered.
+
+Background: a busy Japanese city street (Shinjuku-style crossing),
+blurred crowds of pedestrians and shop signs, bright daytime natural
+light, shallow depth of field with only the woman in sharp focus. Shot
+on 85mm lens. 16:9 aspect ratio, no text, no logos.
+```
+
+**バリエーション（指差しなし版、単調さ回避用）**: 上記から `One arm raised, index finger pointing accusingly toward the camera.` を削除し、`Both arms crossed tightly, tense posture.` に差し替え。
+
+**紐づく台本**: 「正直、日本には期待してなかった…」（マノン・デュボワ、上海の駅で母を助ける人が誰もいなかった経験から、日本での財布紛失・善意の連鎖エピソードへ）
+
+**PhotoScape X 複製・配置・文字入れ指示**
+| 要素 | 内容 |
+|---|---|
+| 複製方法 | 生成した1〜2種の顔画像を4回配置。完全同一だと不自然なので明るさ・拡大率・トリミング位置を1体ごとに微妙に変える |
+| 配置 | 横一列、肩が触れるくらいの間隔で密集 |
+| 怒りマーク | 赤い角ばった爆発記号を各人の頭上に1個ずつ、位置を少しずらして配置 |
+| 上部見出し | 「絶対に許さないから!!」黄色＋黒フチ4px、画面上部中央 |
+| 下段1行目 | 「中国でブチギレたフランス人」水色＋黒フチ |
+| 下段2行目 | 「その後…日本に来た結果」赤＋黒フチ（強調） |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
