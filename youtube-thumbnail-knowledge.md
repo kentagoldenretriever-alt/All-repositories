@@ -200,10 +200,10 @@ text, no logos.
 
 ---
 
-## パターン4: 同一人物クローン怒り顔・横並び型
+## パターン4: 4人異なる美女・怒り顔横並び型
 
 **元ネタ画像の特徴**
-- 同一人物とおぼしき若い女性の激怒した顔を4体、横一列に配置（クローン演出）
+- 若い女性の激怒した顔を4体、横一列に配置
 - 全員が眉間にしわを寄せ、口を大きく開けて叫んでいる表情
 - 手前2人は人差し指でカメラを指差すポーズ
 - 頭上に赤い漫画的な怒りマーク（角ばった爆発記号）を1体ずつ配置
@@ -212,29 +212,35 @@ text, no logos.
 - 下段1行目「中国でブチギレたフランス人」水色＋黒フチ
 - 下段2行目「その後…日本に来た結果」赤＋黒フチ
 
-**制作方式の注意**: AIに同一人物4体を一発生成させるのは困難（毎回別人になりがち）。1〜2種の高品質な顔画像を生成し、PhotoScape Xで複製・トリミング違い・明るさ違いをつけて4体に見せる方式が確実。
+**制作方式**: 当初は「1人を生成してPhotoScape Xで複製」方式を検討したが、クライアント要望により「4人とも別の顔・別の髪色の美人」を1枚で一括生成する方式に変更。CA5人型で得たノウハウ（全員同じ方向を向かせる、AI感を消す指示）を流用。
 
-**画像生成プロンプト（1人分・複製前提、指差しあり版）**
+**画像生成プロンプト（4人一括生成版）**
 ```
-Photorealistic candid documentary-style portrait of a furious young
-European woman in her early-to-mid 20s, shot at a slight low angle from
-chest height, medium-wide framing with generous space around her for
-cropping and compositing. She is shouting with intense rage — mouth wide
-open showing teeth, eyebrows sharply furrowed, deep frown lines, eyes
-fierce and confrontational, looking directly at the camera as if yelling
-at the viewer. One arm raised, index finger pointing accusingly toward
-the camera. Long wavy brunette hair, casual beige/cream jacket over a
-light top, small hoop earrings. Natural real-photo skin texture, avoid
-airbrushed CGI look, avoid uncanny valley — must look like a real
-photograph, not rendered.
+Photorealistic candid documentary-style photo of four stunningly beautiful,
+sexy young European women in their early-to-mid 20s, standing side by side
+in a busy Japanese city street (Shibuya-style crossing), blurred crowds of
+pedestrians and shop signs in the background, bright daytime natural light.
 
-Background: a busy Japanese city street (Shinjuku-style crossing),
-blurred crowds of pedestrians and shop signs, bright daytime natural
-light, shallow depth of field with only the woman in sharp focus. Shot
-on 85mm lens. 16:9 aspect ratio, no text, no logos.
+Each woman has a distinctly different face and hairstyle — one with long
+wavy brunette hair, one with blonde hair, one with auburn/red hair, one
+with straight black hair — all with magazine-cover level beauty, natural
+real-photo skin texture, avoid airbrushed CGI look, avoid uncanny valley,
+avoid identical or mirrored faces between them.
+
+All four are shouting with intense rage directly at the camera — mouths
+wide open showing teeth, eyebrows sharply furrowed, deep frown lines,
+eyes fierce and confrontational — as if collectively yelling at the
+viewer. Each has at least one arm raised, index finger pointing
+accusingly toward the camera, poses varying slightly between them so
+they don't look like copies of each other.
+
+They wear casual stylish outfits in a light color palette (denim
+jackets, fitted tops). Medium-wide framing showing all four from
+roughly waist up, with generous space around them for cropping and
+compositing. Shot on 50mm lens, shallow depth of field with the four
+women in sharp focus and the crowd behind them blurred. 16:9 aspect
+ratio, no text, no logos.
 ```
-
-**バリエーション（指差しなし版、単調さ回避用）**: 上記から `One arm raised, index finger pointing accusingly toward the camera.` を削除し、`Both arms crossed tightly, tense posture.` に差し替え。
 
 **紐づく台本**: 「正直、日本には期待してなかった…」（マノン・デュボワ、上海の駅で母を助ける人が誰もいなかった経験から、日本での財布紛失・善意の連鎖エピソードへ）
 
