@@ -21,6 +21,10 @@
 - 影(シャドウ): 不透明度40〜50%、ぼかし2〜3px（濃すぎ注意、クライアント指摘あり）
 - 黒帯は完全な黒（半透明にしない）で視認性を確保
 
+**制作方針（クライアント指示・最重要）**
+- 元ネタサムネイルと同等ではなく、常に元ネタの上位互換（より綺麗・より美味しそう・よりクオリティが高い）を狙うこと
+- 特に料理写真は「艶・光の反射・湯気の迫力・彩度」を抽象的な言葉（"appetizing"等）で済ませず、食材ごとに具体的な質感描写を書き込むこと
+
 **画像生成プロンプトの鉄則（何度も修正して分かった注意点）**
 - 生成AIは複数人物を「証明写真的な正面シンメトリー」に寄せがち → "NOT a symmetrical frontal lineup"等で明示的に禁止する
 - 視線がバラバラになりがち → "all looking in the exact same direction"と強く指定
@@ -147,22 +151,37 @@ no logos.
 - 中央に赤い矢印で「料理→人物」の視線誘導
 - 「⁉」記号は娘の顔の横
 
-**画像生成プロンプト①（料理部分・引き目バージョン。2画面接合の余白確保のため寄りすぎ厳禁）**
+**画像生成プロンプト①（料理部分・上位互換狙い強化版。クライアントFB「元ネタより綺麗で美味しそうにすること」反映済み）**
 ```
-Photorealistic food photography of a Japanese "okosama lunch" (kids' plate)
-shaped like a red steam locomotive, served on a wooden table. Medium-wide
-shot showing the entire plate with generous empty table space around it
-on all sides (NOT an extreme close-up — leave enough negative space above,
-below, and to the sides for cropping and compositing). The plate holds a
-hamburger steak, breaded fried shrimp, small broccoli florets, cherry
-tomatoes, and ketchup-fried rice shaped like a small mountain. Soft white
-steam rises gently from the locomotive's smokestack, dry-ice style
-theatrical smoke effect. A small paper flag reading "夢" (dream) is
-planted in the rice. Beside the plate, a green cream soda float with
-vanilla ice cream, a maraschino cherry, and a paper cocktail umbrella.
-Warm, bright natural window light, background softly blurred, appetizing
-editorial food photography, vivid but natural colors. 16:9 aspect ratio,
-no text, no logos.
+Professional commercial food photography, magazine-advertisement quality,
+of a Japanese "okosama lunch" (kids' plate) shaped like a red steam
+locomotive, served on a warm wooden table. Medium-wide shot showing the
+entire plate with generous empty table space around it for cropping (NOT
+an extreme close-up — leave negative space on all sides for compositing).
+
+Every element has a glossy, glistening sheen: the hamburger steak is
+coated in a rich glossy demi-glace sauce with visible light reflections,
+the breaded fried shrimp has a crispy golden-brown crust with visible
+crunchy texture, the broccoli florets are vivid emerald green with tiny
+fresh water droplets catching the light, the cherry tomatoes are glossy
+and deep red, and the ketchup-fried rice is molded into a perfectly
+shaped small mountain with a light glistening sheen.
+
+Dramatic, voluminous white steam billows dynamically from the
+locomotive's smokestack, backlit so it glows and catches the light
+beautifully against a softly blurred warm background. A crisp small
+paper flag reading "夢" (dream) stands upright in the rice.
+
+Beside the plate, a vibrant green cream soda float with vanilla ice
+cream, a glossy maraschino cherry, and a paper cocktail umbrella,
+condensation glistening on the glass.
+
+Professional food styling, soft directional studio-style lighting
+creating highlights and sheen on every surface, vivid highly saturated
+colors, mouthwatering sizzle-photography quality as if shot for a
+high-end restaurant advertisement. Shot on a 100mm macro lens with fine
+detail on food textures, shallow depth of field with the background
+softly blurred. 16:9 aspect ratio, no text, no logos.
 ```
 
 **画像生成プロンプト②（家族の反応部分・引き目バージョン。2画面接合の余白確保のため寄りすぎ厳禁）**
