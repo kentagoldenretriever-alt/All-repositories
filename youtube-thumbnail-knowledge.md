@@ -275,6 +275,52 @@ ratio, no text, no logos.
 
 ---
 
+## パターン5: 対峙構図（審査官vs女性）×背景案内板型
+
+**元ネタ画像の特徴**
+- 左: 白人男性の入国審査官（50代、頭髪後退、丸メガネ、濃紺制服、金属バッジ、腕組み、鋭く真剣な表情）
+- 右: 派手な身なりの女性（巻き髪、毛皮/アニマル柄コート、大きなフープピアス、サングラスを頭上に、眉をひそめて不機嫌な顔、赤い日本国旅券を突き出すように見せている）
+- 中央下に「●●●」（沈黙・間の演出）
+- 背景にぼやけた日本語フレーズの案内表示（「いただきます」「よろしくお願いします」「お手数をおかけします」）
+- 上部見出し「日本人なら答えられる…よね？」黄色＋黒フチ
+- 下段1行目「アメリカの空港で暴れる自称日本人」水色＋黒フチ
+- 下段2行目「審査官の質問で正体が暴かれた理由」赤＋黒フチ
+
+**画像生成プロンプト**
+```
+Professional photorealistic editorial photo, candid documentary style, of
+a tense face-to-face confrontation in a US airport secondary inspection
+room. On the left, a serious American male immigration officer in his
+mid-50s, receding gray hair, round wire-frame glasses, navy blue uniform
+with a metal badge, arms crossed, sharp and skeptical expression, sitting
+behind a desk. On the right, a woman in her early 40s with voluminous
+wavy brown hair, sunglasses pushed up on her head, large hoop earrings,
+wearing a flashy animal-print fur coat, scowling with furrowed brows and
+an indignant expression, holding up a red Japanese passport toward the
+officer as if asserting her identity.
+
+Background: a softly blurred wall-mounted display showing faint Japanese
+text phrases in a clean sans-serif font, out of focus, suggesting an
+official signage board. Bright, neutral fluorescent airport lighting,
+clean institutional atmosphere. Natural real-photo skin texture, avoid
+airbrushed CGI look, avoid uncanny valley. Medium-wide framing showing
+both subjects from the chest up, generous negative space around them for
+cropping and compositing. Shot on 50mm lens, moderate depth of field with
+both subjects in sharp focus. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「本当に日本人なら分かるはずです…」（LA空港の審査官デイビッドが、なりすまし女性を「いただきます」「よろしくお願いします」「お手数をおかけします」の3つの言葉で見抜くエピソード）
+
+**PhotoScape X 文字入れ指示**
+| 要素 | 内容 | 色 | 位置 |
+|---|---|---|---|
+| 上部見出し | 「日本人なら答えられる…よね？」 | 黄色＋黒フチ4px | 画面上部中央 |
+| 沈黙記号 | 「●●●」 | 黒 | 画面中央下、2人の間 |
+| 下段1行目 | 「アメリカの空港で暴れる自称日本人」 | 水色＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「審査官の質問で正体が暴かれた理由」 | 赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
