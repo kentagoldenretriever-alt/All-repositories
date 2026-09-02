@@ -335,27 +335,32 @@ both subjects in sharp focus. 16:9 aspect ratio, no text, no logos.
 - 下段1行目（白/水色）「成田空港で偶然撮影されたわずか10秒の映像が」
 - 下段2行目（赤）「拡散され世界が絶賛した理由」
 
-**画像生成プロンプト**
+**画像生成プロンプト（第2版・被写体を目立たせすぎないよう修正済み）**
+
+初版は被写体（男性+男の子）が画面の主役として大きく・鮮明に写りすぎ、元ネタの「群衆に紛れて気づきにくい、たまたま映り込んだ」感じと乖離した。以下は修正版。
+
 ```
-Photorealistic wide-angle photo of a busy, bright Japanese airport terminal
+Photorealistic wide-angle candid photo of a busy Japanese airport terminal
 concourse (Narita-style), warm honey-toned wood flooring, rows of orange
-cushioned chairs in the background, tall windows, and travelers of various
-nationalities walking in all directions — business people with briefcases,
-students with backpacks, women in coats, a few seated resting. Warm bright
-daylight streaming through large windows, clean and orderly atmosphere.
+cushioned chairs, tall windows, bright natural daylight. Many travelers of
+various nationalities walk in all directions at a natural, ordinary pace —
+business people with briefcases, students with backpacks, people rolling
+suitcases, some seated checking phones.
 
-In the midground, slightly left of center, a Japanese businessman in his
-50s wearing a slightly rumpled dark suit with a loosened tie, gently
-carrying a young Western boy in his arms, walking calmly through the
-crowd, his posture caring and unhurried. The boy leans into him
-comfortably, at ease. This pair should be naturally lit and reasonably
-sharp, though the overall shot keeps a wide, candid, photojournalism feel
-rather than a posed portrait — as if captured spontaneously by a bystander
-with a smartphone from a slight distance.
+Somewhere in the midground, blended naturally into the crowd rather than
+placed as the visual center of attention, a Japanese businessman in his
+50s in an ordinary dark suit is gently carrying a young Western boy in his
+arms while walking. This pair should NOT be more sharply focused, more
+brightly lit, more centered, or otherwise visually emphasized compared to
+the surrounding pedestrians — they should be roughly the same size,
+distance, and focus level as everyone else in the frame, easy to miss on
+first glance, as if an ordinary bystander's phone camera just happened to
+catch this moment in a wide shot rather than deliberately framing it.
 
-Natural motion blur on some background pedestrians, realistic skin tones
-and textures, avoid airbrushed CGI look, avoid uncanny valley. 16:9
-aspect ratio, no text, no logos.
+Overall even, snapshot-like focus across the whole scene (no shallow
+depth of field, no single subject singled out), natural candid
+photojournalism style, realistic skin tones and textures, avoid airbrushed
+CGI look. 16:9 aspect ratio, no text, no logos.
 ```
 
 **紐づく台本**: 「オイオイ、嘘だろ？日本人!?」（脳性麻痺の息子イーサンを連れたマイケル・ハリスが、成田空港で見知らぬ会社員に息子を抱えて助けられるエピソード）
