@@ -390,25 +390,29 @@ avoid airbrushed CGI look. 16:9 aspect ratio, no text, no logos.
 - 下段1行目「帰国後パニックに陥る外国人」水色＋黒フチ
 - 下段2行目「日本で味覚崩壊した理由」赤＋黒フチ
 
-**画像生成プロンプト**
+**画像生成プロンプト（第2版・カメラ目線・中央配置・背景具体化）**
 ```
 Professional photorealistic editorial photo, candid documentary style, of
 a stunningly beautiful American woman in her late 40s, wavy honey-blonde
-hair, business-casual attire, sitting in a fast-food restaurant. She has
-a genuinely shocked, horrified expression — eyes wide open, eyebrows
-raised high, one hand pressed over her open mouth as if she just realized
-something disturbing about the food in front of her. Natural real-photo
-skin texture, avoid airbrushed CGI look, avoid uncanny valley, magazine-
-editorial level beauty despite the age-appropriate realistic look.
+hair, business-casual attire, sitting in a fast-food restaurant, positioned
+close to the center of the frame. She is looking directly at the camera,
+direct eye contact with the viewer, with a genuinely shocked, horrified
+expression — eyes wide open, eyebrows raised high, one hand pressed over
+her open mouth as if she just realized something disturbing about the
+food in front of her. Natural real-photo skin texture, avoid airbrushed
+CGI look, avoid uncanny valley, magazine-editorial level beauty despite
+the age-appropriate realistic look.
 
 To the right edge of the frame, partially visible and out of focus, the
 back of a man's head and shoulder, seated across from her, blurred and
 clearly secondary to the composition.
 
-Background: a bright American fast-food restaurant interior, red signage
-and lighting accents visible but blurred, other blurred diners and tables
-further back, warm indoor lighting. Medium-close framing on the woman
-from the chest up, generous negative space around her for cropping and
+Background: a generic American fast-food restaurant interior evoking a
+casual burger chain — bold red and yellow color accents, a blurred
+illuminated menu board, plastic booth seating, warm bright indoor
+lighting — but with no real brand logos, trademarks, or readable text.
+Medium-close framing on the woman from the chest up, roughly centered in
+the frame, generous negative space around her for cropping and
 compositing. Shot on 85mm lens, shallow depth of field with only the
 woman in sharp focus. 16:9 aspect ratio, no text, no logos.
 ```
