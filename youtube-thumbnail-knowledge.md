@@ -379,6 +379,52 @@ avoid airbrushed CGI look. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン7: 1人クローズアップ驚愕×相手後ろ姿型
+
+**元ネタ画像の特徴**
+- メインはブロンドの女性、驚愕・ショックの表情（目を見開き、片手で口を覆う）
+- 背景はファストフード店内（赤い看板・照明要素、ぼやけた他の客）
+- 右端に男性の後ろ姿（会話相手、顔は見えない、添え物的な配置）
+- 「⁉」記号を女性の右側に配置
+- 上部見出し「何食べてもマズイ...!?」黄色＋黒フチ
+- 下段1行目「帰国後パニックに陥る外国人」水色＋黒フチ
+- 下段2行目「日本で味覚崩壊した理由」赤＋黒フチ
+
+**画像生成プロンプト**
+```
+Professional photorealistic editorial photo, candid documentary style, of
+a stunningly beautiful American woman in her late 40s, wavy honey-blonde
+hair, business-casual attire, sitting in a fast-food restaurant. She has
+a genuinely shocked, horrified expression — eyes wide open, eyebrows
+raised high, one hand pressed over her open mouth as if she just realized
+something disturbing about the food in front of her. Natural real-photo
+skin texture, avoid airbrushed CGI look, avoid uncanny valley, magazine-
+editorial level beauty despite the age-appropriate realistic look.
+
+To the right edge of the frame, partially visible and out of focus, the
+back of a man's head and shoulder, seated across from her, blurred and
+clearly secondary to the composition.
+
+Background: a bright American fast-food restaurant interior, red signage
+and lighting accents visible but blurred, other blurred diners and tables
+further back, warm indoor lighting. Medium-close framing on the woman
+from the chest up, generous negative space around her for cropping and
+compositing. Shot on 85mm lens, shallow depth of field with only the
+woman in sharp focus. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「帰国したら何を食べても不味い!」（外食チェーン商品開発責任者レイチェル・モーガンが、日本の天ぷら職人・うどん店の仕事ぶりに触れ、効率至上主義の価値観が揺らぐエピソード）
+
+**PhotoScape X 文字入れ指示**
+| 要素 | 内容 | 色 | 位置 |
+|---|---|---|---|
+| 上部見出し | 「何食べてもマズイ...!?」 | 黄色＋黒フチ4px | 画面上部中央 |
+| リアクション記号 | ⁉ | 赤 | 女性の顔の右側 |
+| 下段1行目 | 「帰国後パニックに陥る外国人」 | 水色＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「日本で味覚崩壊した理由」 | 赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
