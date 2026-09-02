@@ -324,6 +324,53 @@ both subjects in sharp focus. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン6: 雑踏の引きショット×赤丸強調型
+
+**元ネタ画像の特徴**
+- これまでのクローズアップ肖像型と異なり、広角の環境ショット＋赤丸で視線誘導する新しい型
+- 空港ターミナルの広角ショット（成田風、木目調の床、オレンジ色の椅子、多くの旅行者が行き交う）
+- 中央やや左に、スーツ姿の日本人男性が外国人の男の子を抱きかかえて歩いている場面を赤い点線の丸で強調
+- 「⁉」記号を画面左右に2つ配置
+- 上部見出し「オイオイ、嘘だろ！？日本人！」黄色＋黒フチ
+- 下段1行目（白/水色）「成田空港で偶然撮影されたわずか10秒の映像が」
+- 下段2行目（赤）「拡散され世界が絶賛した理由」
+
+**画像生成プロンプト**
+```
+Photorealistic wide-angle photo of a busy, bright Japanese airport terminal
+concourse (Narita-style), warm honey-toned wood flooring, rows of orange
+cushioned chairs in the background, tall windows, and travelers of various
+nationalities walking in all directions — business people with briefcases,
+students with backpacks, women in coats, a few seated resting. Warm bright
+daylight streaming through large windows, clean and orderly atmosphere.
+
+In the midground, slightly left of center, a Japanese businessman in his
+50s wearing a slightly rumpled dark suit with a loosened tie, gently
+carrying a young Western boy in his arms, walking calmly through the
+crowd, his posture caring and unhurried. The boy leans into him
+comfortably, at ease. This pair should be naturally lit and reasonably
+sharp, though the overall shot keeps a wide, candid, photojournalism feel
+rather than a posed portrait — as if captured spontaneously by a bystander
+with a smartphone from a slight distance.
+
+Natural motion blur on some background pedestrians, realistic skin tones
+and textures, avoid airbrushed CGI look, avoid uncanny valley. 16:9
+aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「オイオイ、嘘だろ？日本人!?」（脳性麻痺の息子イーサンを連れたマイケル・ハリスが、成田空港で見知らぬ会社員に息子を抱えて助けられるエピソード）
+
+**PhotoScape X 合成・文字入れ指示**
+| 要素 | 内容 | 色 | 位置 |
+|---|---|---|---|
+| 赤丸強調 | 点線の楕円で男性+男の子のペアを囲む | 赤 | 画面中央やや左 |
+| 「⁉」記号 | 2箇所配置 | 赤 | 画面左上・右上 |
+| 上部見出し | 「オイオイ、嘘だろ！？日本人！」 | 黄色＋黒フチ4px | 画面上部中央 |
+| 下段1行目 | 「成田空港で偶然撮影されたわずか10秒の映像が」 | 白/水色＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「拡散され世界が絶賛した理由」 | 赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
