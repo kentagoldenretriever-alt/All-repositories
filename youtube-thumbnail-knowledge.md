@@ -390,18 +390,19 @@ avoid airbrushed CGI look. 16:9 aspect ratio, no text, no logos.
 - 下段1行目「帰国後パニックに陥る外国人」水色＋黒フチ
 - 下段2行目「日本で味覚崩壊した理由」赤＋黒フチ
 
-**画像生成プロンプト（第2版・カメラ目線・中央配置・背景具体化）**
+**画像生成プロンプト（第3版・カメラ目線・中央配置・背景具体化・美人セクシー強化。クライアントが構図に満足したため以後はこの版をベースにする）**
 ```
 Professional photorealistic editorial photo, candid documentary style, of
-a stunningly beautiful American woman in her late 40s, wavy honey-blonde
-hair, business-casual attire, sitting in a fast-food restaurant, positioned
-close to the center of the frame. She is looking directly at the camera,
-direct eye contact with the viewer, with a genuinely shocked, horrified
-expression — eyes wide open, eyebrows raised high, one hand pressed over
-her open mouth as if she just realized something disturbing about the
-food in front of her. Natural real-photo skin texture, avoid airbrushed
-CGI look, avoid uncanny valley, magazine-editorial level beauty despite
-the age-appropriate realistic look.
+a breathtakingly beautiful American woman in her 40s, supermodel-level
+facial features, flawless glowing skin, glamorous and sexy, wavy honey-
+blonde hair, a fitted stylish top with a flattering neckline, sitting in
+a fast-food restaurant, positioned close to the center of the frame. She
+is looking directly at the camera, direct eye contact with the viewer,
+with a genuinely shocked, horrified expression — eyes wide open,
+eyebrows raised high, one hand pressed over her open mouth as if she
+just realized something disturbing about the food in front of her.
+Natural real-photo skin texture, avoid airbrushed CGI look, avoid uncanny
+valley, striking magazine-editorial level beauty.
 
 To the right edge of the frame, partially visible and out of focus, the
 back of a man's head and shoulder, seated across from her, blurred and
