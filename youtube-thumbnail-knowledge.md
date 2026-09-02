@@ -286,22 +286,31 @@ ratio, no text, no logos.
 - 下段1行目「アメリカの空港で暴れる自称日本人」水色＋黒フチ
 - 下段2行目「審査官の質問で正体が暴かれた理由」赤＋黒フチ
 
-**画像生成プロンプト（美人度強化版・生成結果を見て調整済み）**
+**画像生成プロンプト（第3版・顔の見え方/パスポート再現性/表情を強化。クライアントFB「顔が見えない」「パスポートが日本のものに見えない」「表情をもっと大げさに」を反映）**
 ```
 Professional photorealistic editorial photo, candid documentary style, of
 a tense face-to-face confrontation in a US airport secondary inspection
 room. On the left, a serious American male immigration officer in his
 mid-50s, receding gray hair, round wire-frame glasses, navy blue uniform
 with a metal badge, arms crossed, sharp and skeptical expression, sitting
-behind a desk. On the right, a breathtakingly beautiful woman in her late
-20s, supermodel-level facial features, flawless glowing skin, striking
-and glamorous, voluminous wavy brown hair, sunglasses pushed up on her
-head, large gold hoop earrings, wearing a flashy leopard-print fur coat,
-scowling with furrowed brows and an indignant expression that contrasts
-with her striking beauty, holding up a red Japanese passport toward the
-officer as if asserting her identity. Natural real-photo skin texture,
-avoid airbrushed CGI look, avoid uncanny valley — must look like a real
-photograph of a real person, not rendered.
+behind a desk.
+
+On the right, a breathtakingly beautiful woman in her late 20s, supermodel
+-level facial features, flawless glowing skin, striking and glamorous,
+voluminous wavy brown hair pushed back so her full face is clearly
+visible to the camera (NOT in profile, NOT obscured by hair — face fully
+visible at a three-quarter angle toward the viewer). Sunglasses pushed up
+on her head, large gold hoop earrings, wearing a flashy leopard-print fur
+coat. Her expression is exaggerated and dramatic — deeply furrowed brows,
+mouth open mid-argument, an indignant scowl clearly readable even at
+thumbnail size, more theatrical than a subtle expression.
+
+She holds up an authentic Japanese passport toward the officer: a deep
+maroon/wine-red cover, a gold 16-petal imperial chrysanthemum emblem
+centered on the front, gold Japanese kanji text "日本国旅券" arranged
+above the emblem, and gold English text "JAPAN" and "PASSPORT" below the
+emblem — rendered accurately and legibly, matching the real Japanese
+passport design.
 
 Background: a blurred wall-mounted display showing faint Japanese text
 phrases in a clean sans-serif font on a blue background, out of focus,
