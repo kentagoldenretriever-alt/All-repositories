@@ -450,62 +450,45 @@ woman in sharp focus. 16:9 aspect ratio, no text, no logos.
 - 下段1行目「日本の無料トイレに入って3秒後…」水色＋黒フチ
 - 下段2行目「外国人の態度が一変した理由」赤＋黒フチ
 
-**制作方式（訂正版）**: 当初は「同一人物の連続リアクション」と誤認し、キャラクター統一方式で設計したが、クライアント確認の結果、元ネタは3人の別人（パターン4と同様の複数人一括ではなく、3枚を個別生成して並べる構図）だった。各コマで別人であることを明記して生成する。
+**制作方式（第3版・最終）**: 当初は「同一人物の連続リアクション」と誤認しキャラクター統一方式で設計→クライアント指摘で3人の別人と判明し3枚個別生成方式に変更→さらにクライアントより「3枚合成ではなく1枚のサムネイル画像として3人が自然に横並びになるよう一括生成してほしい」と指摘。CA5人型・4人型と同じ「1枚に複数人を一括生成」方式に統一。
 
-**コマ1用プロンプト**
+**画像生成プロンプト（1枚に3人一括生成）**
 ```
-Photorealistic close-up portrait of a beautiful young Western woman in
-her mid-20s, wavy chestnut-brown hair, gold hoop earrings, warm sun-kissed
-skin with naturally flushed rosy cheeks, dewy glowing makeup look,
-magazine-editorial level beauty. She has a wide-eyed, startled expression,
-eyebrows raised high, glancing sideways off-frame with genuine surprise,
-lips slightly parted. Background: a blurred bright outdoor or plant-filled
-interior. Natural real-photo skin texture, avoid airbrushed CGI look,
-avoid uncanny valley. Shot on 85mm lens, shallow depth of field. Vertical
-crop-friendly composition with headroom. No text, no logos.
-```
+Professional photorealistic editorial photo, candid documentary style, of
+three beautiful young Western women in their mid-20s standing naturally
+side by side in a bright, clean Japanese public restroom, blurred sinks
+and mirrors visible in the background. Each woman has a distinctly
+different face and hair color — one with wavy chestnut-brown hair, one
+with wavy honey-blonde hair with bangs, one with straight golden-blonde
+hair — all with magazine-editorial level beauty, warm sun-kissed skin
+with naturally flushed rosy cheeks, dewy glowing makeup look, gold hoop
+earrings. Natural real-photo skin texture, avoid airbrushed CGI look,
+avoid uncanny valley, avoid identical or mirrored faces between them.
 
-**コマ2用プロンプト**
-```
-Photorealistic close-up portrait of a different beautiful young Western
-woman in her mid-20s (distinct face from other portraits, not the same
-person), wavy honey-blonde hair, layered gold necklace, beige ribbed
-tank top, warm flushed rosy cheeks, dewy glowing makeup look, magazine-
-editorial level beauty. She has a confused, uncertain expression, brows
-slightly furrowed, mouth slightly open as if mid-sentence, eyes glancing
-to the side. Background: a blurred dark, moody interior. Natural real-
-photo skin texture, avoid airbrushed CGI look, avoid uncanny valley. Shot
-on 85mm lens, shallow depth of field. Vertical crop-friendly composition
-with headroom. No text, no logos.
-```
+All three share a moment of surprise upon entering the restroom, but with
+varying intensity: the woman on the left has a wide-eyed startled look,
+glancing sideways with raised eyebrows; the woman in the center looks
+confused and uncertain, mouth slightly open as if mid-sentence, glancing
+to the side; the woman on the right is the most shocked, eyes wide, one
+hand pressed over her open mouth in disbelief. They are positioned close
+together at roughly the same height and distance from camera, a natural
+group composition rather than a rigid lineup.
 
-**コマ3用プロンプト**
-```
-Photorealistic close-up portrait of a different beautiful young Western
-woman in her mid-20s (distinct face from the other two portraits, not
-the same person), wavy blonde hair, gold hoop earrings, warm flushed
-rosy cheeks, dewy glowing makeup look, magazine-editorial level beauty.
-She has a shocked expression, eyes wide, one hand pressed over her open
-mouth in disbelief. Background: a blurred bright, clean Japanese public
-restroom interior — sinks and mirrors visible but out of focus. Natural
-real-photo skin texture, avoid airbrushed CGI look, avoid uncanny valley.
-Shot on 85mm lens, shallow depth of field. Vertical crop-friendly
-composition with headroom. No text, no logos.
+Bright, clean, warm indoor lighting. Medium-close framing from the chest
+up, generous negative space around the group for cropping and
+compositing. Shot on 50mm lens, shallow depth of field with the group in
+sharp focus. 16:9 aspect ratio, no text, no logos.
 ```
 
 **紐づく台本**: 「え…本当にここでするの!?」（オーストラリア人公共施設管理者ポール・ベネットが、富士山麓の道の駅の無料トイレの清掃員の姿勢に触れ、25年間の不信感が変わるエピソード）
 
-**PhotoScape X 合成・文字入れ指示**
+**PhotoScape X 文字入れ指示**
 | 要素 | 内容 |
 |---|---|
-| コマ割り | 生成した3枚を縦長にトリミングし、横に3分割で並べる |
-| コマ間の区切り | 白または黒の細い縦線 |
-| 「⁉」記号 | コマ1-2の間、コマ2-3の間に1つずつ |
+| 「⁉」記号 | 左の女性と中央の女性の間、中央と右の女性の間に1つずつ |
 | 上部見出し | 「え、ここでするの…!?」黄色＋黒フチ4px |
 | 下段1行目 | 「日本の無料トイレに入って3秒後…」水色＋黒フチ |
 | 下段2行目 | 「外国人の態度が一変した理由」赤＋黒フチ（強調） |
-
-**運用上の注意**: 3回の生成で人物の同一性が完全には揃わない場合、コマ2（正面寄りの1枚）を採用し、PhotoScape Xで左右反転・トリミング違いで複製してコマ1・3に流用する方式に切り替える。
 
 ---
 
