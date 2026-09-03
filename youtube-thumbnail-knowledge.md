@@ -560,17 +560,25 @@ ratio, no text, no logos.
 - 下段1行目「余命宣告された娘の最期の願いを叶えに」水色＋黒フチ
 - 下段2行目「訪れた日本で起きた奇跡とは？」赤＋黒フチ
 
-**画像生成プロンプト**
+**画像生成プロンプト（第2版・娘の年齢が成人女性化する問題を修正、父も若く）**
+
+初版では娘が成人女性のように生成されてしまった（AIは「young girl」の指定だけでは大人化しやすい）。子供の身体的特徴を明示的に記述して修正。
+
 ```
 Black-and-white photorealistic editorial portrait, emotionally intimate
-documentary style. A German father in his early 40s, short neatly-cut
-hair, European features, tenderly embraces his young daughter, cheek
-gently pressed against the top of her head, eyes closed or downcast with
-a quiet, sorrowful, weary expression — a man holding back deep emotion.
+documentary style. A German father in his mid-to-late 30s, short neatly
+-cut hair, European features, youthful appearance, tenderly embraces his
+young daughter, cheek gently pressed against the top of her head, eyes
+closed or downcast with a quiet, sorrowful, weary expression — a man
+holding back deep emotion.
 
-His daughter, about 7 years old, blonde hair, is held close in his arms,
-looking directly at the camera with sad, wistful eyes, a fragile and
-melancholic expression, as if silently pleading.
+His daughter is a young girl, exactly 9 years old — child-sized body
+proportions, a small, round, youthful face with soft baby-fat cheeks,
+short stature clearly consistent with a child, NOT an adult woman, NOT a
+teenager. Blonde hair, held close in her father's arms, looking directly
+at the camera with sad, wistful eyes, a fragile and melancholic
+expression, as if silently pleading — the innocent, delicate features of
+an actual 9-year-old child.
 
 Simple neutral gray studio-style background, soft directional lighting
 creating gentle shadows and highlights across their faces, classic black-
