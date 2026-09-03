@@ -450,44 +450,47 @@ woman in sharp focus. 16:9 aspect ratio, no text, no logos.
 - 下段1行目「日本の無料トイレに入って3秒後…」水色＋黒フチ
 - 下段2行目「外国人の態度が一変した理由」赤＋黒フチ
 
-**制作方式**: 同一人物を複数回生成すると同一性が崩れやすいため、共通の外見指定（[CHARACTER]）を固定文言として3回とも使い回し、ブレを最小限にする。
-
-**共通キャラクター指定**
-```
-[CHARACTER] a beautiful young Western woman in her mid-20s, wavy chestnut
--brown hair with honey highlights, gold hoop earrings, a delicate layered
-gold necklace, wearing a beige ribbed tank top, warm sun-kissed skin with
-naturally flushed rosy cheeks, dewy glowing makeup look, magazine-editorial
-level beauty, natural real-photo skin texture, avoid airbrushed CGI look,
-avoid uncanny valley.
-```
+**制作方式（訂正版）**: 当初は「同一人物の連続リアクション」と誤認し、キャラクター統一方式で設計したが、クライアント確認の結果、元ネタは3人の別人（パターン4と同様の複数人一括ではなく、3枚を個別生成して並べる構図）だった。各コマで別人であることを明記して生成する。
 
 **コマ1用プロンプト**
 ```
-Photorealistic close-up portrait of [CHARACTER]. She has a wide-eyed,
-startled expression, eyebrows raised high, glancing sideways off-frame
-with genuine surprise, lips slightly parted. Background: a blurred bright
-modern interior. Shot on 85mm lens, shallow depth of field. Vertical
+Photorealistic close-up portrait of a beautiful young Western woman in
+her mid-20s, wavy chestnut-brown hair, gold hoop earrings, warm sun-kissed
+skin with naturally flushed rosy cheeks, dewy glowing makeup look,
+magazine-editorial level beauty. She has a wide-eyed, startled expression,
+eyebrows raised high, glancing sideways off-frame with genuine surprise,
+lips slightly parted. Background: a blurred bright outdoor or plant-filled
+interior. Natural real-photo skin texture, avoid airbrushed CGI look,
+avoid uncanny valley. Shot on 85mm lens, shallow depth of field. Vertical
 crop-friendly composition with headroom. No text, no logos.
 ```
 
 **コマ2用プロンプト**
 ```
-Photorealistic close-up portrait of [CHARACTER]. She has a confused,
-uncertain expression, brows slightly furrowed, mouth slightly open as if
-mid-sentence, eyes glancing to the side. Background: a blurred bright
-modern interior. Shot on 85mm lens, shallow depth of field. Vertical
-crop-friendly composition with headroom. No text, no logos.
+Photorealistic close-up portrait of a different beautiful young Western
+woman in her mid-20s (distinct face from other portraits, not the same
+person), wavy honey-blonde hair, layered gold necklace, beige ribbed
+tank top, warm flushed rosy cheeks, dewy glowing makeup look, magazine-
+editorial level beauty. She has a confused, uncertain expression, brows
+slightly furrowed, mouth slightly open as if mid-sentence, eyes glancing
+to the side. Background: a blurred dark, moody interior. Natural real-
+photo skin texture, avoid airbrushed CGI look, avoid uncanny valley. Shot
+on 85mm lens, shallow depth of field. Vertical crop-friendly composition
+with headroom. No text, no logos.
 ```
 
 **コマ3用プロンプト**
 ```
-Photorealistic close-up portrait of [CHARACTER]. She has a shocked
-expression, eyes wide, one hand pressed over her open mouth in disbelief.
-Background: a blurred bright, clean Japanese public restroom interior —
-sinks and mirrors visible but out of focus. Shot on 85mm lens, shallow
-depth of field. Vertical crop-friendly composition with headroom. No
-text, no logos.
+Photorealistic close-up portrait of a different beautiful young Western
+woman in her mid-20s (distinct face from the other two portraits, not
+the same person), wavy blonde hair, gold hoop earrings, warm flushed
+rosy cheeks, dewy glowing makeup look, magazine-editorial level beauty.
+She has a shocked expression, eyes wide, one hand pressed over her open
+mouth in disbelief. Background: a blurred bright, clean Japanese public
+restroom interior — sinks and mirrors visible but out of focus. Natural
+real-photo skin texture, avoid airbrushed CGI look, avoid uncanny valley.
+Shot on 85mm lens, shallow depth of field. Vertical crop-friendly
+composition with headroom. No text, no logos.
 ```
 
 **紐づく台本**: 「え…本当にここでするの!?」（オーストラリア人公共施設管理者ポール・ベネットが、富士山麓の道の駅の無料トイレの清掃員の姿勢に触れ、25年間の不信感が変わるエピソード）
