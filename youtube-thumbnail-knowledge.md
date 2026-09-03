@@ -439,6 +439,73 @@ woman in sharp focus. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン8: 同一人物3コマ連続リアクション型
+
+**元ネタ画像の特徴**
+- 同一人物と思われる若い女性の3コマ連続リアクション（左→中→右で表情が変化）
+- 共通の外見: ウェーブがかった茶色〜ブロンドの髪、ゴールドフープピアス、ネックレス、頬にほんのり赤み（艶っぽいメイク）
+- 左: 目を見開いて横目で驚く／中: 戸惑いながら口を開け横を見る／右: 手で口を覆って驚愕、背景にトイレの洗面台
+- 「⁉」記号をコマとコマの間に2箇所
+- 上部見出し「え、ここでするの…!?」黄色＋黒フチ
+- 下段1行目「日本の無料トイレに入って3秒後…」水色＋黒フチ
+- 下段2行目「外国人の態度が一変した理由」赤＋黒フチ
+
+**制作方式**: 同一人物を複数回生成すると同一性が崩れやすいため、共通の外見指定（[CHARACTER]）を固定文言として3回とも使い回し、ブレを最小限にする。
+
+**共通キャラクター指定**
+```
+[CHARACTER] a beautiful young Western woman in her mid-20s, wavy chestnut
+-brown hair with honey highlights, gold hoop earrings, a delicate layered
+gold necklace, wearing a beige ribbed tank top, warm sun-kissed skin with
+naturally flushed rosy cheeks, dewy glowing makeup look, magazine-editorial
+level beauty, natural real-photo skin texture, avoid airbrushed CGI look,
+avoid uncanny valley.
+```
+
+**コマ1用プロンプト**
+```
+Photorealistic close-up portrait of [CHARACTER]. She has a wide-eyed,
+startled expression, eyebrows raised high, glancing sideways off-frame
+with genuine surprise, lips slightly parted. Background: a blurred bright
+modern interior. Shot on 85mm lens, shallow depth of field. Vertical
+crop-friendly composition with headroom. No text, no logos.
+```
+
+**コマ2用プロンプト**
+```
+Photorealistic close-up portrait of [CHARACTER]. She has a confused,
+uncertain expression, brows slightly furrowed, mouth slightly open as if
+mid-sentence, eyes glancing to the side. Background: a blurred bright
+modern interior. Shot on 85mm lens, shallow depth of field. Vertical
+crop-friendly composition with headroom. No text, no logos.
+```
+
+**コマ3用プロンプト**
+```
+Photorealistic close-up portrait of [CHARACTER]. She has a shocked
+expression, eyes wide, one hand pressed over her open mouth in disbelief.
+Background: a blurred bright, clean Japanese public restroom interior —
+sinks and mirrors visible but out of focus. Shot on 85mm lens, shallow
+depth of field. Vertical crop-friendly composition with headroom. No
+text, no logos.
+```
+
+**紐づく台本**: 「え…本当にここでするの!?」（オーストラリア人公共施設管理者ポール・ベネットが、富士山麓の道の駅の無料トイレの清掃員の姿勢に触れ、25年間の不信感が変わるエピソード）
+
+**PhotoScape X 合成・文字入れ指示**
+| 要素 | 内容 |
+|---|---|
+| コマ割り | 生成した3枚を縦長にトリミングし、横に3分割で並べる |
+| コマ間の区切り | 白または黒の細い縦線 |
+| 「⁉」記号 | コマ1-2の間、コマ2-3の間に1つずつ |
+| 上部見出し | 「え、ここでするの…!?」黄色＋黒フチ4px |
+| 下段1行目 | 「日本の無料トイレに入って3秒後…」水色＋黒フチ |
+| 下段2行目 | 「外国人の態度が一変した理由」赤＋黒フチ（強調） |
+
+**運用上の注意**: 3回の生成で人物の同一性が完全には揃わない場合、コマ2（正面寄りの1枚）を採用し、PhotoScape Xで左右反転・トリミング違いで複製してコマ1・3に流用する方式に切り替える。
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
