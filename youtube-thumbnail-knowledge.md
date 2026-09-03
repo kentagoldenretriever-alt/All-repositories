@@ -547,6 +547,53 @@ ratio, no text, no logos.
 
 ---
 
+## パターン10: モノクロ親子抱擁×国旗1つ×吹き出し型
+
+**元ネタ画像の特徴**
+- モノクロ（白黒）写真、これまでの全パターンと違う初めての演出
+- 父親が娘を優しく抱きしめ、頬を寄せている構図
+- 父親: 短髪、ヨーロッパ系、目を伏せて憂いのある切ない表情
+- 娘: 金髪、悲しげな瞳でカメラ目線
+- 画面左上にドイツ国旗（1つのみ、パターン9は2つだった）
+- セリフ吹き出し「パパ、日本に行きたい…」を人物の横に配置
+- 上部見出し「パパ、日本に行きたい…」黄色＋黒フチ（吹き出しと同じ文言を大きく強調）
+- 下段1行目「余命宣告された娘の最期の願いを叶えに」水色＋黒フチ
+- 下段2行目「訪れた日本で起きた奇跡とは？」赤＋黒フチ
+
+**画像生成プロンプト**
+```
+Black-and-white photorealistic editorial portrait, emotionally intimate
+documentary style. A German father in his early 40s, short neatly-cut
+hair, European features, tenderly embraces his young daughter, cheek
+gently pressed against the top of her head, eyes closed or downcast with
+a quiet, sorrowful, weary expression — a man holding back deep emotion.
+
+His daughter, about 7 years old, blonde hair, is held close in his arms,
+looking directly at the camera with sad, wistful eyes, a fragile and
+melancholic expression, as if silently pleading.
+
+Simple neutral gray studio-style background, soft directional lighting
+creating gentle shadows and highlights across their faces, classic black-
+and-white portrait photography with rich tonal contrast. Natural real-
+photo skin texture, avoid airbrushed CGI look, avoid uncanny valley.
+Medium-close framing from the chest up, generous negative space around
+them for cropping and compositing. Shot on 85mm lens, shallow depth of
+field. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「パパ、最後に日本に行きたい…」（ドイツ人エンジニアのトーマス・ベルクマンが、余命宣告を受けた娘レアの願いで来日、大阪の病院で誤診が判明し娘が救われるエピソード）
+
+**PhotoScape X 合成・文字入れ指示**
+| 要素 | 内容 | 位置 |
+|---|---|---|
+| ドイツ国旗アイコン | 実際の国旗素材画像を配置（生成不要） | 画面左上 |
+| セリフ吹き出し | 「パパ、日本に行きたい…」白背景吹き出し、黒文字 | 人物の横 |
+| 上部見出し | 「パパ、日本に行きたい…」黄色＋黒フチ4px | 画面上部中央 |
+| 下段1行目 | 「余命宣告された娘の最期の願いを叶えに」水色＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「訪れた日本で起きた奇跡とは？」赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
