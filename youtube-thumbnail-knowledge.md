@@ -492,6 +492,58 @@ sharp focus. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン9: 電車内家族×国旗アイコン×吹き出し型
+
+**元ネタ画像の特徴**
+- 電車内（新幹線風、青いシート、白い枕カバー）に母親と娘2人が並んで座っている
+- 母親（40代、グレーのカーディガン、黒タートルネック）は窓の外を見つめる悲しげな表情、「ごめんね…」の吹き出しテキストが添えられている
+- 長女（17歳、黒髪ロングストレート、俯いた悲しい表情、紺パーカー）
+- 次女（14歳、眼鏡、黒髪ボブ、俯いた表情、紺パーカー）
+- 画面左上に中国国旗、右上に日本国旗のアイコンを配置（対比構造）
+- 背景に他の乗客がぼやけて見える
+- 上部見出し「もう日本に帰れないの？」黄色＋黒フチ
+- 下段1行目「在留資格切れで中国人一家が帰国」水色＋黒フチ
+- 下段2行目「母国到着5分で全員が絶望」赤＋黒フチ
+- これまでの「驚き・怒り」系と違い、「悲しみ・後悔」の感情を扱う初のパターン
+
+**画像生成プロンプト**
+```
+Photorealistic candid documentary-style photo inside a Japanese shinkansen
+or express train car, blue upholstered seats with white headrest covers,
+other blurred passengers visible in the background rows. A Chinese mother
+in her early 40s, wearing a gray cardigan over a black turtleneck, sits
+by the window with a sad, regretful expression, gazing out at the passing
+scenery, brows drawn together with quiet sorrow.
+
+Beside her, her two daughters sit in a row: the elder daughter, about 17,
+long straight black hair, wearing a navy hoodie, looking down with a
+melancholic, downcast expression. The younger daughter, about 14, wearing
+glasses, black bob haircut, navy hoodie, also looking down, subdued and
+tired.
+
+All three have genuine, understated sad expressions — not dramatic crying,
+but quiet emotional heaviness, natural real-photo skin texture, avoid
+airbrushed CGI look, avoid uncanny valley. Soft natural daylight through
+the train window, warm but muted color tone reflecting the somber mood.
+Medium-wide framing showing all three from the waist up, generous negative
+space around them for cropping and compositing. Shot on 50mm lens,
+moderate depth of field. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「中国の方が日本より快適に決まってる…」（中国人女性ワン・メイリンが在留資格切れで娘2人と一時帰国し、広州の実家で食の安全性の違いに直面するエピソード）
+
+**PhotoScape X 合成・文字入れ指示**
+| 要素 | 内容 | 位置 |
+|---|---|---|
+| 中国国旗アイコン | 実際の国旗素材画像を配置（生成不要） | 画面左上 |
+| 日本国旗アイコン | 実際の国旗素材画像を配置（生成不要） | 画面右上 |
+| 吹き出し「ごめんね…」 | 白背景の吹き出し、黒文字 | 母親の口元付近 |
+| 上部見出し | 「もう日本に帰れないの？」黄色＋黒フチ4px | 画面上部中央 |
+| 下段1行目 | 「在留資格切れで中国人一家が帰国」水色＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「母国到着5分で全員が絶望」赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
