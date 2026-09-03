@@ -506,28 +506,31 @@ sharp focus. 16:9 aspect ratio, no text, no logos.
 - 下段2行目「母国到着5分で全員が絶望」赤＋黒フチ
 - これまでの「驚き・怒り」系と違い、「悲しみ・後悔」の感情を扱う初のパターン
 
-**画像生成プロンプト**
+**画像生成プロンプト（第2版・中国人らしさと母親の表情を強化）**
 ```
 Photorealistic candid documentary-style photo inside a Japanese shinkansen
 or express train car, blue upholstered seats with white headrest covers,
 other blurred passengers visible in the background rows. A Chinese mother
-in her early 40s, wearing a gray cardigan over a black turtleneck, sits
-by the window with a sad, regretful expression, gazing out at the passing
-scenery, brows drawn together with quiet sorrow.
+in her early 40s, clearly of Chinese ethnicity with features typical of
+southern China (Guangzhou region), wearing a gray cardigan over a black
+turtleneck, sits by the window. Her expression is exhausted and remorseful
+— shoulders slightly slumped, head tilted down, eyes downcast with deep
+guilt and quiet shame, as if silently apologizing to herself, far more
+weary and regretful than a simple sad look.
 
-Beside her, her two daughters sit in a row: the elder daughter, about 17,
-long straight black hair, wearing a navy hoodie, looking down with a
-melancholic, downcast expression. The younger daughter, about 14, wearing
-glasses, black bob haircut, navy hoodie, also looking down, subdued and
-tired.
+Beside her, her two daughters, also clearly of Chinese ethnicity, sit in
+a row: the elder daughter, about 17, long straight black hair, wearing a
+navy hoodie, looking down with a melancholic, downcast expression. The
+younger daughter, about 14, wearing glasses, black bob haircut, navy
+hoodie, also looking down, subdued and tired.
 
-All three have genuine, understated sad expressions — not dramatic crying,
-but quiet emotional heaviness, natural real-photo skin texture, avoid
-airbrushed CGI look, avoid uncanny valley. Soft natural daylight through
-the train window, warm but muted color tone reflecting the somber mood.
-Medium-wide framing showing all three from the waist up, generous negative
-space around them for cropping and compositing. Shot on 50mm lens,
-moderate depth of field. 16:9 aspect ratio, no text, no logos.
+All three have genuine, understated sad expressions, natural real-photo
+skin texture, avoid airbrushed CGI look, avoid uncanny valley. Soft
+natural daylight through the train window, warm but muted color tone
+reflecting the somber mood. Medium-wide framing showing all three from
+the waist up, generous negative space around them for cropping and
+compositing. Shot on 50mm lens, moderate depth of field. 16:9 aspect
+ratio, no text, no logos.
 ```
 
 **紐づく台本**: 「中国の方が日本より快適に決まってる…」（中国人女性ワン・メイリンが在留資格切れで娘2人と一時帰国し、広州の実家で食の安全性の違いに直面するエピソード）
