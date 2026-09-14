@@ -612,25 +612,32 @@ field. 16:9 aspect ratio, no text, no logos.
 - 下段1行目「日本に来るため10年貯金したポーランド人女性」水色＋黒フチ
 - 下段2行目「日本上陸直後に泣き崩れた理由」赤＋黒フチ
 
-**画像生成プロンプト**
+**画像生成プロンプト（第2版・服装/背景の高層ビル/表情を修正）**
+
+初版は黒いカーディガンになり、背景が高層ビル群（マンハッタン風）になってしまい、元ネタの「明るめグレーの服・低層の日本的な街並み」と乖離した。以下は修正版。
+
 ```
 Photorealistic candid documentary-style close-up portrait of a Polish
 woman in her late 30s, wavy brown hair slightly disheveled from a long
-flight, natural minimal makeup, tired but genuine expression. She is
-crying — eyes red and glistening with tears, tears visibly streaking
-down her cheeks, one hand raised to wipe her cheek, mouth slightly open
-in a mix of overwhelmed emotion and disbelief. Natural real-photo skin
-texture with visible pores and realistic imperfections, avoid airbrushed
-CGI look, avoid uncanny valley — she should look like an ordinary, real
-woman worn out from travel, not glamorous or posed.
+flight, natural minimal makeup, wearing a light gray casual sweater/hoodie
+(NOT a dark cardigan). Tired but genuine expression, overwhelmed with
+emotion. She is crying — eyes red and glistening with tears, tears
+visibly streaking down her cheeks, one hand raised to wipe her cheek,
+mouth open wider in a mix of shock, disbelief, and overwhelmed emotion —
+more startled and open-mouthed than a subtle quiet cry. Natural real-
+photo skin texture with visible pores and realistic imperfections, avoid
+airbrushed CGI look, avoid uncanny valley — she should look like an
+ordinary, real woman worn out from travel, not glamorous or posed.
 
 Background: an airport arrival lounge with large floor-to-ceiling windows
-showing an overcast gray sky and a low-rise city skyline in the distance,
-blurred fellow travelers and luggage further back. Soft, slightly cool
-natural window light matching the cloudy sky. Medium-close framing from
-the chest up, generous negative space around her for cropping and
-compositing. Shot on 85mm lens, shallow depth of field with only the
-woman in sharp focus. 16:9 aspect ratio, no text, no logos.
+showing an overcast gray sky and a LOW-RISE Japanese cityscape in the
+distance — modest low buildings spread out toward the horizon, NOT a
+skyline of tall skyscrapers, NOT a Manhattan-style skyline. Blurred
+fellow travelers and luggage further back. Soft, slightly cool natural
+window light matching the cloudy sky. Medium-close framing from the chest
+up, generous negative space around her for cropping and compositing.
+Shot on 85mm lens, shallow depth of field with only the woman in sharp
+focus. 16:9 aspect ratio, no text, no logos.
 ```
 
 **紐づく台本**: 「10年かけて貯めた貯金が、数日で消えた…」（ポーランド人女性カタジナ・ノヴァクが10年間貯金して来日、羽田空港で整備士が飛行機に敬礼する光景に涙し、落とし物の封筒が無事戻ってくるエピソード）
