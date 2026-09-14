@@ -602,6 +602,51 @@ field. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン11: 涙のクローズアップ×空港窓外の街並み型
+
+**元ネタ画像の特徴**
+- メインは1人の女性、涙を流しながら頬を拭う、疲れた自然な表情（化粧っ気は控えめ、長旅の疲労感がある）
+- 「⁉」記号を顔の右上に配置
+- 背景は空港到着ロビー、大きな窓越しに曇り空と都市の建物群、ぼやけた他の乗客やスーツケース
+- 上部見出し「これは一体、何ですか…!?」黄色＋黒フチ
+- 下段1行目「日本に来るため10年貯金したポーランド人女性」水色＋黒フチ
+- 下段2行目「日本上陸直後に泣き崩れた理由」赤＋黒フチ
+
+**画像生成プロンプト**
+```
+Photorealistic candid documentary-style close-up portrait of a Polish
+woman in her late 30s, wavy brown hair slightly disheveled from a long
+flight, natural minimal makeup, tired but genuine expression. She is
+crying — eyes red and glistening with tears, tears visibly streaking
+down her cheeks, one hand raised to wipe her cheek, mouth slightly open
+in a mix of overwhelmed emotion and disbelief. Natural real-photo skin
+texture with visible pores and realistic imperfections, avoid airbrushed
+CGI look, avoid uncanny valley — she should look like an ordinary, real
+woman worn out from travel, not glamorous or posed.
+
+Background: an airport arrival lounge with large floor-to-ceiling windows
+showing an overcast gray sky and a low-rise city skyline in the distance,
+blurred fellow travelers and luggage further back. Soft, slightly cool
+natural window light matching the cloudy sky. Medium-close framing from
+the chest up, generous negative space around her for cropping and
+compositing. Shot on 85mm lens, shallow depth of field with only the
+woman in sharp focus. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「10年かけて貯めた貯金が、数日で消えた…」（ポーランド人女性カタジナ・ノヴァクが10年間貯金して来日、羽田空港で整備士が飛行機に敬礼する光景に涙し、落とし物の封筒が無事戻ってくるエピソード）
+
+**制作メモ**: このパターンは「美人でセクシー」路線ではなく、長旅で疲れた自然体のリアルな表情が求められる構図（元ネタも化粧控えめ・涙で顔が濡れた飾らない印象）。美人化要望が来た場合は「疲労感・素朴さは保ったまま整った顔立ちにする」バランス調整が必要になる想定。
+
+**PhotoScape X 文字入れ指示**
+| 要素 | 内容 | 色 | 位置 |
+|---|---|---|---|
+| 上部見出し | 「これは一体、何ですか…!?」 | 黄色＋黒フチ4px | 画面上部中央 |
+| リアクション記号 | ⁉ | 赤 | 女性の顔の右上 |
+| 下段1行目 | 「日本に来るため10年貯金したポーランド人女性」 | 水色＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「日本上陸直後に泣き崩れた理由」 | 赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
