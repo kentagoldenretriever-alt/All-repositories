@@ -654,6 +654,56 @@ focus. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン12: 夜の空港×手前驚き男女×背景群衆矢印強調型
+
+**元ネタ画像の特徴**
+- 夜間の空港ロビー、青みがかった照明、窓の外は暗い夜景
+- 手前に外国人の男女2人、驚いた表情でカメラ目線
+- 「⁉」記号と小さい吹き出し「あれは何…!?」
+- 背景に多数の乗客が床に座り込んで待機している光景（欠航による足止め）
+- 赤い矢印で背景の座り込む乗客群の一部を指し示す（パターン6の「引きショット＋矢印強調」に近い要素）
+- 上部見出し「こんな国、ありえるのか…?」黄色＋黒フチ
+- 下段1行目「全便欠航で羽田に足止めされたイギリス人旅行者」水色＋黒フチ
+- 下段2行目「朝5時のロビーで見た光景とは」赤＋黒フチ
+
+**画像生成プロンプト**
+```
+Photorealistic candid documentary-style photo at night inside a Japanese
+airport terminal (Haneda-style), cool blue-toned ambient lighting, dark
+night sky visible through large windows. In the foreground, medium-close,
+a British man in his early 40s and a Western woman in her late 20s to
+30s, both with genuinely startled, wide-eyed expressions, looking toward
+something off-frame with surprise and disbelief, mouths slightly open.
+
+In the background, softly blurred but visible, hundreds of stranded
+travelers sit quietly on the floor on thin mats in neat, orderly rows,
+some with blankets, a calm and orderly atmosphere despite the crowding —
+no chaos, no mess, everyone seated calmly. The scene should feel eerily
+peaceful for a flight-cancellation crowd.
+
+Natural real-photo skin texture, avoid airbrushed CGI look, avoid uncanny
+valley. Medium-wide framing with generous negative space around the two
+foreground subjects for cropping and compositing. Shot on 50mm lens,
+shallow depth of field with the two foreground people in sharp focus and
+the background crowd softly blurred. 16:9 aspect ratio, no text, no
+logos.
+```
+
+**紐づく台本**: 「こんな国があり得るのか…？」（ヒースロー空港運行管理歴15年のイギリス人トーマス・ハワードが、台風で羽田に足止めされ、深夜に見知らぬ老人乗客・佐藤さんが誰に頼まれるでもなく秩序を保つ姿に価値観を揺さぶられるエピソード）
+
+**制作メモ**: サムネの女性は台本本文には明示的に登場しないキャラクター（旅の連れ、または感情移入を誘う演出上の追加人物）。台本には登場しないが、サムネの構図としてそのまま採用。
+
+**PhotoScape X 合成・文字入れ指示**
+| 要素 | 内容 | 位置 |
+|---|---|---|
+| 赤い矢印 | 背景の座り込む乗客群の一部を指し示す | 画面中央〜左寄り |
+| 「⁉」記号＋吹き出し「あれは何…!?」 | 白背景吹き出し＋赤記号 | 男性の頭上付近 |
+| 上部見出し | 「こんな国、ありえるのか…?」黄色＋黒フチ4px | 画面上部中央 |
+| 下段1行目 | 「全便欠航で羽田に足止めされたイギリス人旅行者」水色＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「朝5時のロビーで見た光景とは」赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
