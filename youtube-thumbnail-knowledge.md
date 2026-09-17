@@ -344,9 +344,9 @@ both subjects in sharp focus. 16:9 aspect ratio, no text, no logos.
 - 下段1行目（白/水色）「成田空港で偶然撮影されたわずか10秒の映像が」
 - 下段2行目（赤）「拡散され世界が絶賛した理由」
 
-**画像生成プロンプト（第3版・引き・向き・親子の対比を修正済み）**
+**画像生成プロンプト（第4版・群衆が全員後ろ向きになる問題を修正）**
 
-初版は被写体が主役化しすぎ、第2版は群衆に埋もれさせるところまでは改善したが、①まだ画角が元ネタほど引いていない、②被写体が後ろ向き/横向きで顔が見えない、③父子の国籍対比（父=日本人、子=白人）が判別できない、という3点のズレが残った。以下は修正版。
+第3版でもまだ、群衆のほぼ全員が奥に向かって歩く後ろ姿になってしまう問題が残っていた。歩く向きのバリエーションを明示的に指定して修正。
 
 ```
 Photorealistic ultra-wide-angle candid photo of a very busy Japanese
@@ -354,17 +354,22 @@ airport terminal concourse (Narita-style), warm honey-toned wood
 flooring, rows of orange cushioned chairs, tall floor-to-ceiling windows,
 bright natural daylight. The shot is framed wider and further back than
 a typical photo — dozens of travelers of various nationalities fill the
-frame at a natural, ordinary pace, business people with briefcases,
-students with backpacks, people rolling suitcases, some seated checking
-phones. The whole space should feel expansive, not tightly cropped.
+frame. The whole space should feel expansive, not tightly cropped.
+
+CRITICAL: Travelers walk in many different directions, not all in the
+same direction. A substantial number of pedestrians walk toward the
+camera or diagonally across the frame, so their faces are clearly visible
+(NOT everyone shown from behind walking away into the distance). Mix of
+people walking toward camera, away from camera, and crossing left-to-
+right or right-to-left, business people with briefcases, students with
+backpacks, people rolling suitcases, some seated checking phones.
 
 Somewhere in the crowd, roughly centered but not isolated, a Japanese
 businessman in his 50s, black hair, ordinary dark suit, is walking while
-gently carrying a young Western boy in his arms — the boy has visibly
+gently carrying a young Western child in his arms — the child has visibly
 light/blond hair and fair skin, a clear visual contrast to the man's
-Japanese features, so the pairing reads at a glance as father-and-child
-from different backgrounds. They are angled roughly three-quarters toward
-the camera (not walking away with backs turned) so their faces are
+Japanese features. They are angled roughly three-quarters toward the
+camera (NOT walking away with backs turned) so their faces are clearly
 visible at a normal viewing distance, same as the surrounding pedestrians.
 
 This pair should NOT be more sharply focused, more brightly lit, or
