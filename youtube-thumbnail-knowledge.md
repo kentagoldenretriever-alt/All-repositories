@@ -713,6 +713,57 @@ logos.
 
 ---
 
+## パターン13: 和室対面母娘×朝食膳×矢印強調型
+
+**元ネタ画像の特徴**
+- 旅館の和室（畳、障子、座布団、床の間の飾り棚）
+- 左に母親（30代後半、茶色いウェーブヘア、グレーのセーター）、優しい笑顔でこちらを見る、吹き出し「最高でしょ？」
+- 右に娘（9歳、茶髪、薄紫のセーター）、目を見開いて驚いた表情、口が半開き、吹き出し「なにこれ…！」＋「‼」マーク
+- 座卓に和朝食の膳：ご飯茶碗、味噌汁椀、漬物・煮物の小鉢、焼き魚の切り身
+- 赤い矢印で焼き魚の皿を指し示す
+- 上部見出し「朝ごはん、こんなに豪華なの？」黄色＋黒フチ
+- 下段1行目「偏食のイギリス人少女が日本旅館で見た朝食」水色＋黒フチ
+- 下段2行目「一口食べて人生が激変した理由」赤＋黒フチ
+
+**画像生成プロンプト**
+```
+Photorealistic candid documentary-style photo inside a traditional
+Japanese ryokan tatami room, low wooden table, shoji sliding doors in
+the background, a tokonoma alcove shelf with a small plant, floor
+cushions (zabuton) visible. On the left, a British mother in her late
+30s, brown wavy shoulder-length hair, wearing a gray sweater, sitting at
+the low table with a warm, gentle smile, looking toward her daughter.
+
+On the right, her daughter, about 9 years old, long brown hair, wearing
+a light purple sweater, sitting at the table with a genuinely astonished
+expression — eyes wide open, mouth slightly parted in surprise, staring
+down at the elaborate breakfast spread in front of her.
+
+On the table between them, an elaborate traditional Japanese breakfast
+set: a bowl of white rice, a lacquered miso soup bowl, small side dishes
+of pickles and simmered vegetables, and a plate with a grilled fish
+fillet, all arranged neatly. Soft natural morning light filtering through
+the shoji screens. Natural real-photo skin texture, avoid airbrushed CGI
+look, avoid uncanny valley. Medium-wide framing showing both figures from
+the waist up and the full table spread, generous negative space around
+them for cropping and compositing. Shot on 35mm lens, moderate depth of
+field. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「朝ごはん、なんでこんなに豪華なの?」（極度の偏食児エラ・ハーパーが、日本海沿いの旅館の仲居さゆきさんの3日間変わらぬ朝食への向き合い方に触れ、初めて自分から食事を口にするエピソード）
+
+**PhotoScape X 合成・文字入れ指示**
+| 要素 | 内容 | 位置 |
+|---|---|---|
+| 赤い矢印 | 焼き魚の皿を指し示す | 皿の右上 |
+| 母親の吹き出し | 「最高でしょ？」白背景吹き出し、黒文字 | 母親の口元付近 |
+| 娘の吹き出し＋記号 | 「なにこれ…！」＋「‼」 | 娘の頭上付近 |
+| 上部見出し | 「朝ごはん、こんなに豪華なの？」黄色＋黒フチ4px | 画面上部中央 |
+| 下段1行目 | 「偏食のイギリス人少女が日本旅館で見た朝食」水色＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「一口食べて人生が激変した理由」赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
