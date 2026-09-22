@@ -764,6 +764,56 @@ field. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン14: 4人グループ×路地裏暖簾×矢印強調型
+
+**元ネタ画像の特徴**
+- 東京下町の古い路地（木造建築、赤提灯、紺色の暖簾）
+- 手前に4人のフランス人（年配の男性、若い男性、女性2人）、全員が驚いた表情でこちらを見る
+- 「⁉」「?!」の記号2つ
+- 吹き出し「聞いてないよ…」
+- 赤い矢印で暖簾を指し示す
+- 上部見出し「嘘だろ…この店で食べるのか？」黄色＋黒フチ
+- 下段1行目「フランス人ソムリエが東京下町の大衆居酒屋へ」水色＋黒フチ
+- 下段2行目「暖簾の先で見た衝撃の光景とは」赤＋黒フチ
+
+**画像生成プロンプト**
+```
+Photorealistic candid documentary-style photo of four French travelers
+standing together in a narrow, old-fashioned Tokyo backstreet alley,
+weathered wooden two-story buildings, a red paper lantern hanging
+overhead, a faded indigo-blue noren curtain hanging over a doorway in
+the background.
+
+The group: an older French man in his early 50s wearing a dark suit,
+graying hair, genuinely shocked expression; a French man in his late 30s
+with short beard, also startled; two French women in their 30s-40s,
+one with a scarf, both with equally surprised, wide-eyed expressions.
+All four are looking toward the camera / the doorway with disbelief,
+mouths slightly open, as if they cannot believe they are being led here.
+
+Natural real-photo skin texture, avoid airbrushed CGI look, avoid uncanny
+valley. Warm late-afternoon lighting typical of a Tokyo backstreet at
+dusk. Medium-wide framing showing all four from the chest up in the
+foreground, with the noren-curtained doorway visible in the background
+to the right, generous negative space around the group for cropping and
+compositing. Shot on 35mm lens, moderate depth of field. 16:9 aspect
+ratio, no text, no logos.
+```
+
+**紐づく台本**: 「え、ここは天国なの…⁉」（パリの三つ星レストランでシェフソムリエを26年務めたリュック・モローが、蔵人の藤田に連れられ東京下町の12席の酒場を訪れ、格付けや数字では測れない人へのまなざしに触れるエピソード）
+
+**PhotoScape X 合成・文字入れ指示**
+| 要素 | 内容 | 位置 |
+|---|---|---|
+| 赤い矢印 | 暖簾を指し示す | 暖簾の左上 |
+| 「⁉」「?!」記号 | 2箇所 | 人物の頭上付近2箇所 |
+| 吹き出し「聞いてないよ…」 | 白背景吹き出し、黒文字 | 女性の口元付近 |
+| 上部見出し | 「嘘だろ…この店で食べるのか？」黄色＋黒フチ4px | 画面上部中央 |
+| 下段1行目 | 「フランス人ソムリエが東京下町の大衆居酒屋へ」水色＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「暖簾の先で見た衝撃の光景とは」赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
