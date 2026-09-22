@@ -824,6 +824,55 @@ focus. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン15: 空港ロビー4人家族×困惑表情×セリフ吹き出し型
+
+**元ネタ画像の特徴**
+- 空港ロビー、明るい室内、背景にぼやけた他の乗客と椅子
+- 4人家族が横並び：父（40代後半、黒髪短髪、黒いジャケット）、息子（13歳、茶髪、グレーのパーカー）、娘（10歳、茶色い長髪）、母（ブロンド、ベージュのコート）
+- 全員が困惑・心配そうな深刻な表情でこちらを見ている
+- 「⁉」「?!」記号が父と母の頭上に
+- 娘の吹き出し「どこ行くの…？」
+- 上部見出し「日本だと言えなかった…」黄色＋黒フチ
+- 下段1行目「旅行先を伏せたまま子どもたちを空港へ連れ出し」水色＋黒フチ
+- 下段2行目「兄妹が泣き崩れ世界が騒然」赤＋黒フチ
+
+**画像生成プロンプト**
+```
+Photorealistic candid documentary-style photo of a British family of
+four sitting together in an airport departure lounge, bright indoor
+lighting, blurred fellow travelers and seating rows in the background.
+
+The father, late 40s, short dark hair, wearing a black jacket, has a
+worried, conflicted expression, brows furrowed. Beside him, his son,
+about 13, light brown hair, wearing a gray hoodie, looks uneasy and
+guarded. Next to him, his younger sister, about 10, long light brown
+hair, looking directly at the camera with an anxious, questioning
+expression. On the far side, the mother, blonde shoulder-length hair,
+wearing a beige coat, has a similarly worried expression, brows raised
+slightly with concern.
+
+All four share a subdued, tense, uncertain mood — not shock or excitement,
+but quiet worry and unspoken tension within the family. Natural real-
+photo skin texture, avoid airbrushed CGI look, avoid uncanny valley.
+Medium-wide framing showing all four from the chest up, generous
+negative space around them for cropping and compositing. Shot on 50mm
+lens, moderate depth of field. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「え、本当に日本に行くの?…」（活版印刷職人ダニエル・ハーパーが、3年前の旅行中止のトラウマから空港到着まで行き先を伏せ、日本滞在中に息子ノアの心が少しずつ開いていくエピソード）
+
+**PhotoScape X 文字入れ指示**
+| 要素 | 内容 | 位置 |
+|---|---|---|
+| 「⁉」記号 | 父の頭上 | 父の右上 |
+| 「?!」記号 | 母の頭上 | 母の右上 |
+| 娘の吹き出し | 「どこ行くの…？」白背景吹き出し、黒文字 | 娘の口元付近 |
+| 上部見出し | 「日本だと言えなかった…」黄色＋黒フチ4px | 画面上部中央 |
+| 下段1行目 | 「旅行先を伏せたまま子どもたちを空港へ連れ出し」水色＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「兄妹が泣き崩れ世界が騒然」赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
