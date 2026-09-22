@@ -776,43 +776,38 @@ field. 16:9 aspect ratio, no text, no logos.
 - 下段1行目「フランス人ソムリエが東京下町の大衆居酒屋へ」水色＋黒フチ
 - 下段2行目「暖簾の先で見た衝撃の光景とは」赤＋黒フチ
 
-**画像生成プロンプト（第3版・AI感を解消。配置の均一さ・フラットな光・表情の画一性を修正）**
+**画像生成プロンプト（第4版・元ネタとの寄り/配置/光のズレを修正）**
 
-第2版は視線と構図は改善したが、①4人が完璧に等間隔・均一な光量で並びすぎて「並べた感」が出る、②表情が全員同じ強度・形で画一的、③暖簾がきれいすぎてプロップ感がある、という3点でAI感が出た。以下は修正版。
+第3版でAI感は改善したが、クライアントが元ネタ画像を再提示し「もっと寄せてほしい」と指摘。元ネタは①顔のドアップ（肩の一部のみ）、②手前が最大で奥へ行くほど重なって小さくなる遠近配置（CA5人型と同じロジック）、③暖簾・提灯が近く大きめに見える、④日中の柔らかい拡散光（夕暮れの暖色ではない）という特徴があり、第3版はこれらとズレていた。以下は修正版。
 
 ```
-Photorealistic candid documentary-style photo of four French travelers
-standing together in a narrow, old-fashioned Tokyo backstreet alley at
-dusk, weathered wooden two-story buildings with visible age, peeling
-paint, and uneven surfaces, a red paper lantern glowing overhead. In the
-background to the right, a well-worn, sun-faded indigo noren curtain
-with slightly frayed edges hangs unevenly over a doorway — it should
-look like real washed fabric, not a crisp clean prop.
+Photorealistic candid documentary-style extreme close-up photo of four
+French travelers' faces, shot from very close range — framing shows
+mostly faces and just a hint of shoulders, NOT a waist-up shot. The
+group is arranged in a receding diagonal cluster: the older man in the
+front-left is closest to the camera and largest in frame, with the other
+three overlapping behind him at progressively smaller sizes and slightly
+greater distance, creating a natural depth stack (similar to a tight
+huddled group looking at the same thing).
 
-The group: an older French man in his early 50s wearing a dark suit,
-graying hair; a French man in his late 30s with short beard; two French
-women in their 30s-40s, one with a scarf. They are NOT lined up in a
-perfectly even row — stand at slightly different depths and distances
-from camera, overlapping naturally as a real group walking together
-would, not posed in a straight line.
+The group: an older French man in his early 50s in front, dark suit,
+graying hair, mouth open in shock; behind him, a French man in his late
+30s with short beard, startled; two French women in their 30s-40s
+further back, one with a scarf, each with a genuinely different
+intensity and shape of surprised expression — not identical.
 
-Each person's expression of shock/surprise has a DIFFERENT intensity and
-shape — one with eyebrows sharply raised, one with a more subtle frown,
-one with mouth slightly open, one more restrained — avoid identical
-matching expressions across all four faces. All have their eyes directed
-toward the noren curtain, faces angled enough toward camera to stay
-readable.
+Background, closer and larger than a distant backdrop: an old wooden
+Tokyo backstreet alley softly blurred, a red paper lantern glowing
+nearby, a well-worn indigo noren curtain hanging over a doorway,
+relatively close and clearly visible though softly out of focus behind
+the sharp foreground faces.
 
-Lighting: natural, slightly uneven golden-hour light with soft shadows
-and imperfect highlights, NOT flat or overly even studio-style lighting.
-Subtle natural film grain, slightly imperfect focus falloff, candid
-smartphone-snapshot quality rather than a polished editorial shot —
-avoid an overly crisp, hyper-detailed, HDR "AI-rendered" look.
-
-Natural real-photo skin texture with visible pores and asymmetry, avoid
-airbrushed CGI look, avoid uncanny valley. Medium-wide framing showing
-all four from the chest up, generous negative space around the group for
-cropping and compositing. 16:9 aspect ratio, no text, no logos.
+Lighting: soft, diffused daytime natural light, slightly backlit, NOT
+warm golden-hour tones — overcast-daylight quality. Natural real-photo
+skin texture with visible pores and asymmetry, avoid airbrushed CGI look,
+avoid uncanny valley, avoid a flat AI-rendered look. Shot on 85mm lens,
+shallow depth of field with only the front one or two faces in sharpest
+focus. 16:9 aspect ratio, no text, no logos.
 ```
 
 **紐づく台本**: 「え、ここは天国なの…⁉」（パリの三つ星レストランでシェフソムリエを26年務めたリュック・モローが、蔵人の藤田に連れられ東京下町の12席の酒場を訪れ、格付けや数字では測れない人へのまなざしに触れるエピソード）
