@@ -776,20 +776,25 @@ field. 16:9 aspect ratio, no text, no logos.
 - 下段1行目「フランス人ソムリエが東京下町の大衆居酒屋へ」水色＋黒フチ
 - 下段2行目「暖簾の先で見た衝撃の光景とは」赤＋黒フチ
 
-**画像生成プロンプト**
+**画像生成プロンプト（第2版・視線を暖簾方向に、ただし顔は見える角度を維持）**
 ```
 Photorealistic candid documentary-style photo of four French travelers
 standing together in a narrow, old-fashioned Tokyo backstreet alley,
 weathered wooden two-story buildings, a red paper lantern hanging
 overhead, a faded indigo-blue noren curtain hanging over a doorway in
-the background.
+the background to the right.
 
 The group: an older French man in his early 50s wearing a dark suit,
 graying hair, genuinely shocked expression; a French man in his late 30s
 with short beard, also startled; two French women in their 30s-40s,
 one with a scarf, both with equally surprised, wide-eyed expressions.
-All four are looking toward the camera / the doorway with disbelief,
-mouths slightly open, as if they cannot believe they are being led here.
+
+All four have their eyes and gaze directed toward the noren curtain on
+the right side of the frame, as if just noticing where they are being
+led — but their faces and bodies remain angled enough toward the camera
+(roughly three-quarters view, NOT in profile) that their full facial
+expressions of shock and disbelief stay clearly visible to the viewer,
+mouths slightly open.
 
 Natural real-photo skin texture, avoid airbrushed CGI look, avoid uncanny
 valley. Warm late-afternoon lighting typical of a Tokyo backstreet at
