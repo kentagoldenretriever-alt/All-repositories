@@ -776,33 +776,43 @@ field. 16:9 aspect ratio, no text, no logos.
 - 下段1行目「フランス人ソムリエが東京下町の大衆居酒屋へ」水色＋黒フチ
 - 下段2行目「暖簾の先で見た衝撃の光景とは」赤＋黒フチ
 
-**画像生成プロンプト（第2版・視線を暖簾方向に、ただし顔は見える角度を維持）**
+**画像生成プロンプト（第3版・AI感を解消。配置の均一さ・フラットな光・表情の画一性を修正）**
+
+第2版は視線と構図は改善したが、①4人が完璧に等間隔・均一な光量で並びすぎて「並べた感」が出る、②表情が全員同じ強度・形で画一的、③暖簾がきれいすぎてプロップ感がある、という3点でAI感が出た。以下は修正版。
+
 ```
 Photorealistic candid documentary-style photo of four French travelers
-standing together in a narrow, old-fashioned Tokyo backstreet alley,
-weathered wooden two-story buildings, a red paper lantern hanging
-overhead, a faded indigo-blue noren curtain hanging over a doorway in
-the background to the right.
+standing together in a narrow, old-fashioned Tokyo backstreet alley at
+dusk, weathered wooden two-story buildings with visible age, peeling
+paint, and uneven surfaces, a red paper lantern glowing overhead. In the
+background to the right, a well-worn, sun-faded indigo noren curtain
+with slightly frayed edges hangs unevenly over a doorway — it should
+look like real washed fabric, not a crisp clean prop.
 
 The group: an older French man in his early 50s wearing a dark suit,
-graying hair, genuinely shocked expression; a French man in his late 30s
-with short beard, also startled; two French women in their 30s-40s,
-one with a scarf, both with equally surprised, wide-eyed expressions.
+graying hair; a French man in his late 30s with short beard; two French
+women in their 30s-40s, one with a scarf. They are NOT lined up in a
+perfectly even row — stand at slightly different depths and distances
+from camera, overlapping naturally as a real group walking together
+would, not posed in a straight line.
 
-All four have their eyes and gaze directed toward the noren curtain on
-the right side of the frame, as if just noticing where they are being
-led — but their faces and bodies remain angled enough toward the camera
-(roughly three-quarters view, NOT in profile) that their full facial
-expressions of shock and disbelief stay clearly visible to the viewer,
-mouths slightly open.
+Each person's expression of shock/surprise has a DIFFERENT intensity and
+shape — one with eyebrows sharply raised, one with a more subtle frown,
+one with mouth slightly open, one more restrained — avoid identical
+matching expressions across all four faces. All have their eyes directed
+toward the noren curtain, faces angled enough toward camera to stay
+readable.
 
-Natural real-photo skin texture, avoid airbrushed CGI look, avoid uncanny
-valley. Warm late-afternoon lighting typical of a Tokyo backstreet at
-dusk. Medium-wide framing showing all four from the chest up in the
-foreground, with the noren-curtained doorway visible in the background
-to the right, generous negative space around the group for cropping and
-compositing. Shot on 35mm lens, moderate depth of field. 16:9 aspect
-ratio, no text, no logos.
+Lighting: natural, slightly uneven golden-hour light with soft shadows
+and imperfect highlights, NOT flat or overly even studio-style lighting.
+Subtle natural film grain, slightly imperfect focus falloff, candid
+smartphone-snapshot quality rather than a polished editorial shot —
+avoid an overly crisp, hyper-detailed, HDR "AI-rendered" look.
+
+Natural real-photo skin texture with visible pores and asymmetry, avoid
+airbrushed CGI look, avoid uncanny valley. Medium-wide framing showing
+all four from the chest up, generous negative space around the group for
+cropping and compositing. 16:9 aspect ratio, no text, no logos.
 ```
 
 **紐づく台本**: 「え、ここは天国なの…⁉」（パリの三つ星レストランでシェフソムリエを26年務めたリュック・モローが、蔵人の藤田に連れられ東京下町の12席の酒場を訪れ、格付けや数字では測れない人へのまなざしに触れるエピソード）
