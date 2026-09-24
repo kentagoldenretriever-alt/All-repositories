@@ -973,6 +973,55 @@ blurred behind them. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン18: 状況再現型（人物不在・日本の日常光景が主役）
+
+**元ネタ画像の特徴**
+- これまでの外国人クローズアップ型と異なり、外国人は画面に登場しない「状況再現ショット」
+- 日中の住宅街の交差点、複数の車（白い車、黒いセダンなど）が横断歩道付近を走行・停止
+- 手前右に小学生2人（黄色い通学帽、紺の制服、赤いランドセル）が横断歩道の脇に立っている
+- 「!!!?」の記号、吹き出し「この後……」
+- 上部見出し「あれは一体、なに！？」黄色＋黒フチ
+- 下段1行目「日本旅行中のイギリス人夫婦」緑＋黒フチ
+- 下段2行目「わずか7秒の衝撃的な光景に絶句!!」赤＋黒フチ
+
+**画像生成プロンプト**
+```
+Photorealistic candid documentary-style photo of an ordinary Japanese
+suburban intersection in daytime, multiple cars (a white sedan, a black
+sedan, several other vehicles) traveling or stopped near a crosswalk with
+clear white stripes, typical Japanese residential street with houses,
+utility poles, and small shop signage in the background, natural bright
+daylight.
+
+In the foreground on the right side, two elementary school children stand
+at the edge of the crosswalk, seen from behind or in three-quarter view:
+both wearing yellow school safety hats, navy school uniforms, and
+matching red randoseru backpacks (traditional Japanese school satchels),
+waiting to cross.
+
+Natural real-photo quality, documentary snapshot style, avoid airbrushed
+CGI look, avoid uncanny valley. Wide-angle framing capturing the full
+intersection and the children in the foreground, generous negative space
+around the scene for cropping and compositing. Shot on 35mm lens,
+moderate depth of field with everything reasonably in focus like a real
+street photo. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「あれは一体なんだ…？」（元ロンドン警視庁警部補トーマス・ウィットフィールドが、日本の治安を疑いながら視察旅行に訪れ、信号のない横断歩道で小学生が見せた深いお辞儀に30年の信念を揺さぶられるエピソード）
+
+**制作メモ**: これまでのパターンと異なり、外国人夫婦（トーマスとマーガレット）自体は画面に写らず、彼らが目撃した「状況」だけを再現する構図。この型は今後「衝撃的な光景そのものを見せる」系の台本で使い回せる。
+
+**PhotoScape X 文字入れ指示**
+| 要素 | 内容 | 位置 |
+|---|---|---|
+| 「!!!?」記号 | 画面中央上部 | 交差点上空あたり |
+| 吹き出し「この後……」 | 白背景吹き出し、黒文字 | 画面右上、子供たちの近く |
+| 上部見出し | 「あれは一体、なに！？」黄色＋黒フチ4px | 画面上部中央 |
+| 下段1行目 | 「日本旅行中のイギリス人夫婦」緑＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「わずか7秒の衝撃的な光景に絶句!!」赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
