@@ -923,6 +923,56 @@ depth of field. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン17: 夜の飲み屋横丁×男女の驚き（横顔＋正面）×提灯と暖簾型
+
+**元ネタ画像の特徴**
+- 夜の飲み屋横丁、ネオンと提灯の灯り
+- 左: 男性（50代、白髪交じりの短髪、青いシャツ）、横顔で見上げるように驚いた表情
+- 右: 女性（50代、茶色い巻き髪）、正面向きで大きく口を開け目を見開く強い驚愕表情
+- 「‼」記号1つ（男性の耳の近く）
+- 背景: 赤提灯、黒地に白文字の「居酒屋」の暖簾、「やきとり」「もつ煮」「生ビール」の品書き札
+- 上部見出し「えっ、ここで食べるの？」黄色＋黒フチ
+- 下段1行目「初来日の外国人が日本好きになった」水色＋黒フチ
+- 下段2行目「忘れられない衝撃の夜とは」赤＋黒フチ
+
+**画像生成プロンプト**
+```
+Photorealistic candid documentary-style photo at night in a narrow
+Japanese izakaya alley (yokocho-style), warm glowing red paper lanterns,
+a black noren curtain with white Japanese text reading "居酒屋"
+(izakaya), small illuminated menu signs on the wall reading "やきとり"
+"もつ煮" "生ビール", neon signage glowing softly in the blurred
+background, warm nighttime lighting typical of a Japanese drinking
+alley.
+
+In the foreground, an American man in his early 50s, graying short hair,
+wearing a blue button-up shirt, shown in profile, looking upward and
+sideways with a genuinely startled expression, mouth slightly open.
+
+Beside him, his wife, also in her 50s, wavy brown hair, facing the
+camera directly with an intensely shocked expression — eyes wide open,
+eyebrows raised high, mouth wide open in astonishment, a floral scarf
+around her neck.
+
+Natural real-photo skin texture, avoid airbrushed CGI look, avoid uncanny
+valley. Medium-close framing from the chest up, generous negative space
+around them for cropping and compositing. Shot on 50mm lens, shallow
+depth of field with the couple in sharp focus and the alley softly
+blurred behind them. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「ここは天国なの…?」（何事も細かく予定を立てるニューヨークの商社マンダニエル・ターナーが、予約日を間違えたことがきっかけで路地裏の小さな居酒屋に入り、予定にない出会いの楽しさを知るエピソード）
+
+**PhotoScape X 文字入れ指示**
+| 要素 | 内容 | 位置 |
+|---|---|---|
+| 「‼」記号 | 男性の耳の近く | 男性の右上 |
+| 上部見出し | 「えっ、ここで食べるの？」黄色＋黒フチ4px | 画面上部中央 |
+| 下段1行目 | 「初来日の外国人が日本好きになった」水色＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「忘れられない衝撃の夜とは」赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
