@@ -1022,6 +1022,67 @@ street photo. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン19: 俯瞰×カルガモの群れ×警察官交通規制型（人物不在）
+
+**元ネタ画像の特徴**
+- パターン18と同系統の「状況再現型」だが、俯瞰（ドローン/高所）アングルが新要素
+- 日中の日本の住宅街の交差点を真上に近い斜め上から見下ろすアングル。横断歩道の白線が複数方向に伸びる十字路
+- 交差点中央に、クリーム色〜薄茶色の綿毛のカルガモの子ガモの大群（100羽以上）が団子状に固まって道路を横断している
+- 警察官5〜6名が交差点の各所（横断歩道脇・角）に立ち、紺の制服＋白い制帽姿で車両を止めてカルガモの群れを見守っている。走ったり慌てたりせず、静かに見守る立ち位置
+- 警察官のうち1人の頭上に「!!?」記号（白地＋黒フチ）を配置し、驚き・注目を強調
+- 車両は画面内にほぼ見えない（停止線の外またはフレーム外に処理されている）
+- 背景は低層の住宅・電柱・街路樹など、日本的な生活道路の雰囲気
+- 上部見出し「「日本の道路には神がいるのか…?」」黄色文字＋黒フチ、鍵カッコで囲む
+- 下段1行目「日本の異様な光景を写した1分の映像」黄緑（ライムグリーン寄り）文字＋黒フチ
+- 下段2行目「世界が驚愕し脅威の500万再生!!」赤文字＋黒フチ
+
+**画像生成プロンプト**
+```
+Photorealistic aerial/high-angle documentary photo of an ordinary Japanese
+residential street intersection in daytime, shot from a high oblique angle
+(as if from a drone or a tall building) looking down at a crosswalk-marked
+crossroads with clear white pedestrian-crossing stripes running in
+multiple directions. Typical Japanese suburban townscape in the
+background: low-rise houses, utility poles, small shop signage, street
+trees, natural bright daylight, no harsh shadows.
+
+In the center of the intersection, a large flock of fluffy cream-to-light-
+brown baby ducklings (well over a hundred, mallard/domestic duckling
+appearance) is clustered tightly together, waddling across the crosswalk
+as a dense huddled mass, photographed from above so the flock reads as an
+organic cluster shape on the asphalt.
+
+Around the intersection, five to six Japanese traffic police officers in
+navy-blue uniforms and white peaked caps stand calmly at the corners and
+edges of the crosswalk, having stopped traffic so the ducklings can cross;
+their postures are calm and attentive, not rushed or alarmed, some facing
+toward the duckling cluster, positioned at slightly different distances
+and angles for a natural, non-symmetrical arrangement. No vehicles visible
+in frame, or only far in the background beyond the stop line.
+
+Natural real-photo aerial documentary quality, avoid airbrushed CGI look,
+avoid uncanny valley, avoid perfectly symmetrical or evenly-spaced
+placement of the officers. Wide-angle high-angle framing capturing the
+full intersection with generous negative space around the edges for
+cropping and text compositing. 16:9 aspect ratio, no text, no logos, no
+watermarks.
+```
+
+**紐づく台本**: パリの新聞記者クレール・デュボワ（44歳）。取材中のひったくり被害と警察の冷淡な対応をきっかけに人間不信に陥り、「秩序正しい日本社会は監視社会の産物に過ぎない」と疑って視察取材に訪れる。新宿の交差点で、警察官たちが車両を止めてカルガモの親子（子ガモの群れ）のために道を空け、誰一人苛立たず静かに見守る光景を目撃し、凍りついていた心が涙とともにほどける、という物語。
+
+**制作メモ**: パターン18（状況再現型・人物不在）の派生バリエーション。今回新たに「俯瞰アングル」と「動物（カルガモ）×警察官」という要素が加わった。今後、動物がらみの心温まる日本の日常光景を扱う台本で、この俯瞰×人物不在の型を使い回せる。カルガモの群れは密集した塊として描写し、警察官の配置は均等になりすぎないよう非対称に散らすことでAI感を回避する。
+
+**PhotoScape X 文字入れ指示**
+| 要素 | 内容 | 位置 |
+|---|---|---|
+| 「!!?」記号 | 白地＋黒フチ、警察官の頭上に小さく配置 | 画面右上寄り、警察官の近く |
+| 上部見出し | 「「日本の道路には神がいるのか…?」」黄色＋黒フチ4px、鍵カッコごと表示 | 画面最上部、横一杯 |
+| 下段1行目 | 「日本の異様な光景を写した1分の映像」黄緑＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「世界が驚愕し脅威の500万再生!!」赤＋黒フチ（強調） | 下部帯2行目 |
+| 上下レターボックス帯（任意） | 上下に薄い黒帯を敷いて見出し文字の視認性を上げる | 画面上端・下端 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
