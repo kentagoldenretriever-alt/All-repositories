@@ -873,6 +873,56 @@ lens, moderate depth of field. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン16: 涙の娘×寄り添う母×空港窓外の飛行機型
+
+**元ネタ画像の特徴**
+- 空港ロビー、窓の外に駐機中の飛行機、ぼやけた他の乗客
+- 左: 父（50代後半、白髪交じりの短髪、黒Tシャツ＋グレーのジップパーカー）、やや離れた位置で心配そうな表情
+- 中央: 娘（18歳、ブロンドの巻き髪、涙を流している、悲しげな表情）
+- 右: 母（ブロンドのまとめ髪、ベージュのカーディガン）、娘の顔を覗き込むように心配そうに向き合う
+- 「?!」記号が父と母の頭上に2つ
+- 上部見出し「ママ、もう日本に住もうよ」黄色＋黒フチ
+- 下段1行目「10日間の日本旅行を終え帰国するイギリス人一家」水色＋黒フチ
+- 下段2行目「羽田空港で娘が崩れ落ちた理由」赤＋黒フチ
+
+**画像生成プロンプト**
+```
+Photorealistic candid documentary-style photo in a Japanese airport
+departure lounge, large windows showing a parked airplane and tarmac
+outside, blurred fellow travelers seated in the background.
+
+On the left, a father in his late 50s, graying short hair, wearing a
+black t-shirt under a gray zip-up hoodie, standing slightly apart with
+arms crossed, a worried, concerned expression on his face.
+
+In the center, his 18-year-old daughter, long wavy blonde hair, visibly
+crying — eyes red, tears streaking down her cheeks, a raw, emotional,
+vulnerable expression, looking toward her mother.
+
+On the right, the mother, blonde hair pulled back in a bun, wearing a
+beige cardigan, leaning in close to her daughter, studying her face with
+tender concern, one hand near her daughter's shoulder.
+
+Natural real-photo skin texture, avoid airbrushed CGI look, avoid uncanny
+valley. Soft natural daylight through the terminal windows. Medium-close
+framing showing all three from the chest up, generous negative space
+around them for cropping and compositing. Shot on 50mm lens, moderate
+depth of field. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「ママ、もう帰りたくない」（人前で声を出すのが怖くなった18歳のソフィー・ベネットが、家族旅行の日本で空港職員への態度を後悔し、帰国前日の早朝に誰も見ていない時間に働くその職員の姿を見て涙するエピソード）
+
+**PhotoScape X 文字入れ指示**
+| 要素 | 内容 | 位置 |
+|---|---|---|
+| 「?!」記号 | 父の頭上 | 父の右上 |
+| 「?!」記号 | 母の頭上 | 母の右上 |
+| 上部見出し | 「ママ、もう日本に住もうよ」黄色＋黒フチ4px | 画面上部中央 |
+| 下段1行目 | 「10日間の日本旅行を終え帰国するイギリス人一家」水色＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「羽田空港で娘が崩れ落ちた理由」赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
