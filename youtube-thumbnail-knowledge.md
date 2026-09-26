@@ -1083,6 +1083,73 @@ watermarks.
 
 ---
 
+## パターン20: 姉妹2人ドアップ見下ろし×料理拒絶反応型
+
+**元ネタ画像の特徴**
+- パターン3（料理×家族リアクション左右分割型）と異なり、画面分割なしの1枚構図。少女2人と料理が同一フレーム内に収まっている
+- 手前に金髪の少女2人（姉：長めのウェーブヘア、妹：やや幼い顔立ち）が身を乗り出し、テーブルに肘やお腹を預けて皿を見下ろしている
+- 2人とも眉をひそめ、口を「への字」に結んだ強い警戒・拒絶の表情（美味しそうという反応では全くない）
+- 皿の中身：黒々と艶のあるハンバーグ、ケチャップ味のナポリタン風スパゲティ、紫キャベツと千切りキャベツのコールスロー
+- 背景は奥がぼかされた木目調のレストラン内装、うっすら他の客のシルエット
+- 赤い矢印がハンバーグを指して強調
+- 「⁉」記号が2つ、姉妹それぞれの頭上（左は黒文字、右は黒文字、どちらも白フチ）
+- 白背景の吹き出し「ナニこれ？」（黒文字）が右の少女の右上に配置
+- 上部見出し「「ハンバーグ？絶対食べない！」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「超偏食のアメリカ人姉妹が初めての日本旅行で」緑文字＋黒フチ
+- 下段2行目「一口食べて価値観激変した理由」赤文字＋黒フチ（最も大きく強調）
+
+**画像生成プロンプト（クライアント方針「元ネタの上位互換」を反映し、食べ物は艶・湯気・質感を具体的に描写）**
+```
+Photorealistic candid documentary-style photo, close-up shot from a
+slightly high angle looking down at a restaurant table. Two young
+American sisters, one about 8 years old with long wavy blonde hair and
+one about 6 years old with shorter blonde hair, lean forward over the
+table with their forearms resting near the plate, faces close together
+and close to the camera, looking down at the food with clearly negative,
+skeptical, wary expressions: furrowed eyebrows, mouths pulled into a
+disgusted or apprehensive frown. This is a genuine reluctance/refusal
+reaction, not curiosity or delight. The two sisters have distinct,
+different facial features and slightly different hair tones so they read
+as clearly different individuals, not clones. Natural real skin texture
+with subtle imperfections, avoid airbrushed CGI look, avoid uncanny
+valley, avoid a perfectly symmetrical mirrored pose between the two girls
+— vary their head tilt and arm position naturally.
+
+On the plate in the foreground, a glossy Japanese-style hamburger steak
+(hambagu) with a deep brown, glistening demi-glace sauce pooling around
+it and visible steam softly rising, showing a tender, juicy cut with
+moist interior texture just barely visible; beside it a portion of
+ketchup-based Napolitan-style spaghetti with glossy red sauce catching
+the light, and a small mound of shredded cabbage coleslaw mixing pale
+green and purple cabbage for color contrast. Every food element has a
+polished, mouthwatering restaurant-photography sheen, shot as if for a
+food magazine, contrasted against the children's wary expressions.
+
+Background is a warm, softly blurred traditional Japanese diner/yoshoku
+restaurant interior, wooden tables and dim warm lighting, indistinct
+silhouettes of other patrons further back. Shot on a 35mm lens, shallow
+depth of field with the girls and plate in sharp focus and the background
+softly blurred, generous negative space around the top and sides of the
+frame for text compositing. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「この子たちは絶対に食べない」（ニューヨークに暮らすアメリカ人母レイチェル・カーターと、回避制限性食物摂取症の8歳エミリー・6歳ソフィア姉妹が、日本旅行中に下町の洋食店で宮本さん夫妻の作ったハンバーグを一口食べたことをきっかけに、8年間の偏食が少しずつ変わっていくエピソード）
+
+**制作メモ**: これまでの「料理×家族リアクション」型（パターン3）は左右2枚合成だったが、本パターンは子供2人と料理を1枚のフレームに収める密着構図。表情は「美味しそう」ではなく「拒絶・警戒」を明確に描くのがポイント（台本の偏食エピソードに対応）。クライアント方針により、料理自体はどんな回でも艶・湯気・質感を具体的に描写して「元ネタの上位互換」を狙う。
+
+**PhotoScape X 文字入れ指示**
+| 要素 | 内容 | 色 | 位置 |
+|---|---|---|---|
+| 赤い矢印 | ハンバーグを指す | 赤 | 皿の中央〜ハンバーグ |
+| 「⁉」記号（左） | 姉の頭上 | 黒文字＋白フチ | 画面左上 |
+| 「⁉」記号（右） | 妹の頭上 | 黒文字＋白フチ | 画面右上 |
+| 吹き出し「ナニこれ？」 | 白背景の吹き出し | 黒文字 | 画面右側、妹の右上 |
+| 上部見出し | 「「ハンバーグ？絶対食べない！」」 | 黄色＋黒フチ4px | 画面最上部、横一杯 |
+| 下段1行目 | 「超偏食のアメリカ人姉妹が初めての日本旅行で」 | 緑＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「一口食べて価値観激変した理由」 | 赤＋黒フチ（最も大きく強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
