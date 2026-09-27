@@ -1225,63 +1225,49 @@ children all reasonably legible. 16:9 aspect ratio, no text, no logos.
 - 下段1行目「憧れ続けた日本の景色に」水色（シアン）文字＋黒フチ
 - 下段2行目「泣き崩れる外国人続出」赤文字＋黒フチ
 
-**画像生成プロンプト（3枚individually生成し、PhotoScape Xで縦3分割に接合する）**
+**画像生成プロンプト（1枚で3分割モンタージュを一括生成）**
+```
+A single photorealistic image composed as a horizontal triptych: the
+frame is divided into three equal vertical panels separated by thin
+black dividing bars, each panel showing a different woman in her own
+selfie-style crying moment, so it reads as a montage of three separate
+selfie-video screenshots combined into one picture.
 
-①左パネル用
-```
-Photorealistic selfie-style video screenshot of a Western woman in her
-20s with brown hair, sitting in a dim, warmly lit indoor room (soft
-ambient lamp light in the background, slightly out of focus). She is
-holding her phone at arm's length for a selfie angle, eyes squinted
-nearly shut, genuinely crying with emotion, one hand raised to wipe tears
-from her cheek and nose. Natural, unposed, slightly grainy authentic
-selfie-video quality, soft warm indoor lighting, avoid airbrushed CGI
-look, avoid uncanny valley. Vertical-friendly framing with the face and
-upper shoulders centered, generous headroom for cropping into a narrow
-vertical panel. 9:16 or square-ish crop, no text, no logos.
-```
+Left panel: a Western woman in her 20s with brown hair, in a dim, warmly
+lit indoor room (soft ambient lamp light softly blurred in the
+background). Selfie-angle close-up of her face, eyes squinted nearly
+shut, genuinely crying, one hand raised wiping tears from her cheek and
+nose.
 
-②中央パネル用
-```
-Photorealistic selfie-style video screenshot of a Southeast Asian woman
-in her 20s with long dark hair, wearing a light green top and a lanyard
-with an ID/pass card around her neck (as if a traveler or transit pass),
-sitting inside a moving vehicle (bus or train interior visible softly
-blurred in the background, warm interior lights). She is genuinely crying,
-dabbing her eyes with a white tissue held in one hand, eyebrows raised in
-emotional distress, mouth slightly open. Natural, unposed, authentic
-selfie-video quality with slight motion blur in the background from the
-moving vehicle, avoid airbrushed CGI look, avoid uncanny valley. Vertical-
-friendly framing centered on her face and shoulders with generous headroom
-for cropping into a narrow vertical panel. 9:16 or square-ish crop, no
-text, no logos.
-```
+Center panel: a Southeast Asian woman in her 20s with long dark hair,
+wearing a light green top and a lanyard with an ID/pass card around her
+neck, sitting inside a moving vehicle (bus or train interior softly
+blurred behind her, warm interior lights). Selfie-angle close-up of her
+face, genuinely crying, dabbing her eyes with a white tissue, eyebrows
+raised in emotional distress, mouth slightly open.
 
-③右パネル用
-```
-Photorealistic selfie-style video screenshot of a woman in her late 20s
-with voluminous curly brown hair, wearing small hoop earrings and a
-delicate necklace, sitting indoors under warm golden lighting. She is
-genuinely crying, one hand raised with fingers gently dabbing under her
-eye, head tilted slightly upward and gaze lifted as if trying to keep
-tears from falling, lips pressed in an emotional expression. Natural,
-unposed, authentic selfie-video quality, soft warm golden-hour-style
-indoor lighting, avoid airbrushed CGI look, avoid uncanny valley.
-Vertical-friendly framing centered on her face and shoulders with
-generous headroom for cropping into a narrow vertical panel. 9:16 or
-square-ish crop, no text, no logos.
+Right panel: a woman in her late 20s with voluminous curly brown hair,
+wearing small hoop earrings and a delicate necklace, indoors under warm
+golden lighting. Selfie-angle close-up of her face, genuinely crying,
+one hand with fingers gently dabbing under her eye, head tilted slightly
+upward with her gaze lifted as if trying to keep tears from falling.
+
+The three women must have clearly distinct faces, ethnicities, hairstyles
+and settings so they read as three different individuals, not the same
+person repeated. Each panel has its own natural, unposed, authentic
+selfie-video quality and its own lighting mood; avoid airbrushed CGI
+look, avoid uncanny valley, avoid identical poses or mirrored symmetry
+between panels. Leave a small amount of empty space near the top of each
+panel for text compositing. Overall 16:9 aspect ratio canvas divided into
+the three vertical panels, no text, no logos.
 ```
 
 **紐づく台本**: 「本当に実在するはずがない」（アメリカ人女性リサ・コリンズが、子供の頃好きだったアニメの舞台が実在すると知り、聖地巡礼で日本を訪れ、踏切や住宅街の景色が本物だったことに涙するエピソード。動画内では他の外国人聖地巡礼者たちの反応も紹介される想定）
 
-**制作メモ**: 3人は全員別人（別の国籍・髪型・シチュエーション）として明確に描き分けること。各パネルは個別に生成し、PhotoScape Xで均等な縦3分割グリッドに配置して接合する。この型は「複数の外国人の同じ感動エピソードへの反応を並べる」系の台本（聖地巡礼、SNSでバズった話題など）で今後使い回せる。
+**制作メモ**: 3人は全員別人（別の国籍・髪型・シチュエーション）として明確に描き分けること。1枚のプロンプトで3分割モンタージュとして一括生成し、区切り線も画像内に含める（PhotoScape Xでの接合作業は不要）。この型は「複数の外国人の同じ感動エピソードへの反応を並べる」系の台本（聖地巡礼、SNSでバズった話題など）で今後使い回せる。
 
 **PhotoScape X 文字入れ指示**
 ```
-■レイアウト
-3枚の縦長パネル画像を均等な幅で左・中央・右に並べて接合する
-（縦3分割グリッド、パネル間に細い黒枠線を入れてもよい）
-
 ■「!!!?」記号
 内容：!!!?
 色：白地＋黒フチ
