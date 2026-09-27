@@ -1295,6 +1295,109 @@ the three vertical panels, no text, no logos.
 
 ---
 
+## パターン23: 料理×家族リアクション左右分割型（回転寿司バージョン）
+
+**元ネタ画像の特徴**
+- パターン3（料理×家族リアクション左右分割型）と同じ左右2分割構図・同じ家族3人（母：ブロンドのウェーブヘア、娘：6歳ツインテール＋ピンクリボン、父：口髭＋デニムジャケット）を流用
+- 今回は左半分の料理を「お子様ランチ」から「回転寿司」に差し替えたバージョン
+- 左半分：回転寿司の皿数枚のクローズアップ（卵焼き、だし巻き卵、コーン軍艦、サーモン握りなど彩り豊かな皿。台本内の「新幹線型の配膳ロボット」が皿を運んでくる場面を再現する小さな新幹線カートを添える）
+- 右半分：家族3人の反応ショット（パターン3と同じ人物設定・同じ驚きの表情）
+- 中央に赤い矢印で「料理→人物」の視線誘導
+- 「⁉」記号は娘の顔の横
+
+**画像生成プロンプト①（回転寿司部分。クライアント方針「元ネタの上位互換」を反映し、艶・質感を具体的に描写）**
+```
+Professional commercial food photography, magazine-advertisement quality,
+of a Japanese conveyor belt sushi (kaitenzushi) scene on a warm wooden
+counter. Medium-wide shot showing several colorful sushi plates arranged
+appetizingly with generous empty space around them for cropping (NOT an
+extreme close-up — leave negative space on all sides for compositing).
+
+In the foreground, a plate of glossy tamagoyaki (sweet rolled omelet)
+sushi with a rich golden-yellow sheen and visible fine layers, a plate of
+chawanmushi (savory egg custard) in a small lidded cup with delicate
+steam rising, a corn gunkan roll with glistening kernels and a light
+mayonnaise sheen, and a plate of fresh salmon nigiri with a glossy,
+marbled orange-pink surface catching the light. Every piece has a
+polished, mouthwatering restaurant-photography gloss with visible fresh
+texture.
+
+A small, cute bullet-train (shinkansen) shaped robot food-delivery cart
+runs along a miniature track beside the counter, carrying one of the
+sushi plates, whimsical and playful in design, adding a sense of motion
+and delight.
+
+Behind the counter, a softly blurred conveyor belt lane curves away into
+the background with more colorful sushi plates in soft focus, warm
+ambient restaurant lighting. Professional food styling, soft directional
+studio-style lighting creating highlights and sheen on every surface,
+vivid highly saturated colors, sizzle-photography quality as if shot for
+a high-end restaurant advertisement. Shot on a 100mm macro lens with fine
+detail on food textures, shallow depth of field with the background
+softly blurred. 16:9 aspect ratio, no text, no logos.
+```
+
+**画像生成プロンプト②（家族の反応部分。パターン3のプロンプト②と同一設定を流用）**
+```
+Photorealistic candid documentary-style photo of an American family of
+three, medium-wide shot from the waist up with generous space around and
+above the subjects (NOT a tight close-up on just faces — leave enough
+negative space on all sides for cropping and compositing). They are
+reacting with shock and amazement, as if just seeing something astonishing
+off-frame to the left. The mother, attractive woman in her late 30s with
+wavy blonde hair, mouth open in genuine surprise, eyes wide. Her daughter,
+about 6 years old, with twin-tail hairstyle and a pink ribbon, has the most
+exaggerated reaction — both hands pressed to her cheeks, mouth wide open,
+eyes huge with delighted disbelief. The father, with a mustache, wearing a
+denim jacket, stands beside them, also reacting with raised eyebrows and
+an open mouth, his full upper body visible rather than cropped at the edge.
+All three genuinely emotional, candid real-photo skin texture, avoid
+airbrushed CGI look, avoid uncanny valley. Soft indoor restaurant lighting,
+warm and bright, blurred cozy background. Shot on 50mm lens for a wider
+natural field of view, moderate depth of field. 16:9 aspect ratio, no
+text, no logos.
+```
+
+**紐づく台本**: 「だから子連れで日本へ行くなって言ったのに…」（報道記者レイチェル・モリソンと6歳の娘エラが、回転寿司店でエラが自分の意志でタブレット注文し、新幹線型ロボットが皿を届ける仕組みをきっかけに、あれほど拒んでいた魚料理に自分から挑戦するようになるエピソード。パターン3のお子様ランチ回と同一家族・同一台本フックの回転寿司版）
+
+**制作メモ**: パターン3の構図・家族設定をそのまま流用し、料理だけを回転寿司に差し替えた派生バージョン。同じ家族が別の台本（お子様ランチ回／回転寿司回）に登場するシリーズ展開として使える。
+
+**PhotoScape X 文字入れ指示**
+```
+■レイアウト
+左に回転寿司画像、右に家族画像を配置し中央で接合（縦分割2枚合成）
+
+■赤い矢印
+内容：料理→家族の方向を示す矢印
+色：赤
+位置：画面中央
+
+■上部見出し
+内容：だから子連れで日本へ行くなって言ったのに…
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面上部、中央揃え
+
+■「⁉」記号
+内容：⁉
+色：赤
+位置：娘の顔の右上
+
+■下段1行目
+内容：アメリカ人記者親子が忠告を無視して来日
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯1行目
+
+■下段2行目
+内容：回転寿司で帰国後は大変!?
+色：赤＋黒フチ（強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
