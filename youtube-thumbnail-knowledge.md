@@ -1150,6 +1150,69 @@ frame for text compositing. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン21: 教室ドア口の驚愕母×手前笑顔で牛乳を飲む娘型
+
+**元ネタ画像の特徴**
+- 明るい日本の小学校の教室、窓から自然光が差し込む昼の給食時間
+- 画面左端：母親（茶色い髪、カーキ色のシャツジャケット）が教室のドアを開けて飛び込んできた瞬間。目を見開き、口を開けた驚愕の表情で、片手を横に伸ばしてドアを押さえるポーズ
+- 母親の頭上に「!!!?」記号（白地＋黒フチ）
+- 画面手前中央：金髪の少女（ボブヘア、白いブラウス＋紺のスモック）が着席し、両手で牛乳パックを持って満面の笑顔で飲んでいる。周りの日本人児童と全く同じ見た目の紙パックを持っている
+- 背景：日本人の児童数名が机で給食を食べている（黒髪、白シャツ）
+- さらに奥右：給食当番の児童2人が白い帽子＋白衣姿で立っている
+- 上部見出し「「娘に牛乳飲ませないで」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「アレルギーに苦しむ娘と日本へ移住」水色（シアン）文字＋黒フチ
+- 下段2行目「給食での光景に母が絶句…」赤文字＋黒フチ
+
+**画像生成プロンプト**
+```
+Photorealistic candid documentary-style photo inside a bright, sunlit
+Japanese elementary school classroom during lunchtime (school lunch /
+kyushoku), warm natural daylight streaming through large windows.
+
+On the left edge of the frame, a Western mother in her mid-30s with
+brown hair, wearing an olive-green shirt jacket, bursts through the
+classroom's sliding door, one hand still on the door frame, her face
+frozen in wide-eyed, open-mouthed shock and alarm as if rushing in out
+of worry. She is positioned at the very edge of the frame, partially in
+the doorway.
+
+In the foreground, center of the frame, a young blonde girl about 7
+years old with a bob haircut, wearing a white blouse under a navy pinafore
+school smock, sits at a classroom desk holding a milk carton with both
+hands, drinking from it with a big genuine happy smile, eyes crinkled
+with delight. The carton looks visually identical to the ones the
+Japanese children around her are holding.
+
+In the mid-ground behind her, several Japanese elementary school children
+with black hair, in white shirts, are seated at desks eating their own
+school lunch trays, some mid-bite, natural candid poses. Further back to
+the right, two more Japanese children stand wearing white lunch-duty caps
+and white smocks (kyushoku touban uniform), calmly attending to serving
+duties.
+
+Natural real-photo skin texture and candid expressions, avoid airbrushed
+CGI look, avoid uncanny valley, avoid identical or mirrored poses among
+the background children — vary posture and head angle naturally. Soft
+bright classroom lighting, no harsh shadows, blackboard and classroom
+decorations softly visible in the background. Shot on 35mm lens,
+moderate depth of field keeping the mother, the girl, and the background
+children all reasonably legible. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「この子に給食は絶対ムリです」（アメリカ人母クレア・ベネットと重度乳製品アレルギーの娘エミリー、7歳。過去に友達の善意で命の危機に陥った経験から誰も信じられなくなっていたが、日本の学校が乳成分不使用で見た目も牛乳パックと全く同じ専用の飲み物を毎朝手作りしてくれていたことを知り、給食を覗きに来て絶句するエピソード）
+
+**制作メモ**: 母親は「教室に駆けつけて中を覗く」構図で顔全体がはっきり見えるように配置し、娘は周囲の子供と同じ見た目の紙パックを持たせることで「特別扱いされていないのに実は特別に配慮されている」という台本のオチを画で示す。背景の給食当番の児童は、これまでのパターン（学校・給食系）と共通する小道具として使い回せる。
+
+**PhotoScape X 文字入れ指示**
+| 要素 | 内容 | 色 | 位置 |
+|---|---|---|---|
+| 「!!!?」記号 | 母親の頭上 | 白地＋黒フチ | 画面左上、母親の頭の近く |
+| 上部見出し | 「「娘に牛乳飲ませないで」」 | 黄色＋黒フチ4px | 画面最上部、横一杯 |
+| 下段1行目 | 「アレルギーに苦しむ娘と日本へ移住」 | 水色（シアン）＋黒フチ | 下部帯1行目 |
+| 下段2行目 | 「給食での光景に母が絶句…」 | 赤＋黒フチ（強調） | 下部帯2行目 |
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
