@@ -1213,6 +1213,102 @@ children all reasonably legible. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン22: 3分割・自撮り風泣き顔モンタージュ型
+
+**元ネタ画像の特徴**
+- これまでの「左右2分割」（パターン3等）とも「1枚一括生成」（パターン8等）とも異なる、縦3分割の自撮りスクリーンショット風モンタージュ構図
+- 左パネル：白人女性（茶髪、暗めの室内・間接照明の暖色背景）が自撮りアングルで目を細めながら泣いており、手で頬・鼻元を拭っている
+- 中央パネル：東南アジア系の女性（緑色の服、首から交通機関/旅行者用と思われるストラップ付きIDカードを下げている）が乗り物内（バスや電車の座席）で自撮りしており、ティッシュで目元を拭って泣いている
+- 右パネル：巻き髪の女性（イヤリング・ネックレスを着用）が暖色の室内照明の下、指先で目元を拭いながら少し上を見上げるポーズで泣いている
+- 中央パネルと右パネルの間、上部に「!!!?」記号（白地＋黒フチ）
+- 上部見出し「「本当に実在するの？」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「憧れ続けた日本の景色に」水色（シアン）文字＋黒フチ
+- 下段2行目「泣き崩れる外国人続出」赤文字＋黒フチ
+
+**画像生成プロンプト（3枚individually生成し、PhotoScape Xで縦3分割に接合する）**
+
+①左パネル用
+```
+Photorealistic selfie-style video screenshot of a Western woman in her
+20s with brown hair, sitting in a dim, warmly lit indoor room (soft
+ambient lamp light in the background, slightly out of focus). She is
+holding her phone at arm's length for a selfie angle, eyes squinted
+nearly shut, genuinely crying with emotion, one hand raised to wipe tears
+from her cheek and nose. Natural, unposed, slightly grainy authentic
+selfie-video quality, soft warm indoor lighting, avoid airbrushed CGI
+look, avoid uncanny valley. Vertical-friendly framing with the face and
+upper shoulders centered, generous headroom for cropping into a narrow
+vertical panel. 9:16 or square-ish crop, no text, no logos.
+```
+
+②中央パネル用
+```
+Photorealistic selfie-style video screenshot of a Southeast Asian woman
+in her 20s with long dark hair, wearing a light green top and a lanyard
+with an ID/pass card around her neck (as if a traveler or transit pass),
+sitting inside a moving vehicle (bus or train interior visible softly
+blurred in the background, warm interior lights). She is genuinely crying,
+dabbing her eyes with a white tissue held in one hand, eyebrows raised in
+emotional distress, mouth slightly open. Natural, unposed, authentic
+selfie-video quality with slight motion blur in the background from the
+moving vehicle, avoid airbrushed CGI look, avoid uncanny valley. Vertical-
+friendly framing centered on her face and shoulders with generous headroom
+for cropping into a narrow vertical panel. 9:16 or square-ish crop, no
+text, no logos.
+```
+
+③右パネル用
+```
+Photorealistic selfie-style video screenshot of a woman in her late 20s
+with voluminous curly brown hair, wearing small hoop earrings and a
+delicate necklace, sitting indoors under warm golden lighting. She is
+genuinely crying, one hand raised with fingers gently dabbing under her
+eye, head tilted slightly upward and gaze lifted as if trying to keep
+tears from falling, lips pressed in an emotional expression. Natural,
+unposed, authentic selfie-video quality, soft warm golden-hour-style
+indoor lighting, avoid airbrushed CGI look, avoid uncanny valley.
+Vertical-friendly framing centered on her face and shoulders with
+generous headroom for cropping into a narrow vertical panel. 9:16 or
+square-ish crop, no text, no logos.
+```
+
+**紐づく台本**: 「本当に実在するはずがない」（アメリカ人女性リサ・コリンズが、子供の頃好きだったアニメの舞台が実在すると知り、聖地巡礼で日本を訪れ、踏切や住宅街の景色が本物だったことに涙するエピソード。動画内では他の外国人聖地巡礼者たちの反応も紹介される想定）
+
+**制作メモ**: 3人は全員別人（別の国籍・髪型・シチュエーション）として明確に描き分けること。各パネルは個別に生成し、PhotoScape Xで均等な縦3分割グリッドに配置して接合する。この型は「複数の外国人の同じ感動エピソードへの反応を並べる」系の台本（聖地巡礼、SNSでバズった話題など）で今後使い回せる。
+
+**PhotoScape X 文字入れ指示**
+```
+■レイアウト
+3枚の縦長パネル画像を均等な幅で左・中央・右に並べて接合する
+（縦3分割グリッド、パネル間に細い黒枠線を入れてもよい）
+
+■「!!!?」記号
+内容：!!!?
+色：白地＋黒フチ
+位置：中央パネルと右パネルの境目あたり、上部寄り
+
+■上部見出し
+内容：「本当に実在するの？」
+色：黄色文字＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：憧れ続けた日本の景色に
+色：水色（シアン）文字＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：泣き崩れる外国人続出
+色：赤文字＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
