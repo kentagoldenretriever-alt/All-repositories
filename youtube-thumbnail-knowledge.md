@@ -1398,6 +1398,109 @@ text, no logos.
 
 ---
 
+## パターン24: 駅構内引きショット×手前車椅子女性×奥の駅員点線強調型
+
+**元ネタ画像の特徴**
+- パターン6（雑踏の引きショット×赤丸強調型）に近い「引きの構図＋赤枠強調」だが、今回は「手前で助けを求める人物」と「奥で助けている人物」の2つの視線対象を1枚に収める新しい構図
+- 駅構内（東京駅想定）の広い階段前の連絡通路、朝の混雑した雰囲気。手前・左右には多数の通行人がモーションブラー気味に行き交っている
+- 手前中央：車椅子に乗った白人女性（金髪、黒いジャケット、30代後半）が階段を見上げ、助けを求めている
+- 女性の左上に「⁉」記号（白地＋黒フチ）
+- 女性の右上に2段の吹き出し「お願い…」「誰か…」（白背景＋黒文字）
+- 赤い矢印が吹き出しから奥の階段上の駅員の方向へ伸び、視線誘導している
+- 奥（階段の途中）：紺の制服＋白い制帽の駅員が、片手を横に伸ばして案内するジェスチャーをしており、その先にグレーのコートを着てスーツケースを引く高齢の白人男性が立っている
+- この駅員と高齢男性の組み合わせ全体を、赤い点線の楕円で囲んで強調（パターン6の「赤丸強調」の楕円バージョン）
+- 画面左下に大きめの国旗アイコン（今回はイギリス国旗）
+- 上部見出し「「お願い…誰か助けてください！」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「東京駅の階段で立ち往生した車椅子の英国人女性」水色（シアン）文字＋黒フチ
+- 下段2行目「駅員が出した答えに世界が絶句」赤文字＋黒フチ
+
+**画像生成プロンプト（1枚で手前の女性と奥の駅員シーンを一括生成）**
+```
+Photorealistic candid documentary-style photo inside a large, busy
+Japanese train station concourse (like Tokyo Station), taken as a wide
+pulled-back shot in the early morning. Numerous commuters and travelers
+with rolling suitcases move through the space in the foreground and to
+the sides, several rendered with natural motion blur to convey a busy,
+bustling crowd, varied walking directions and body angles for a natural
+non-symmetrical crowd.
+
+In the center foreground, clearly readable and not obscured by the crowd,
+a Western woman in her late 30s with blonde hair and a black jacket sits
+in a wheelchair, looking up toward a large staircase in front of her with
+a distressed, pleading expression, one hand slightly raised as if calling
+out for help. She is positioned far enough from the crowd that she reads
+as an isolated, stranded figure at the base of the stairs she cannot
+climb.
+
+In the middle distance, partway up the staircase, a Japanese train
+station staff member in a navy-blue uniform and white peaked cap stands
+with one arm extended, calmly giving directions or assistance to an
+elderly Western man in a grey overcoat who is pulling a wheeled suitcase
+beside him. Their interaction should read as calm, attentive, and
+deliberate, not rushed.
+
+Natural real-photo documentary quality, avoid airbrushed CGI look, avoid
+uncanny valley, avoid a perfectly symmetrical or overly neat crowd
+placement. Wide-angle pulled-back framing with generous negative space
+around the edges and near the top for text and graphic compositing. Soft
+natural indoor station lighting. Shot on a 24mm wide lens, moderate depth
+of field keeping both the foreground woman and the staff member on the
+stairs reasonably legible. 16:9 aspect ratio, no text, no logos, no
+watermarks.
+```
+
+**紐づく台本**: 「お願い、誰か助けて…」（イギリス出身の元水泳指導者シャーロット・ヘイズ、37歳。交通事故で母を亡くし自身も車椅子生活になって以来、人に助けを求めることを避けてきたが、認知症の父ウィリアムと訪れた東京駅でエレベーター故障により階段前で立ち往生し、駅員・宮田の静かな対応に心を動かされるエピソード）
+
+**制作メモ**: パターン6の「引き構図＋強調枠」の発展形として、①手前の困っている人物、②奥で対応する人物、という2つのポイントを1枚の画像に収め、赤い点線の楕円で奥のポイントを強調する新しい手法。今後「駅員・店員・通行人が誰かを助けている場面を遠目に見せる」系の台本で使い回せる。国旗アイコンは台本の国籍に応じて差し替える。
+
+**PhotoScape X 文字入れ指示**
+```
+■「⁉」記号
+内容：⁉
+色：白地＋黒フチ
+位置：車椅子の女性の左上
+
+■吹き出し（2段）
+内容：お願い… ／ 誰か…
+色：白背景＋黒文字
+位置：女性の右上、2行に分けて配置
+
+■赤い矢印
+内容：吹き出しから奥の駅員の方向へ伸ばす
+色：赤
+位置：画面中央〜奥の階段方向
+
+■赤い点線の楕円
+内容：奥の駅員と高齢男性をまとめて囲む
+色：赤（点線）
+位置：階段の途中、画面奥
+
+■国旗アイコン
+内容：台本の国籍に応じた国旗（今回はイギリス国旗）
+位置：画面左下、大きめに配置
+
+■上部見出し
+内容：「お願い…誰か助けてください！」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：東京駅の階段で立ち往生した車椅子の英国人女性
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：駅員が出した答えに世界が絶句
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
