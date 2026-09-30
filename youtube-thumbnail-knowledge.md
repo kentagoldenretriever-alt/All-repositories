@@ -1582,6 +1582,108 @@ text, no logos.
 
 ---
 
+## パターン26: 6人の美女×TOTOウォシュレット注視型（1枚一括生成）
+
+**元ネタ画像の特徴**
+- パターン8（3人の美女1枚一括生成型）の発展形。今回は6人の金髪アメリカ人女性が寮の部屋で、中央に置かれた白いウォシュレット一体型トイレ（TOTO）を取り囲むように見ている構図
+- 6人は全員異なる髪型・巻き方・服の色（グレー、白、グレー、黒、茶色、黒のセーター）で、明確に別人として描き分けられている
+- 表情はバラバラ：驚いて口を開ける子、両手で口元を覆って驚愕する子、感激して泣いている子、笑顔で誇らしげな子など、感情の種類も強さも1人ずつ異なる
+- 「⁉」記号が2箇所（左端の子、右端の子）
+- 吹き出し「なにこれ！」（左寄りの女性）、「最高でしょ？」（笑顔の女性）
+- 中央下に赤い矢印がTOTOのウォシュレット一体型トイレ（リモコンパネル付き）を指している
+- 背景は木目調のドア・寮の部屋のような内装
+- 上部見出し「「トイレが皆を狂わせた…」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「アメリカの女子寮に日本のトイレを導入した結果」水色（シアン）文字＋黒フチ
+- 下段2行目「現地女子たちが絶句した理由」赤文字＋黒フチ
+
+**画像生成プロンプト（1枚で6人＋トイレを一括生成。全員別人・美人・AIっぽさ排除を明示）**
+```
+Photorealistic candid documentary-style photo inside a cozy American
+college dorm room, warm indoor lighting, wooden door and furniture softly
+visible in the background. Six beautiful young American women in their
+early 20s, all blonde but with clearly distinct hairstyles (straight,
+loose waves, tighter curls, different lengths and partings) and different
+sweater colors (grey, white, grey, black, brown, black), stand gathered
+loosely around a table in the center of the room, looking down at
+something on it with a wide range of genuine, individually distinct
+reactions.
+
+Each woman's face is clearly different from the others — distinct bone
+structure, eyebrow shape, smile, and eye shape — so they read as six
+separate individuals, not repeated or cloned faces. Their expressions
+vary naturally and are not synchronized: one has her mouth wide open in
+shock, another has both hands pressed over her mouth in disbelief, another
+is genuinely tearing up with emotion, another is laughing with a proud
+delighted grin, another reacts with raised eyebrows and a half-open mouth,
+another looks on with an amused smile. Their poses, head angles, and body
+positions are all different and naturally staggered, not lined up
+symmetrically or evenly spaced — some lean in closer, some stand back
+slightly, creating a natural, candid group cluster.
+
+In the center of the table, a modern white Japanese integrated washlet
+toilet (TOTO brand, sleek white ceramic design with a side control panel
+with buttons) sits as the object everyone is reacting to.
+
+Natural real-photo skin texture with individual variation, avoid
+airbrushed CGI look, avoid uncanny valley, avoid identical or mirrored
+expressions, avoid perfectly even studio lighting — use soft warm
+directional indoor light with natural falloff. Shot on a 35mm lens,
+moderate depth of field with all six women and the toilet reasonably in
+focus, generous negative space around the top and sides for text
+compositing. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「日本のトイレが皆を狂わせた…」（ペンシルベニア州の大学生オリビア・ベイカー、20歳が、古い女子寮の冷たい共同トイレに悩んだ末、貯金のほぼ全てを使って日本製ウォシュレットトイレを個人輸入・設置し、寮の仲間たちの反応が大きな輪となってクラウドファンディング・大学全体への導入にまで広がっていくエピソード）
+
+**制作メモ**: パターン8で確立した「複数人を1枚で一括生成する」手法を6人に拡張したバージョン。人数が増えるほど「同一人物の使い回し」に見えやすくなるため、髪型・服の色・表情の種類と強さ・配置の不均一さを、プロンプトで一つずつ具体的に指定することが重要。クライアント指示「女性は美人ばかりで、表情をAIっぽくないように」を反映し、個々の顔立ちの違いと自然な表情のばらつきを明示している。
+
+**PhotoScape X 文字入れ指示**
+```
+■「⁉」記号（左）
+内容：⁉
+色：赤
+位置：画面左端の女性の頭上
+
+■「⁉」記号（右）
+内容：‼
+色：赤
+位置：画面右端の女性の頭上
+
+■吹き出し「なにこれ！」
+色：白背景＋黒文字
+位置：左寄りの女性（驚いている子）の近く
+
+■吹き出し「最高でしょ？」
+色：白背景＋黒文字
+位置：笑顔の女性の近く
+
+■赤い矢印
+内容：中央のトイレを指す
+色：赤
+位置：画面中央下
+
+■上部見出し
+内容：「トイレが皆を狂わせた…」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：アメリカの女子寮に日本のトイレを導入した結果
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：現地女子たちが絶句した理由
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
