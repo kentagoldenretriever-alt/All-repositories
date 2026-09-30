@@ -1501,6 +1501,83 @@ watermarks.
 
 ---
 
+## パターン25: 対峙構図×背景案内板型（パターン5の男女逆転バージョン・女性審査官）
+
+**元ネタ画像の特徴**
+- パターン5と全く同じ構図・同じ背景案内板だが、ユーザー指示により左右の人物の男女を入れ替えたバージョン
+- 左：女性の入国審査官（中国系、美人、力強く鋭い雰囲気、腕組み、紺の制服＋金属バッジ、厳しく真剣な表情）
+- 右：自称日本人の男性容疑者（不機嫌・反抗的な表情、赤い日本国旅券を突き出すように見せている）
+- 中央下に「●●●」（沈黙・間の演出）
+- 背景にぼやけた日本語フレーズの案内表示（「いただきます」「よろしくお願いします」「お手数をおかけします」）
+- 上部見出し「「日本人なら、答えられますよね?」」黄色＋黒フチ
+- 下段1行目「ベテラン審査官が見抜いた自称日本人」水色＋黒フチ
+- 下段2行目「たった3つの言葉で、嘘は全て崩れた」赤＋黒フチ
+
+**画像生成プロンプト（パターン5のプロンプトを男女逆転させ、女性審査官を中国系・美人・強い雰囲気に強化）**
+```
+Professional photorealistic editorial photo, candid documentary style, of
+a tense face-to-face confrontation in a US airport secondary inspection
+room. On the left, a striking Chinese-American female immigration officer
+in her mid-30s, sharp intense eyes, hair pulled back neatly, navy blue
+uniform with a metal badge, arms crossed, a commanding and powerful
+presence, her expression sharp, skeptical, and unyielding — exuding
+authority and confidence. She is beautiful but her expression is
+intense and serious, not soft or friendly, sitting behind a desk with a
+posture that conveys quiet dominance.
+
+On the right, a man in his 30s with an indignant, defensive, and slightly
+panicked expression, eyebrows furrowed, mouth open mid-argument as if
+protesting. His face is fully visible at a three-quarter angle toward the
+viewer (NOT in profile, NOT obscured). He holds up an authentic Japanese
+passport toward the officer: a deep maroon/wine-red cover, a gold
+16-petal imperial chrysanthemum emblem centered on the front, gold
+Japanese kanji text "日本国旅券" arranged above the emblem, and gold
+English text "JAPAN" and "PASSPORT" below the emblem — rendered
+accurately and legibly, matching the real Japanese passport design.
+
+Background: a blurred wall-mounted display showing faint Japanese text
+phrases in a clean sans-serif font on a blue background, out of focus,
+suggesting an official signage board. Bright, neutral fluorescent airport
+lighting, clean institutional atmosphere. Medium-wide framing showing
+both subjects from the chest up, generous negative space around them for
+cropping and compositing. Natural real-photo skin texture, avoid
+airbrushed CGI look, avoid uncanny valley. Shot on 50mm lens, moderate
+depth of field with both subjects in sharp focus. 16:9 aspect ratio, no
+text, no logos.
+```
+
+**紐づく台本**: 「日本人なら答えられるよ…」（ロサンゼルス国際空港の入国審査官マイケル・ハリス、56歳が、盗難パスポートを使って日本人になりすました中国出身の女性リン・メイリンを、「いただきます」「よろしくお願いします」「ありがとう」という3つの言葉の答え方から見抜くエピソード。本来の台本では審査官が男性・容疑者が女性だが、サムネイルはユーザー指示により男女を逆転して制作）
+
+**制作メモ**: パターン5の構図をそのまま流用し、人物の性別だけを入れ替えた派生バージョン。女性側（今回は審査官役）を「中国系・美人・強い雰囲気」に指定する場合はこのプロンプトを、逆に「美人な女性容疑者」パターンが必要な場合は元のパターン5をそのまま使う。同じ台本・同じ構図でも、男女の配置を変えるだけで印象が大きく変わるため、クライアントの好みに応じて使い分ける。
+
+**PhotoScape X 文字入れ指示**
+```
+■上部見出し
+内容：「日本人なら、答えられますよね？」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面上部中央
+
+■沈黙記号
+内容：●●●
+色：黒
+位置：画面中央下、2人の間
+
+■下段1行目
+内容：ベテラン審査官が見抜いた自称日本人
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯1行目
+
+■下段2行目
+内容：たった3つの言葉で、嘘は全て崩れた
+色：赤＋黒フチ（強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
