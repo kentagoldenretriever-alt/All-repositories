@@ -1684,6 +1684,78 @@ compositing. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン27: 屋上ビアガーデン夜景×祖母陶酔×孫驚愕型
+
+**元ネタ画像の特徴**
+- 夜の屋上ビアガーデン、背景に都市の夜景（高層ビルの灯り、提灯風の電球が連なって吊るされている）がぼかされて広がる
+- 左：高齢の白人女性（白髪の巻き毛、花柄ブラウス）が、レモンスライスの入った黄金色のビールジョッキを両手で持ち、目を閉じて心から満喫するような表情で飲んでいる
+- 右：若い男性（黒髪、無精髭、赤いTシャツ）が同じくレモン入りビールジョッキを持ちながら、大きく目を見開き口を開けた驚愕の表情を浮かべている
+- 男性の頭上に「!!!?」記号（白地＋黒フチ）
+- 上部見出し「「日本のビールは邪道だw」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「ドイツ一家が初ビアガーデン」水色（シアン）文字＋黒フチ
+- 下段2行目「祖母がまさかの大暴走⁉」赤文字＋黒フチ
+
+**画像生成プロンプト**
+```
+Photorealistic candid documentary-style photo at a rooftop beer garden in
+Tokyo at night, softly blurred city skyline in the background with
+illuminated skyscrapers and strings of warm lantern-style string lights
+hanging overhead, creating a lively but softly out-of-focus backdrop.
+
+On the left, an elderly Western woman in her early 70s with curly white
+hair and a floral-patterned blouse, holding a large glass beer mug with
+both hands, a frosted golden beer with a lemon slice visible, her eyes
+closed in genuine blissful enjoyment as she drinks, a faint contented
+smile on her lips — the picture of someone savoring an unexpectedly
+wonderful taste.
+
+On the right, a young man in his late 20s with short dark hair and light
+stubble, wearing a red t-shirt, holding a similar frosted beer mug with a
+lemon slice, his face frozen in wide-eyed, open-mouthed astonishment as he
+watches her, eyebrows raised high, clearly stunned by her reaction.
+
+Natural real-photo skin texture, avoid airbrushed CGI look, avoid uncanny
+valley. Warm evening lighting mixed with the cool blue tones of the city
+night sky, soft bokeh from the background lights. Medium-wide framing
+showing both subjects from the chest up with generous negative space
+around them for cropping and text compositing. Shot on 50mm lens, shallow
+depth of field with the two subjects in sharp focus and the city skyline
+softly blurred behind them. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「日本のビール⁉ドイツが一番でしょ…」（ミュンヘンの老舗醸造所で50年以上品質管理責任者を務めてきた72歳のヘルガ・シュミットが、常温に近い温度こそ正しいという信念を持ちながら来日。東京で暮らす孫ミヒャエルに連れられてデパート屋上のビアガーデンを訪れ、しぶしぶ口にした極限まで冷やされた日本のビールに衝撃を受けるエピソード）
+
+**制作メモ**: これまでの「驚く側＋平然/満喫する側」という組み合わせを逆転させ、年配者が心から満喫し、若者が驚くという新しい感情配置。屋上ビアガーデンの夜景・提灯風ライトという背景は「海外の反応×日本の飲食店」系の台本で今後も使い回せる。
+
+**PhotoScape X 文字入れ指示**
+```
+■「!!!?」記号
+内容：!!!?
+色：白地＋黒フチ
+位置：男性の頭上
+
+■上部見出し
+内容：「日本のビールは邪道だw」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：ドイツ一家が初ビアガーデン
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：祖母がまさかの大暴走⁉
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
