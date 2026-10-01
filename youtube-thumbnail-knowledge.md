@@ -1756,6 +1756,89 @@ softly blurred behind them. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン28: 台所の母×3兄弟×おにぎり皿赤丸強調型
+
+**元ネタ画像の特徴**
+- パターン3（料理×家族リアクション左右分割型）と異なり、1枚構図の中に母親・子供3人・料理すべてを収める構図
+- 明るいアメリカの家庭的なキッチンを背景に、左に母親（茶髪のお団子ヘア、困ったような表情）が、白いおにぎり3つ（1つは海苔なし、1つは海苔巻き）が乗った皿を子供たちに差し出している
+- 皿の部分を赤い点線の楕円で囲んで強調
+- 母親の手元近くに吹き出し「これじゃダメ…？」（白背景＋黒文字）
+- 右側に3兄弟：長女格の女の子（8歳くらい、茶色の長い髪、ピンクのセーター、不満げな表情で皿を見つめている）、次男格の男の子（6歳くらい、紺のセーター、口をへの字に曲げた不満顔）、長男格の男の子（15歳くらい、黒髪、腕組み、無表情気味でやや冷めた様子）
+- 左下に黄色いジュースの容器が画面端に見切れている
+- 上部見出し「「日本に連れてこなければよかった…」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「10日の家族旅行から帰国したアメリカ人3兄弟」水色（シアン）文字＋黒フチ
+- 下段2行目「帰国翌日から毎朝号泣した理由」赤文字＋黒フチ
+
+**画像生成プロンプト（1枚で母親・3兄弟・おにぎり皿を一括生成）**
+```
+Photorealistic candid documentary-style photo in a bright American home
+kitchen, white tile backsplash, kitchen sink and jars softly visible in
+the background, natural daylight.
+
+On the left, a mother in her late 30s with brown hair in a messy bun,
+wearing a grey top, holds out a white plate toward her children with a
+slightly worried, searching expression, as if hoping they'll like what
+she made.
+
+On the plate, three plain white rice balls (onigiri) — one wrapped with a
+strip of nori seaweed, the others plain white rice — sit together, simply
+shaped, clearly homemade rather than professionally styled.
+
+To the right, three siblings sit at the kitchen table reacting with
+visible disappointment, each a distinct individual: an 8-year-old girl
+with long brown hair and a pink sweater, looking at the plate with a
+dissatisfied, unconvinced expression; a 6-year-old boy in a navy sweater
+with his mouth turned down in a pouting frown; and a 15-year-old boy with
+dark hair, arms crossed, wearing a dark sweater, looking on with a flat,
+unimpressed, slightly cold expression. Their reactions are each distinct
+in intensity and body language, not synchronized or mirrored.
+
+A yellow juice carton is partially visible at the edge of the frame in
+the foreground. Natural real-photo skin texture, soft natural indoor
+lighting, avoid airbrushed CGI look, avoid uncanny valley. Medium-wide
+framing showing the mother, the plate, and all three children together in
+one frame, generous negative space around the top and sides for text
+compositing. Shot on 35mm lens, moderate depth of field with everyone
+reasonably in focus. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「日本に連れてこなければよかった…」（オハイオ州の看護師エミリー・カーターが、夫を亡くしてから1人で育ててきた3人の息子（15歳・11歳・6歳）を連れて石川県の民宿へ10日間のホームステイに行き、帰国後、民宿の女将・田中きみ子が握ってくれたおにぎりが忘れられず毎朝泣き出すようになる子供たちと向き合うエピソード）
+
+**制作メモ**: パターン3の「料理×家族リアクション」の系譜だが、左右分割ではなく1枚の中に全員を収め、料理部分だけを赤い点線の楕円で強調する構図。子供が複数人登場する場合は、年齢・髪型・表情の種類と強さをそれぞれ明確に描き分けることで「同一人物の使い回し」を防ぐ。
+
+**PhotoScape X 文字入れ指示**
+```
+■赤い点線の楕円
+内容：おにぎりの皿を囲む
+色：赤（点線）
+位置：皿の周囲
+
+■吹き出し「これじゃダメ…？」
+色：白背景＋黒文字
+位置：母親の手元（皿の近く）
+
+■上部見出し
+内容：「日本に連れてこなければよかった…」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：10日の家族旅行から帰国したアメリカ人3兄弟
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：帰国翌日から毎朝号泣した理由
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
