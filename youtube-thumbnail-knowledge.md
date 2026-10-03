@@ -2030,6 +2030,100 @@ no logos, no watermarks.
 
 ---
 
+## パターン31: 3分割・親の驚き×偏食児の完食プロセス型
+
+**元ネタ画像の特徴**
+- パターン22（3分割自撮りモンタージュ型）と同じ縦3分割の構図だが、内容は「両親の反応」と「子供が食べる過程」を時系列的に見せる構成
+- 左パネル：両親2人（母親：茶髪、グレーセーター／父親：黒髪、無精髭）がカメラ目線でレストランのテーブルに着き、驚いた表情を浮かべている。父親は箸を持つ手が見切れて写っている
+- 中央パネル：3歳前後の男の子（巻き毛の茶髪、紺×白ボーダーのパーカー）がいくらの乗ったおにぎりを両手で持って頬張っている
+- 右パネル：同じ男の子がラーメンを箸ですすっている接写。画面右端に積み重なった白い皿（6枚程度）が写り込んでいる
+- 「⁉」記号（黒背景＋白文字）が左パネルと中央パネルの境目、上部に配置
+- 赤い矢印が中央パネルの子供の手元（おにぎり）を指す
+- 赤い点線の楕円が右パネルの積み重なった皿を囲んで強調
+- 上部見出し「「どうして日本食だけなの！？」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「偏食の6歳児を連れて来日したフランス人一家」緑文字＋黒フチ
+- 下段2行目「6皿を平らげた息子の姿に絶句」赤文字＋黒フチ
+
+**画像生成プロンプト（1枚で3分割を一括生成。皿の積み重なりは画像内に含め、矢印と点線の楕円はPhotoScape Xで後から追加）**
+```
+A single photorealistic image composed as a horizontal triptych: the
+frame is divided into three equal vertical panels separated by thin
+black dividing bars, each panel showing a different moment from the same
+family's meal at a Japanese restaurant, so it reads as a sequence of
+three separate photos combined into one picture.
+
+Left panel: a French couple at a restaurant table, candid documentary
+style. The mother has brown hair and wears a grey sweater, her hand near
+her mouth in a gesture of genuine surprise, eyebrows raised. The father
+has dark hair and light stubble, holding chopsticks, also reacting with
+wide eyes and a surprised, slightly open mouth. Both are looking toward
+camera/off-frame as if reacting to something delightful happening nearby.
+Softly blurred restaurant interior background.
+
+Center panel: a 3-year-old boy with curly brown hair, wearing a navy and
+white striped hoodie, happily eating a rice ball (onigiri) topped with
+glistening salmon roe (ikura), holding it with both small hands and
+biting into it with an eager, satisfied expression, eyes slightly closed
+in enjoyment. Softly blurred restaurant table background with a bowl
+visible.
+
+Right panel: a close-up of the same boy slurping ramen noodles with
+chopsticks, noodles lifted mid-air toward his mouth, cheeks full,
+genuinely enjoying the food. To the right edge of this panel, a tall
+stack of about six empty white bowls/plates is clearly visible on the
+table, stacked neatly, showing how much he has already eaten.
+
+Each panel has consistent soft natural restaurant lighting and candid,
+unposed expressions; avoid airbrushed CGI look, avoid uncanny valley,
+avoid identical or repeated poses between panels. Leave a small amount of
+empty space near the top of each panel for text compositing. Overall 16:9
+aspect ratio canvas divided into the three vertical panels, no text, no
+logos.
+```
+
+**紐づく台本**: 未着信（このパターンは画像のみ先行で作成。台本が届き次第、物語の詳細をここに追記する）
+
+**制作メモ**: パターン22と同じ3分割一括生成の手法だが、3人全員同一人物ではなく「両親2人＋子供1人」という構成。中央・右パネルは同じ子供が連続する場面（おにぎり→ラーメン）を食べる時系列として描写するため、髪型・服装は中央と右で統一して同一人物と分かるようにする。赤い矢印と皿を囲む点線の楕円は画像生成後にPhotoScape Xで追加する。
+
+**PhotoScape X 文字入れ指示**
+```
+■「⁉」記号
+内容：⁉
+色：黒背景＋白文字
+位置：左パネルと中央パネルの境目、上部
+
+■赤い矢印
+内容：中央パネルの子供の手元（おにぎり）を指す
+色：赤
+位置：中央パネル下部
+
+■赤い点線の楕円
+内容：右パネルの積み重なった皿を囲む
+色：赤（点線）
+位置：右パネル右端
+
+■上部見出し
+内容：「どうして日本食だけなの！？」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：偏食の6歳児を連れて来日したフランス人一家
+色：緑＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：6皿を平らげた息子の姿に絶句
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
