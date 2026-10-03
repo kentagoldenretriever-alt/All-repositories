@@ -1851,7 +1851,7 @@ reasonably in focus. 16:9 aspect ratio, no text, no logos.
 - 下段1行目「お風呂嫌いのスウェーデン留学生たちが訪日」緑文字＋黒フチ
 - 下段2行目「強制的に温泉に入らせた結果」赤文字＋黒フチ
 
-**画像生成プロンプト（1枚で10人前後を一括生成。全員別人・自然な表情のばらつきを明示）**
+**画像生成プロンプト（修正版。①水着がラッシュガード化する、②全員同じ顔テンプレートに寄る、③湯に浸かって密着しすぎる、という3つのAI生成の癖を名指しで禁止）**
 ```
 Photorealistic selfie-style group photo at a traditional Japanese open-air
 hot spring facility (rotenburo) that permits swimsuits, with a stone-lined
@@ -1859,27 +1859,43 @@ bath, wooden buckets and stools, and a stone lantern and traditional
 wooden building softly visible in the background, warm natural daylight
 with gentle steam rising from the water.
 
-A group of about ten young Swedish women in their early 20s, all blonde
-but with clearly distinct hairstyles (straight, wavy, different lengths
-and partings) and different swimsuit colors and patterns (solid black,
-floral print, solid red), gather together as if taking a group selfie,
-smiling genuinely at the camera. Each woman's face is clearly different
-from the others — distinct bone structure, eyebrow shape, smile — so they
-read as separate individuals, not repeated or cloned faces. Their smiles
-and head angles vary naturally, not synchronized or mirrored; some stand
-closer to the camera, some further back, in a natural staggered cluster
-rather than a neat lineup.
+A group of about ten young Swedish women in their early 20s stand or sit
+casually on the stone edge of the bath, only their feet and lower legs in
+the water (NOT submerged to the chest, NOT reclining against each other
+in the water) — a casual standing/seated tourist group photo, not a
+lounging pool-party pose. Keep clear physical space between each woman;
+avoid bodies pressed together or overlapping limbs.
 
-One woman wearing a red one-piece swimsuit stands slightly in front of
-the others, closest to camera, as the apparent selfie-taker.
+They wear ordinary swimsuits that leave the shoulders and arms bare —
+tank-style one-pieces, halter one-pieces, or bikini tops — in varied
+colors and patterns (solid black, floral print, solid red). Do NOT dress
+them in long-sleeve rash guards or swim shirts; shoulders and upper arms
+must be visible on every woman.
+
+Each woman must look like a genuinely different individual: vary face
+shape (oval, round, heart-shaped, square jaw), vary eye color, vary skin
+tone and freckle pattern (some fair and freckled, some tan, some plain),
+vary nose and jaw shape, vary height and build, vary hairstyle (straight,
+wavy, braided, pixie-short, different lengths and partings) and hair
+shade (platinum blonde, golden blonde, dirty blonde). No two faces should
+look like they share the same underlying bone structure — avoid the
+"identical sisters with different hair" look.
+
+They gather together as if taking a group selfie, smiling genuinely at
+the camera, with natural variation in smile width and head angle, not
+synchronized or mirrored; some stand closer to the camera, some further
+back, in a natural staggered cluster rather than a neat lineup.
+
+One woman wearing a red swimsuit stands slightly in front of the others,
+closest to camera, as the apparent selfie-taker, her arm extended toward
+the camera in a natural selfie pose.
 
 Natural real-photo skin texture with individual variation, avoid
-airbrushed CGI look, avoid uncanny valley, avoid identical or mirrored
-expressions, avoid perfectly even studio lighting — use soft natural
-outdoor daylight with gentle shadows. Shot on a 24mm wide lens to fit the
-whole group, moderate depth of field with everyone reasonably in focus,
-generous negative space around the top and sides for text compositing.
-16:9 aspect ratio, no text, no logos.
+airbrushed CGI look, avoid uncanny valley, avoid perfectly even studio
+lighting — use soft natural outdoor daylight with gentle shadows. Shot on
+a 24mm wide lens to fit the whole group, moderate depth of field with
+everyone reasonably in focus, generous negative space around the top and
+sides for text compositing. 16:9 aspect ratio, no text, no logos.
 ```
 
 **紐づく台本**: 「毎日お風呂に入るなんて絶対嫌だ」（スウェーデンの大学で教育学を学ぶソフィアが、週1回のシャワー文化を持つ母国から1年間の日本留学へ。毎日の入浴・洗髪に抵抗を感じていたが、ホストファミリーの娘みさきと祖母はるえの石風呂を通じて「お風呂は心を洗う場所」という日本文化の本質に触れ、価値観が変わっていくエピソード）
