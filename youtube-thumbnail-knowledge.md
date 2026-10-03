@@ -1839,6 +1839,91 @@ reasonably in focus. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン29: 女性集団×水着×露天風呂自撮り型
+
+**元ネタ画像の特徴**
+- 和風の露天風呂（石造りの湯舟、木桶、石灯籠、和風建築）を背景に、金髪のスウェーデン人女性10人前後が水着姿（黒無地、花柄、赤のワンピースなど色とりどり）で集まり、自撮り風の構図でカメラに向かって笑顔を見せている
+- 手前中央に赤いワンピース水着の女性が最も目立つ位置に立ち、他の女性たちがその周りに自然に散らばるように配置されている
+- 「⁉」記号が2箇所（画面上部、人物の間）
+- 赤い矢印が画面左下の露天風呂（湯舟）を指している
+- 右下に大きなスウェーデン国旗のアイコン
+- 上部見出し「「毎日お風呂なんて絶対にイヤよ」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「お風呂嫌いのスウェーデン留学生たちが訪日」緑文字＋黒フチ
+- 下段2行目「強制的に温泉に入らせた結果」赤文字＋黒フチ
+
+**画像生成プロンプト（1枚で10人前後を一括生成。全員別人・自然な表情のばらつきを明示）**
+```
+Photorealistic selfie-style group photo at a traditional Japanese open-air
+hot spring facility (rotenburo) that permits swimsuits, with a stone-lined
+bath, wooden buckets and stools, and a stone lantern and traditional
+wooden building softly visible in the background, warm natural daylight
+with gentle steam rising from the water.
+
+A group of about ten young Swedish women in their early 20s, all blonde
+but with clearly distinct hairstyles (straight, wavy, different lengths
+and partings) and different swimsuit colors and patterns (solid black,
+floral print, solid red), gather together as if taking a group selfie,
+smiling genuinely at the camera. Each woman's face is clearly different
+from the others — distinct bone structure, eyebrow shape, smile — so they
+read as separate individuals, not repeated or cloned faces. Their smiles
+and head angles vary naturally, not synchronized or mirrored; some stand
+closer to the camera, some further back, in a natural staggered cluster
+rather than a neat lineup.
+
+One woman wearing a red one-piece swimsuit stands slightly in front of
+the others, closest to camera, as the apparent selfie-taker.
+
+Natural real-photo skin texture with individual variation, avoid
+airbrushed CGI look, avoid uncanny valley, avoid identical or mirrored
+expressions, avoid perfectly even studio lighting — use soft natural
+outdoor daylight with gentle shadows. Shot on a 24mm wide lens to fit the
+whole group, moderate depth of field with everyone reasonably in focus,
+generous negative space around the top and sides for text compositing.
+16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「毎日お風呂に入るなんて絶対嫌だ」（スウェーデンの大学で教育学を学ぶソフィアが、週1回のシャワー文化を持つ母国から1年間の日本留学へ。毎日の入浴・洗髪に抵抗を感じていたが、ホストファミリーの娘みさきと祖母はるえの石風呂を通じて「お風呂は心を洗う場所」という日本文化の本質に触れ、価値観が変わっていくエピソード）
+
+**制作メモ**: 台本自体はソフィア1人の留学エピソードだが、サムネイルでは「お風呂嫌いなスウェーデン人グループ」として象徴的に複数人へ誇張して描くことでCTRを狙う、このジャンルでよくある手法。人数が多い場合は、パターン26と同様に髪型・水着の色柄・表情の種類と強さ・配置の不均一さを具体的に指定し、同一人物の使い回しに見えないようにする。
+
+**PhotoScape X 文字入れ指示**
+```
+■「⁉」記号（2箇所）
+内容：⁉
+色：白地＋黒フチ
+位置：画面上部、人物の間（2箇所に分散配置）
+
+■赤い矢印
+内容：画面左下の露天風呂を指す
+色：赤
+位置：画面左下
+
+■国旗アイコン
+内容：スウェーデン国旗
+位置：画面右下、大きめに配置
+
+■上部見出し
+内容：「毎日お風呂なんて絶対にイヤよ」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：お風呂嫌いのスウェーデン留学生たちが訪日
+色：緑＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：強制的に温泉に入らせた結果
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
