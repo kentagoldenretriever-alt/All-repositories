@@ -1940,6 +1940,96 @@ sides for text compositing. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン30: 夜間空港ロビー雑魚寝×整然通路×手前家族驚愕型
+
+**元ネタ画像の特徴**
+- パターン6・24の系譜（引きの構図＋手前の人物反応）だが、今回は「欠航で空港に足止めされた夜、床に雑魚寝する群衆」という新しいシチュエーション
+- 奥：夜の空港出発ロビー、大きなガラス窓の外に夜景、天井の照明は一部消灯され薄暗い。床には数十人（日本人中心）が毛布にくるまって整然と横たわって眠っている。横たわる人々の脇には、スーツケースが持ち手を上にして一列に立てて並べられ、人1人が歩けるまっすぐな通路ができている
+- 手前右：オーストラリア人家族3人が驚愕の表情でロビーを見つめている。左から20代の娘（茶髪）、40〜50代の母親（ブロンド、グレーのジャケット）、50代の父親（グレーヘア、グレーのパーカー、リュック）
+- 「⁉」記号（白地＋黒フチ）が家族の頭上
+- 吹き出し「あれは一体…!?」（白背景＋黒文字）が家族の手前
+- 赤い矢印が奥の整然とした通路（雑魚寝エリア）を指している
+- 上部見出し「「こんな国がありえるのか？」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「全便欠航で関空に足止めされた豪州人の一家」水色（シアン）文字＋黒フチ
+- 下段2行目「深夜のロビーで目を疑った理由」赤文字＋黒フチ
+
+**画像生成プロンプト（1枚で奥の雑魚寝シーンと手前の家族を一括生成）**
+```
+Photorealistic candid documentary-style photo inside a large airport
+departure lobby at night, floor-to-ceiling windows showing a dim city/
+runway nightscape outside, overhead lights partially dimmed for the
+night, creating a soft, slightly dark atmosphere.
+
+In the background, dozens of people (mostly Japanese travelers, a few
+foreign travelers mixed in) lie sleeping on the floor wrapped in blankets,
+stranded overnight due to flight cancellations. Their rolling suitcases
+are stood upright on their wheels in a neat row along the edge of a clear
+walking path, creating an orderly, straight corridor running through the
+sleeping crowd — the suitcases and sleeping people are arranged with
+quiet, deliberate neatness, not chaotic or scattered. Vary the sleeping
+positions and blanket colors naturally so it doesn't look like repeated
+identical figures.
+
+In the foreground on the right, an Australian family of three stands
+looking into the lobby with expressions of genuine astonishment and
+disbelief: a young woman in her early 20s with brown hair wearing a black
+top; her mother, a blonde woman in her late 40s wearing a grey jacket and
+backpack; and her father, a grey-haired man in his mid-50s wearing a grey
+hoodie and backpack. All three have wide eyes and slightly open mouths,
+staring into the lobby as if they cannot believe what they're seeing.
+
+Natural real-photo skin texture, avoid airbrushed CGI look, avoid uncanny
+valley, avoid perfectly identical or robotic-looking sleeping figures.
+Wide-angle pulled-back framing with the family in the foreground and the
+sleeping crowd and orderly corridor clearly visible in the midground/
+background, generous negative space around the top for text compositing.
+Shot on a 24mm wide lens, moderate depth of field keeping both the family
+and the background crowd reasonably legible. 16:9 aspect ratio, no text,
+no logos, no watermarks.
+```
+
+**紐づく台本**: 「こんな国がありえるのか？」（オーストラリアの電気工事士ダニエル・モリソン、54歳が、台風による全便欠航で関西国際空港に家族3人で足止めされる。4年前の洪水災害で父を失って以来「人混みの夜は弱者から踏まれる」と信じ、人混みで一睡もしない習慣を持つ彼が、深夜の出発ロビーで見知らぬ人々が自発的に荷物を並べて通路を作り、年配者や子供が歩けるよう配慮し合う光景に心を揺さぶられるエピソード）
+
+**制作メモ**: パターン6・24と同じ「引きの構図＋手前の人物反応」だが、今回は雑魚寝する群衆そのものが主役。整然と並んだスーツケースと通路という台本の核心的なビジュアル（阪神淡路大震災の避難所から受け継がれた知恵）を背景にしっかり描写することが重要。手前の家族は3人ともはっきり驚愕が分かる表情にし、吹き出しと矢印で奥の通路に視線誘導する。
+
+**PhotoScape X 文字入れ指示**
+```
+■「⁉」記号
+内容：⁉
+色：白地＋黒フチ
+位置：家族の頭上（中央寄り）
+
+■吹き出し「あれは一体…!?」
+色：白背景＋黒文字
+位置：家族の手前
+
+■赤い矢印
+内容：奥の整然とした通路を指す
+色：赤
+位置：画面中央〜奥
+
+■上部見出し
+内容：「こんな国がありえるのか？」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：全便欠航で関空に足止めされた豪州人の一家
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：深夜のロビーで目を疑った理由
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
