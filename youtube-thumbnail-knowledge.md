@@ -2124,6 +2124,87 @@ logos.
 
 ---
 
+## パターン32: 空港出発ロビー×ホストファミリーとの別れ×3人号泣型
+
+**元ネタ画像の特徴**
+- 空港の出発ロビー、背景に窓越しの滑走路・荷物カートなどがぼかされて写る
+- 中央：10代後半の女子高生（黒髪ロング、前髪あり、白いニットセーター、黒いリュック）が、ティッシュを目元に押し当てて号泣している
+- 左：年配の女性（ホストマザー役、黒髪に白髪混じり、ベージュのブラウス）が少女の肩に手を添え、涙ぐんでいる
+- 右：年配の男性（ホストファザー役、白髪交じりの短髪、水色シャツ＋紺ジャケット）が涙目で少女を見つめている
+- 「?!」記号が画面上部左右に2箇所
+- 画面左下に国旗アイコン（台本の国籍に合わせて差し替える）
+- 上部見出し「「お母さん、私まだ日本にいたい…」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「3週間のホームステイを終えた◯◯人女子高生」水色（シアン）文字＋黒フチ
+- 下段2行目「空港で少女が崩れ落ちた理由」赤文字＋黒フチ
+
+**注意（今回の修正点）**: 参考画像では韓国国旗＋「韓国人女子高生」の表記だったが、紐づく台本は中国・大連出身のワン・シャオユーのため、国旗を中国国旗、下段1行目を「3週間のホームステイを終えた中国人女子高生」に修正して使用する。このパターンを再利用する際は、必ずその回の台本の国籍と国旗を一致させること。
+
+**画像生成プロンプト**
+```
+Photorealistic candid documentary-style photo in an airport departure
+lobby, softly blurred floor-to-ceiling windows showing a runway and
+luggage carts outside, soft natural daylight.
+
+In the center, a Chinese teenage girl, about 17 years old, with long
+black hair and bangs, wearing a white knit sweater and a black backpack,
+is crying hard, pressing a tissue to her face, genuine overwhelming
+emotion, eyes red and wet, shoulders slightly hunched forward.
+
+On the left, an older Japanese woman in her mid-50s, acting as her
+host mother, with black hair streaked with grey, wearing a beige blouse,
+has one hand resting gently on the girl's shoulder, her own eyes welling
+up with tears, a bittersweet, caring expression.
+
+On the right, an older Japanese man in his mid-to-late 50s, acting as
+her host father, with short greying hair, wearing a light blue shirt
+under a navy blazer, looks at the girl with moist eyes, a restrained but
+visibly emotional expression, as if trying to hold back tears.
+
+Natural real-photo skin texture, genuine unposed emotion, avoid airbrushed
+CGI look, avoid uncanny valley. Soft indoor airport lighting. Medium-wide
+framing showing all three from the chest up, generous negative space
+around the top for text compositing. Shot on 50mm lens, moderate depth of
+field with all three in sharp focus and the background softly blurred.
+16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「お母さん、私まだ日本にいたい…」（中国・大連出身の17歳、ワン・シャオユー。9歳で父を亡くして以来「人の優しさは一時的な建前」と信じてきた彼女が、大阪での3週間のホームステイを通じてホストファザー・家夫とホストマザー・はるみの不器用だが本物の優しさに触れ、帰国当日の空港で崩れ落ちるエピソード）
+
+**制作メモ**: 国旗・国籍表記は使い回し時に必ず台本と一致させる（今回は中国国旗に修正）。3人の表情は「号泣する少女」「涙ぐむホストマザー」「こらえる涙を浮かべたホストファザー」と、感情の種類と強さを意図的に変えて描写している。
+
+**PhotoScape X 文字入れ指示**
+```
+■「?!」記号（2箇所）
+内容：?!
+色：黒文字（縁取りなしでも可）
+位置：画面上部左右（母役・父役の頭上付近）
+
+■国旗アイコン
+内容：中国国旗（台本の国籍に合わせて差し替え）
+位置：画面左下
+
+■上部見出し
+内容：「お母さん、私まだ日本にいたい…」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：3週間のホームステイを終えた中国人女子高生
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：空港で少女が崩れ落ちた理由
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
