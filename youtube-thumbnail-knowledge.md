@@ -2205,6 +2205,102 @@ field with all three in sharp focus and the background softly blurred.
 
 ---
 
+## パターン33: 街頭インタビュー×中国人女性3人の怒り・困惑型
+
+**元ネタ画像の特徴**
+- これまでのパターンにない新構図：日本の街角での「街頭インタビュー」形式
+- 背景は夕方〜夜の京都風の町並み（提灯の明かり、奥に人混みがぼかされて写る）
+- 手前にインタビュアーのマイクが差し出されている。マイクを持つ手と黒いジャケットの袖だけが画面左端に見切れており、インタビュアー本人の顔は写らない
+- 3人の中国人女性（全員黒髪ロングストレート、明確に別人と分かる顔立ち）がマイクに向かって反応している
+  - 左：怒った表情、漫画的な怒りマーク（プンプンマーク）が髪の近くに
+  - 中央：メガネをかけた女性、怒った表情、プンプンマーク、吹き出し「嘘つくな!!」（白背景＋黒文字）
+  - 右：驚き・困惑の表情、「!!!?」記号
+- 画面左下に中国国旗
+- 上部見出し「「はっ！えっ？中国語じゃないの？」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「中国語だと思っていた言葉が実は日本語だった」緑文字＋黒フチ
+- 下段2行目「それを知った中国人が大発狂」赤文字＋黒フチ
+
+**画像生成プロンプト（1枚で3人＋インタビュアーの手を一括生成）**
+```
+Photorealistic candid street-interview style photo on a Japanese street
+at dusk/evening (Kyoto-style townscape), warm paper lanterns glowing in
+the softly blurred background, a blurred crowd of pedestrians further
+back.
+
+In the foreground left edge, a microphone is held into frame by an
+interviewer whose face is not visible — only a hand holding the
+microphone and the sleeve of a black jacket are visible at the very edge
+of the frame.
+
+Three Chinese women in their mid-20s, all with long straight black hair
+but each with a clearly distinct face — different face shape, eyebrow
+shape, and features so they read as separate individuals, not cloned
+faces — are being interviewed, reacting toward the microphone with
+genuine, varied expressions:
+
+Left woman: visibly angry, furrowed brows, mouth tense, an irritated
+scowl.
+
+Center woman: wearing black-framed glasses, also visibly angry/
+indignant, brows drawn together, mouth slightly open as if arguing back.
+
+Right woman: a different reaction — wide-eyed confusion and disbelief,
+eyebrows raised, mouth slightly open in surprise rather than anger.
+
+Natural real-photo skin texture, candid unposed expressions, avoid
+airbrushed CGI look, avoid uncanny valley, avoid identical or mirrored
+expressions between the three women. Warm evening lighting mixed with
+the glow of lanterns, soft bokeh in the background. Medium-wide framing
+showing all three women from the chest up with generous negative space
+around the top and sides for text compositing. Shot on 50mm lens,
+shallow depth of field with the three women in sharp focus and the
+background softly blurred. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「え？中国語だよね⁉…」（北京の学者一家に生まれた29歳の中国史博士課程生ウェイが、中華文明こそ東アジア文化の源流だと信じて育ったが、京都に留学する親友・翔太との再会を通じて、自分が日常的に使う中国語の多く（経済・自由・人民・共和国など）が実は明治時代の日本で作られた和製漢語だったと知り、価値観が揺さぶられるエピソード）
+
+**制作メモ**: 台本自体はウェイ1人の物語だが、サムネイルでは「街頭インタビューで中国人女性3人に聞いた」という体裁に象徴化してCTRを狙う、このジャンルでよくある手法（パターン29と同様）。インタビュアーの手とマイクを画面端に写し込むことで「街頭インタビュー形式」であることを一目で伝えられる。3人は全員怒り・困惑など反応の種類を変えることで、同一人物の使い回しに見えないようにする。
+
+**PhotoScape X 文字入れ指示**
+```
+■プンプンマーク（左・中央の2箇所）
+内容：漫画的な怒りマーク
+位置：左の女性と中央の女性の髪の近く
+
+■「!!!?」記号
+色：白地＋黒フチ
+位置：右の女性の頭上
+
+■吹き出し「嘘つくな!!」
+色：白背景＋黒文字
+位置：中央の女性の近く
+
+■国旗アイコン
+内容：中国国旗
+位置：画面左下
+
+■上部見出し
+内容：「はっ！えっ？中国語じゃないの？」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：中国語だと思っていた言葉が実は日本語だった
+色：緑＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：それを知った中国人が大発狂
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
