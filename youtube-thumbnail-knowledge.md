@@ -2301,6 +2301,92 @@ background softly blurred. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン34: 俯瞰の交差点映像×TV視聴者驚愕反応 左右分割型
+
+**元ネタ画像の特徴**
+- パターン3（料理×家族リアクション左右分割型）の系譜だが、左側が「料理」ではなく「ドローン視点の交差点映像」という新しい組み合わせ
+- 左半分：渋谷スクランブル交差点を真上から見下ろす俯瞰ショット。夜、信号待ちの大量の歩行者が横断歩道を一斉に渡っている様子、ネオン看板や街灯の光が画面を彩る
+- 右半分：テレビ番組を視聴している外国人5〜6人の驚愕リアクションショット。中央に黒髪の男性（青シャツ）が大きく口を開けて驚く表情、その左に黒髪の女性（ピンクトップ）も驚いた表情、後方に巻き毛の女性（黒トップ）が口元を手で覆う、さらに奥にメガネの男性、右端にも巻き毛の女性が手を口に当てて驚いている
+- 中央に赤い矢印で「交差点映像→視聴者」の視線誘導
+- 「‼」「⁉」記号が視聴者の間に2箇所
+- 上部見出し「「全世界196ヵ国で日本だけ！」」黄色文字＋黒フチ
+- 下段1行目「イギリスBBCが放送した日本特集で」水色（シアン）文字＋黒フチ
+- 下段2行目「偶然映った日本の日常に世界が驚愕」赤文字＋黒フチ
+
+**画像生成プロンプト①（交差点映像部分）**
+```
+Photorealistic aerial drone-shot photo looking straight down at a famous
+Japanese pedestrian scramble crossing (Shibuya-style) at night. Dozens of
+pedestrians cross in multiple directions simultaneously across the wide
+white-striped crosswalk, illuminated by bright neon signage and
+streetlights from the surrounding buildings, creating a vibrant, bustling
+night-time cityscape. Vehicles waiting at the surrounding intersection,
+colorful building facades and advertising screens glowing around the
+edges of the frame. Natural real-photo aerial documentary quality, avoid
+airbrushed CGI look. Wide top-down framing with generous negative space
+around the edges for cropping and compositing. 16:9 aspect ratio, no
+text, no logos.
+```
+
+**画像生成プロンプト②（視聴者のリアクション部分）**
+```
+Photorealistic candid documentary-style photo of a diverse group of five
+to six Western adults sitting together watching a television or large
+screen off-frame, lit by the cool blue glow of the screen in a dim room
+(like a sports-bar or living-room viewing-party setting). All of them
+react with genuine shock and astonishment: a man in the center with dark
+hair wearing a blue shirt, mouth wide open in disbelief; a woman to his
+left with dark hair and a pink top, also wide-eyed and open-mouthed; a
+curly-haired woman behind them with a black top, one hand pressed over
+her mouth in astonishment; a man further back wearing glasses, eyebrows
+raised in surprise; another curly-haired woman at the right edge with a
+hand near her mouth, equally stunned. Each person's reaction varies
+naturally in intensity and head angle, not synchronized or mirrored.
+Natural real-photo skin texture, avoid airbrushed CGI look, avoid uncanny
+valley. Medium-wide framing showing the group from the chest up, generous
+negative space around them for cropping and compositing. Shot on 35mm
+lens, moderate depth of field. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 未着信（このパターンは画像のみ先行で作成。台本が届き次第、物語の詳細をここに追記する）
+
+**制作メモ**: パターン3の左右分割構図の派生で、左側を「料理」ではなく「航空写真・ドローン視点の都市景観映像」に差し替えたバージョン。視聴者側のリアクションは5〜6人と人数が多いため、パターン26・29と同様に髪型・服装・表情の種類と強さを個別に指定し、同一人物の使い回しに見えないようにする。この型は「海外のテレビ番組に日本の映像が偶然映り込んで話題になる」系の台本で今後使い回せる。
+
+**PhotoScape X 文字入れ指示**
+```
+■レイアウト
+左に交差点の俯瞰映像、右に視聴者のリアクション画像を配置し中央で接合（縦分割2枚合成）
+
+■赤い矢印
+内容：交差点映像→視聴者の方向
+色：赤（白フチ付き矢印アイコン）
+位置：画面中央
+
+■「‼」「⁉」記号（2箇所）
+色：赤
+位置：視聴者たちの間、2箇所に分散配置
+
+■上部見出し
+内容：「全世界196ヵ国で日本だけ！」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面上部、横幅いっぱい中央揃え
+
+■下段1行目
+内容：イギリスBBCが放送した日本特集で
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯1行目
+
+■下段2行目
+内容：偶然映った日本の日常に世界が驚愕
+色：赤＋黒フチ（強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
