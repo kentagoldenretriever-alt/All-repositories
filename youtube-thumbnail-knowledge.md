@@ -2387,6 +2387,78 @@ lens, moderate depth of field. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン35: 警察官の交通誘導接写×人物不在（状況再現）型
+
+**元ネタ画像の特徴**
+- パターン18・19と同じ「状況再現型（人物不在）」の系譜だが、今回は俯瞰ではなく地上からの接写ショットで、女性警察官1人の動作にフォーカスする構図
+- 日中の広い道路、横断歩道と緑のガードレール、タイル敷きの歩道が背景
+- 手前中央：女性警察官（紺の活動服、制帽、白手袋、白い誘導棒を持つ）が腰を落とし、道路上の何か（小さな生き物を安全に誘導しているような動作）に向けて手を伸ばしている
+- 奥：段ボール箱を抱えた人物がぼかされて歩いている
+- 右端：別の警察官（白い制帽、サングラス）が横から見守っている
+- 画面左上に日本国旗のアイコン
+- 上部見出し「「日本は神の国なのか！？」」黄色文字＋黒フチ
+- 下段1行目「わずか1分の映像が500万回再生」水色（シアン）文字＋黒フチ
+- 下段2行目「世界中を絶句させた日本の異様な光景」赤文字＋黒フチ
+
+**画像生成プロンプト**
+```
+Photorealistic candid documentary-style photo on a wide Japanese city
+street in daytime, a pedestrian crosswalk and green guardrail visible,
+tiled sidewalk in the foreground, soft natural daylight, slightly
+overcast.
+
+In the center foreground, a female Japanese traffic police officer in a
+navy-blue uniform and police cap, wearing white gloves and holding a
+white traffic-guidance baton, crouches low with her body bent forward,
+one gloved hand reaching down toward the road surface as if carefully
+guiding or protecting a small creature (such as ducklings) safely across
+the street. Her posture is careful and gentle, not rushed.
+
+In the middle background, a person carrying a cardboard box walks past,
+rendered softly out of focus. At the right edge of the frame, a second
+police officer in a white peaked cap and sunglasses stands in profile,
+calmly watching the scene.
+
+Natural real-photo documentary quality, avoid airbrushed CGI look, avoid
+uncanny valley. Soft natural daylight with gentle shadows. Medium shot
+framing with the crouching officer as the clear focal point, generous
+negative space around the top and left for text compositing. Shot on
+50mm lens, shallow depth of field with the officer in sharp focus and the
+background softly blurred. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 未着信（このパターンは画像のみ先行で作成。台本が届き次第、物語の詳細をここに追記する）
+
+**制作メモ**: パターン19（俯瞰×カルガモ群×警察官交通規制型）の接写バリエーション。警察官が道路上の小さな生き物を守るように誘導する「日本は神の国」系の動画は再利用性が高いテーマなので、動物の種類（カルガモ・子猫など）は台本に応じて差し替え可能。国旗アイコンは台本の文脈に応じて使う（今回は日本国内の出来事なので日本国旗）。
+
+**PhotoScape X 文字入れ指示**
+```
+■国旗アイコン
+内容：日本国旗
+位置：画面左上
+
+■上部見出し
+内容：「日本は神の国なのか！？」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：わずか1分の映像が500万回再生
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：世界中を絶句させた日本の異様な光景
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
