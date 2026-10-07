@@ -2538,6 +2538,110 @@ generous negative space near the top and bottom for text compositing.
 
 ---
 
+## パターン37: 厨房内集団×皿覗き込み×看板シェフ驚愕型
+
+**元ネタ画像の特徴**
+- パターン14（4人グループ×路地裏暖簾型）と同じ「複数人が1つの対象を覗き込む」構図だが、今回は屋外の暖簾前ではなくフランス料理店の厨房内という新しい舞台設定
+- 背景はステンレスの調理台と銀色の調理器具が並ぶ厨房
+- 中央手前に一皿（牡蠣フライのような、艶やかな照りのある揚げ物料理）が置かれ、赤い矢印でその皿を強調
+- 5人の人物が皿を取り囲むように覗き込んでいる
+  - 左：48歳の日本人女性（白石フミコ役、グレーのトップス＋黄色いエプロン）控えめだが確かな表情で皿を見つめる。吹き出し「お口に合えば…」
+  - 中央奥左：年配の白人男性シェフ（白衣）、驚いた表情、近くに「⁉」記号
+  - 中央：黒髪メガネの若い男性シェフ（白衣）、大きく口を開けて驚く表情
+  - 右：白髪・メガネの年配の男性シェフ（アンリ・デュラン役、白衣）、最も強い驚愕の表情。吹き出し「な、なんだこれは…」
+  - 画面右上に「⁉」記号
+- 画面左下にフランス国旗のアイコン
+- 上部見出し「「皿洗いに料理などできるかw」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「パリの三ツ星で嘲笑された48歳の日本人皿洗い」緑文字＋黒フチ
+- 下段2行目「看板シェフを絶句させた理由」赤文字＋黒フチ
+
+**画像生成プロンプト（1枚で5人＋皿を一括生成。全員別人・表情の強度を変えて描写）**
+```
+Photorealistic candid documentary-style photo inside a professional
+French restaurant kitchen, stainless steel countertops and cookware
+softly visible in the background, bright even kitchen lighting.
+
+In the center foreground, a plate of golden-brown fried oysters (kaki
+furai), glossy and appetizing, with a small dollop of tartar sauce and a
+lemon wedge, sits on the counter as the clear focal point of the scene.
+
+Around the plate, five people lean in to look at the dish with a range of
+genuine reactions:
+
+Left: a 48-year-old Japanese woman wearing a grey top under a yellow
+apron, her expression modest and quietly composed rather than shocked,
+looking at the dish with calm confidence.
+
+Center-left background: an older Western male chef in white chef's whites,
+eyebrows raised in surprise, mouth slightly open.
+
+Center: a younger male chef with dark hair and glasses, also in white
+chef's whites, leaning in close with his mouth wide open in genuine
+astonishment.
+
+Right: an older Western male chef with grey hair and glasses, in white
+chef's whites, the most visibly shocked of the group — eyes wide, mouth
+open in stunned disbelief, as the head chef of the restaurant.
+
+Each person's reaction varies naturally in intensity and head angle, not
+synchronized or mirrored; avoid identical or cloned faces, avoid
+perfectly even symmetrical spacing. Natural real-photo skin texture,
+avoid airbrushed CGI look, avoid uncanny valley. Medium-wide framing
+showing all five people and the plate together, generous negative space
+around the top and sides for text compositing. Shot on 35mm lens,
+moderate depth of field with everyone reasonably in focus. 16:9 aspect
+ratio, no text, no logos.
+```
+
+**紐づく台本**: 「皿洗いに料理ができるか」（パリの三つ星レストラン「オーブ」で皿洗いとして働く48歳の日本人女性・白石フミコが、看板シェフ、アンリ・デュランの渾身の一皿を大物客フェリエに「作った人間の顔が見えない」と評された直後、自ら名乗り出て作った牡蠣フライが、フランスと宮城の牡蠣をめぐる歴史的な恩返しのエピソードとともに厨房全体を驚かせるエピソード）
+
+**制作メモ**: パターン14の「集団で1つの対象を覗き込む」構図を屋内の厨房シーンに応用した派生バージョン。主人公フミコだけは他の4人と違い「驚き」ではなく「控えめな確信」の表情にすることで、台本の「謙虚だが実力のある皿洗い」という人物像を一目で伝えている。
+
+**PhotoScape X 文字入れ指示**
+```
+■吹き出し「お口に合えば…」
+色：白背景＋黒文字
+位置：左のフミコ役の女性の近く
+
+■吹き出し「な、なんだこれは…」
+色：白背景＋黒文字
+位置：右の看板シェフの近く
+
+■「⁉」記号（2箇所）
+色：黒文字
+位置：中央奥のシェフの近く、画面右上
+
+■赤い矢印
+内容：中央の皿を指す
+色：赤
+位置：皿の上部
+
+■国旗アイコン
+内容：フランス国旗
+位置：画面左下
+
+■上部見出し
+内容：「皿洗いに料理などできるかw」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：パリの三ツ星で嘲笑された48歳の日本人皿洗い
+色：緑＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：看板シェフを絶句させた理由
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
