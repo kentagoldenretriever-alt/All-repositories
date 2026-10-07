@@ -2642,6 +2642,82 @@ ratio, no text, no logos.
 
 ---
 
+## パターン38: 空港出発案内板背景×単独女性の動揺電話受信型
+
+**元ネタ画像の特徴**
+- パターン11（涙のクローズアップ単独型）に近い1人の女性のクローズアップだが、今回は「電話を受けて動揺する」という新しいシチュエーション
+- 背景は空港の大型フライト案内板（ぼかされた表示パネルと通行人）
+- 中央：30代の女性（茶髪のウェーブヘア、ベージュのコート、ゴールドのフープイヤリング、結婚指輪）が、片手を頬に当てて深く心配そうな表情を浮かべている。眉をひそめ、目を見開き、動揺が伝わる表情
+- 「⁉」記号（黒文字）が画面右上
+- 吹き出し「夫が…」（白背景＋黒文字）が顔の下あたりに配置
+- 画面左下に国旗アイコン（台本の国籍に合わせて差し替える）
+- 上部見出し「「頼む、今すぐ日本に来てくれ！」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「赴任◯ヶ月の夫から突然電話を受けた◯◯人妻」緑文字＋黒フチ
+- 下段2行目「赴任先での夫の激変ぶりに絶句」赤文字＋黒フチ
+
+**注意（今回の修正点）**: 参考画像ではイギリス国旗＋「イギリス人妻」の表記だったが、紐づく台本はシカゴ在住のアメリカ人女性エミリー・ターナーのため、国旗をアメリカ国旗、下段1行目を「赴任3ヶ月の夫から突然電話を受けたアメリカ人妻」に修正して使用する。
+
+**画像生成プロンプト**
+```
+Photorealistic candid documentary-style photo of a woman in her mid-30s
+with wavy brown hair, wearing a beige coat, gold hoop earrings, and a
+wedding ring, standing inside an airport terminal with a large flight
+information display board softly blurred in the background, along with
+blurred silhouettes of passersby.
+
+Her expression shows genuine worry and alarm: eyebrows drawn together,
+eyes wide with concern, one hand raised to press against her cheek as if
+she has just received distressing news on a phone call. Her posture is
+slightly tense, caught mid-reaction.
+
+Natural real-photo skin texture, candid unposed expression, avoid
+airbrushed CGI look, avoid uncanny valley. Soft indoor airport lighting.
+Medium close-up framing from the chest up, generous negative space
+around the top and sides for text compositing. Shot on 85mm lens,
+shallow depth of field with her in sharp focus and the background softly
+blurred. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「頼む…今すぐ日本に来てくれ…」（シカゴ在住のアメリカ人女性エミリー・ターナー、34歳。単身赴任で日本の川越へ発った夫トーマスから切迫した電話を受け、慌てて日本へ飛ぶが、待っていたのは夫の激変ではなく、1週間の滞在を通じて自分自身の不安や思い込みが溶けていく体験だったというエピソード）
+
+**制作メモ**: 1人の女性の表情だけで物語の緊張感を伝えるシンプルな構図。国旗・国籍表記は台本に忠実に修正すること（使い回し時は要注意、今回はイギリス→アメリカに修正）。「夫が心配で海外へ急行する」系の台本で今後も使い回せる。
+
+**PhotoScape X 文字入れ指示**
+```
+■「⁉」記号
+色：黒文字
+位置：画面右上
+
+■吹き出し「夫が…」
+色：白背景＋黒文字
+位置：女性の顔の下あたり
+
+■国旗アイコン
+内容：アメリカ国旗
+位置：画面左下
+
+■上部見出し
+内容：「頼む、今すぐ日本に来てくれ！」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：赴任3ヶ月の夫から突然電話を受けたアメリカ人妻
+色：緑＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：赴任先での夫の激変ぶりに絶句
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
