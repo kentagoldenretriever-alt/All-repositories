@@ -2459,6 +2459,85 @@ background softly blurred. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン36: 夜景俯瞰パノラマ×矢印＋点線円の二重強調型（人物不在）
+
+**元ネタ画像の特徴**
+- パターン18・19・35と同じ「状況再現型（人物不在）」の系譜だが、今回は人物も動物も一切登場せず、東京の夜景俯瞰パノラマ写真そのものが主役
+- 高層ビルから見下ろす構図で、オレンジ色にライトアップされた東京タワーを中心に、無数の高層ビルの窓明かり、奥に東京湾と橋、地平線まで続く夜景が広がる
+- 赤い矢印が東京タワーを指して強調
+- 画面右寄りのビル群の一角を赤い点線の円で囲んで強調（物語の鍵となる「屋上の黄色い印」がある建物群を暗示する演出。印そのものは夜景では見えないため、円で「ここに何かある」という期待感だけを煽る）
+- 画面右上に「⁉」記号（黒背景＋白文字）
+- 上部見出し「「日本の嘘を全部撮ってやる！」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「フランス人記者が上空から捉えた5分の映像」緑文字＋黒フチ
+- 下段2行目「瞬く間に1400万再生された理由」赤文字＋黒フチ
+
+**注意（今回の修正点）**: 参考画像では下段1行目が「フランス人記者」だったが、紐づく台本の主人公ルーカス・ベネットはニューヨーク在住のアメリカ人写真記者のため、「アメリカ人記者が上空から捉えた5分の映像」に修正して使用する。
+
+**画像生成プロンプト**
+```
+Photorealistic aerial night panorama of Tokyo, shot from a high vantage
+point (as if from an observation deck or drone), looking out across a
+dense cityscape of illuminated skyscrapers toward Tokyo Bay and a
+suspension bridge in the far distance. Tokyo Tower stands prominently
+left-of-center, lit in warm orange, its lattice structure clearly
+visible against the night sky.
+
+Thousands of window lights fill the skyline in soft white and warm
+yellow tones, varying in density and brightness across different
+buildings, with a few colorful illuminated signs and building accents
+breaking up the monotony. The horizon glows faintly with the ambient
+light of the wider city beyond. Calm night sky above, no clouds
+obscuring the skyline.
+
+Photorealistic real-photo quality, avoid airbrushed CGI look, natural
+long-exposure night photography aesthetic with crisp individual window
+lights (not blurred into a single glow). Wide panoramic framing with
+generous negative space near the top and bottom for text compositing.
+16:9 aspect ratio, no text, no logos, no watermarks.
+```
+
+**紐づく台本**: 「嘘つき日本を撮ってやる！」（ニューヨークの写真記者ルーカス・ベネット、19年のキャリアの中で「美しすぎる風景には必ず演出がある」と信じるようになった彼が、東京の夜景映像の真偽を確かめるためヘリコプターで上空から撮影。灰色の屋上に並ぶ黄色い緊急救助用スペースの印「R」「H」を発見し、40年間1度も使われないまま塗り直され続けてきたその意味を知るエピソード）
+
+**制作メモ**: 人物を一切登場させない、都市の夜景パノラマのみで構成する最もシンプルな「状況再現型」。赤い点線の円は実際には何も見えない場所を囲むことで「この先に何かがある」という引きを作る、ミステリー要素の強い台本向けの演出。国籍表記は台本に忠実に修正すること（使い回し時は要注意）。
+
+**PhotoScape X 文字入れ指示**
+```
+■赤い矢印
+内容：東京タワーを指す
+色：赤（白フチ付き矢印アイコン）
+位置：東京タワーの右上
+
+■赤い点線の円
+内容：右寄りのビル群の一角を囲む
+色：赤（点線）
+位置：画面右側のビル群
+
+■「⁉」記号
+色：黒背景＋白文字
+位置：画面右上
+
+■上部見出し
+内容：「日本の嘘を全部撮ってやる！」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：アメリカ人記者が上空から捉えた5分の映像
+色：緑＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：瞬く間に1400万再生された理由
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
