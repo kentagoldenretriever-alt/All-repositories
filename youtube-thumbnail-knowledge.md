@@ -2718,6 +2718,87 @@ blurred. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン39: 新幹線ホーム対面構図×フランス人専門家集団×懐疑的観察型
+
+**元ネタ画像の特徴**
+- 日本の新幹線ホーム、右側にN700系新幹線の先頭車両が停車している
+- 左側にフランス人専門家5人が横並びに立ち、全員スーツ姿でメガネをかけている。表情は懐疑的・観察的（顎に手を当てる、腕を組む、鋭い視線で見つめるなど）で、それぞれ強度や仕草が異なる
+- 手前中央に日本人男性1人（後ろ姿、濃紺スーツ）が、フランス人専門家グループに新幹線を案内・説明している
+- 「⁉」記号がフランス人グループの中心人物（リーダー格）の頭上
+- 赤い矢印が新幹線の先頭部分（連結部付近）を指している
+- 上部見出し「「見せてもらおう、新幹線の実力とやらを」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「日本の新幹線の視察に訪れたフランス専門家」水色（シアン）文字＋黒フチ
+- 下段2行目「発車3分後に絶句した理由」赤文字＋黒フチ
+
+**画像生成プロンプト（1枚でフランス人5人＋日本人案内役＋新幹線を一括生成）**
+```
+Photorealistic candid documentary-style photo on a Japanese shinkansen
+station platform, a white N700-series bullet train stopped on the right
+side of the frame, its sleek nose and connecting car visible, platform
+architecture and signage softly blurred in the background, bright
+natural daylight.
+
+On the left, five French businessmen in their 30s to 50s stand together,
+all wearing suits and glasses, each with a clearly distinct face, hair
+color (grey, brown, dark), and build so they read as separate
+individuals, not cloned faces. Their expressions are skeptical and
+appraising rather than friendly: one strokes his chin thoughtfully, one
+has his arms crossed, one squints with a doubtful look, one raises an
+eyebrow, the central figure (slightly older, grey-haired) has a sharp,
+evaluating stare — each person's posture and expression intensity
+varies naturally, not synchronized or mirrored.
+
+In the foreground center, a Japanese man in a dark navy suit is seen
+from behind or in three-quarter profile, gesturing toward the train as
+if explaining it to the group, his face partially turned away from the
+camera.
+
+Natural real-photo skin texture, avoid airbrushed CGI look, avoid
+uncanny valley, avoid identical or evenly-spaced lineup — stagger the
+group naturally. Soft natural daylight with gentle shadows. Medium-wide
+framing showing the group, the guide, and the train nose all together,
+generous negative space around the top for text compositing. Shot on
+35mm lens, moderate depth of field with the group and the train in sharp
+focus. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「見せてもらおうか、新幹線の実力を…」（フランスの高速鉄道TGVに34年携わってきた技術者アラン・フェイブル、57歳が、部下クレマンと共に日本の新幹線を視察。「島国だから成立する特殊な仕組み」と見下していたが、新横浜を出て3分後の滑らかな加速、分散動力方式、駅員やスタッフの連携など、速度だけでなく「乗客が時刻を疑わずに済む」仕組み全体に心を動かされるエピソード）
+
+**制作メモ**: 台本の登場人物はアランとクレマンの2人だが、サムネイルでは「フランス専門家チーム」として5人に誇張して描写し、視察の重厚感・権威性を強調するこのジャンルでよくある手法（パターン29・33と同様）。日本人案内役（田中）は顔を見せずシルエット・後ろ姿で配置することで、フランス側の表情に視線を集中させている。
+
+**PhotoScape X 文字入れ指示**
+```
+■「⁉」記号
+色：黒文字
+位置：フランス人グループの中心人物（リーダー格）の頭上
+
+■赤い矢印
+内容：新幹線の先頭部分を指す
+色：赤
+位置：新幹線の連結部付近
+
+■上部見出し
+内容：「見せてもらおう、新幹線の実力とやらを」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：日本の新幹線の視察に訪れたフランス専門家
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：発車3分後に絶句した理由
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
