@@ -2799,6 +2799,101 @@ focus. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン40: 駅構内群衆×スマホ注視×女性複数人の動揺型
+
+**元ネタ画像の特徴**
+- 日本の駅構内の広い通路、奥に多数の通行人がぼかされて行き交う
+- 4人の中国人女性（全員黒髪ロング、明確に別人と分かる顔立ち）が画面内に配置されている
+  - 手前中央：黒いジャケット姿の女性が驚いた表情で「⁉」記号、吹き出し「なにあれ…」
+  - 中央奥：ベージュのカーディガン姿の女性がスマートフォンの画面を見つめている。その手元・画面部分を赤い点線の円で囲んで強調
+  - 右：ベージュのコート姿の女性が手で口を覆い、目を見開いて驚愕した表情、吹き出し「嘘でしょ…」
+  - 左奥：やや後ろ姿で歩く4人目の女性（背景寄りに配置）
+- 上部見出し「「日本人はなぜ中国を嫌うの？」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「日本人に嫌われる理由が疑問だった中国人女性」緑文字＋黒フチ
+- 下段2行目「到着5秒で理由が判明‼」赤文字＋黒フチ
+
+**画像生成プロンプト（1枚で4人を一括生成。全員別人・表情の種類を変えて描写）**
+```
+Photorealistic candid documentary-style photo inside a busy Japanese
+train station concourse, a blurred crowd of commuters moving through the
+background, bright clean indoor lighting.
+
+Four Chinese women in their early-to-mid 20s, all with long black hair
+but each with a clearly distinct face — different face shape, eyebrow
+shape, and features so they read as four separate individuals, not
+cloned faces — appear in the frame with varied genuine reactions:
+
+Center foreground: a woman in a black jacket, carrying a black bag,
+reacting with wide-eyed surprise, eyebrows raised, mouth slightly open
+as if she just noticed something unexpected.
+
+Center background: a woman in a beige cardigan, looking down intently at
+her smartphone screen, absorbed and slightly tense, holding the phone
+with both hands.
+
+Right: a woman in a beige coat, one hand pressed over her mouth in
+genuine shock, eyes wide, as if stunned by what she just realized.
+
+Left background: a fourth woman, seen partially from behind or at an
+angle, walking through the concourse, rendered slightly softer in focus
+than the three foreground women.
+
+Each woman's reaction varies naturally in intensity and head angle, not
+synchronized or mirrored. Natural real-photo skin texture, avoid
+airbrushed CGI look, avoid uncanny valley, avoid identical or evenly-
+spaced placement. Soft natural indoor lighting. Medium-wide framing
+showing all four women with the blurred crowd behind them, generous
+negative space around the top for text compositing. Shot on 35mm lens,
+moderate depth of field with the three foreground women in sharp focus
+and the background crowd softly blurred. 16:9 aspect ratio, no text, no
+logos.
+```
+
+**紐づく台本**: 「なぜ日本人は中国人が嫌いなの？…」（上海出身の24歳大学院生リが、高校時代からネット上の日本人の中国を揶揄するコメントに抱いていた疑問の答えを探しにニュージーランドの大学で日本研究を専攻し、10日間の日本1人旅へ。財布を落として見返りを求めず届けてくれた人々、和菓子職人や寿司職人の仕事への向き合い方、戦争で亡くなった父の遺言を語る奈良の老人との出会いを通じて、「日本人は中国人を嫌っているのではなく、思いやりのない人に距離を置いているだけだ」という答えにたどり着くエピソード）
+
+**制作メモ**: 台本自体は上海出身のリ1人旅の物語だが、サムネイルでは「中国人女性複数人が駅構内で動揺する」という体裁に象徴化してCTRを狙う、このジャンルでよくある手法（パターン29・33・39と同様）。パターン33（街頭インタビュー型）と異なり、今回はマイクを介さず、スマートフォンの画面を見て動揺するという新しい切り口。スマホに表示されている内容は明示せず、赤い点線の円で「何か重要な情報を見ている」ことだけを示唆する演出。
+
+**PhotoScape X 文字入れ指示**
+```
+■「⁉」記号（2箇所）
+色：黒文字
+位置：中央手前の女性の頭上、右の女性の頭上
+
+■吹き出し「なにあれ…」
+色：白背景＋黒文字
+位置：中央手前の女性の近く
+
+■吹き出し「嘘でしょ…」
+色：白背景＋黒文字
+位置：右の女性の近く
+
+■赤い点線の円
+内容：中央奥の女性のスマートフォン画面周辺を囲む
+色：赤（点線）
+位置：中央奥
+
+■上部見出し
+内容：「日本人はなぜ中国を嫌うの？」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：日本人に嫌われる理由が疑問だった中国人女性
+色：緑＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：到着5秒で理由が判明‼
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
