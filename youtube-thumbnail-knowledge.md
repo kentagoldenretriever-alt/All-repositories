@@ -3164,6 +3164,95 @@ focus. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン44: 電車内×外国人観光客2人の困惑×小学生グループ赤丸強調型
+
+**元ネタ画像の特徴**
+- 日本の通勤電車内、窓の外には走行中を示すブレが入った景色
+- 左手前：4人の小学生（黄色い通学帽2人、紺の制服帽2人、半袖白シャツ、赤いランドセル）が立って本やスマートフォンのような機器を見ている。1人が手に持つ機器部分を赤い点線の円で囲んで強調
+- 奥：座席に座る日本人の大人たち（スーツ姿、スマートフォンや新聞を見ている）
+- 右：外国人観光客の男性2人（大きなバックパック、タンクトップ・Tシャツ姿の旅行者風）が困惑した表情を浮かべている。1人は額に手を当てる仕草、もう1人は眉をひそめて見つめる仕草。「⁉」記号が2箇所、吹き出し「どういう事だ…」
+- 赤い矢印が小学生グループ（特に機器を持つ女の子）を指している
+- 上部見出し「「日本の小学生に一体なにが…！？」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「日本の電車内で子供たちが衝撃の行動に」水色（シアン）文字＋黒フチ
+- 下段2行目「外国人観光客が困惑した理由」赤文字＋黒フチ
+
+**画像生成プロンプト（1枚で小学生4人＋大人の乗客＋外国人観光客2人を一括生成）**
+```
+Photorealistic candid documentary-style photo inside a Japanese commuter
+train car, motion-blurred scenery visible through the windows suggesting
+the train is moving, overhead handrails and advertisement panels softly
+visible.
+
+In the left foreground, four Japanese elementary school children stand
+together: two wearing yellow school safety caps and two wearing navy
+school caps, all in short-sleeve white shirts with red randoseru
+backpacks. One girl holds a small handheld device, looking down at it
+with the other children glancing over.
+
+In the midground, several Japanese adults in business attire sit in the
+train seats, absorbed in their phones or newspapers, calm and quiet.
+
+On the right, two Western male backpacker tourists in their late 20s,
+wearing tank tops or t-shirts and carrying large hiking backpacks (one
+blue, one green), stand with genuinely puzzled, baffled expressions —
+one with a hand raised to his forehead, eyebrows furrowed in confusion,
+the other with a similarly bewildered, questioning look, both staring
+toward the children.
+
+Natural real-photo skin texture, candid unposed expressions, avoid
+airbrushed CGI look, avoid uncanny valley. Soft natural indoor train
+lighting. Medium-wide framing showing the children, the seated adults,
+and the two tourists together, generous negative space around the top
+for text compositing. Shot on 35mm lens, moderate depth of field with
+everyone reasonably in focus. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「こんな国があり得るのか…？」（シリコンバレーで顔認証システム開発チームを率いるエンジニア、37歳のデビッド・トンプソンが、東京出張中に保護者も教師もいない小学生集団が電車に自分たちだけで乗り込む光景を目撃。「子供を1人にすることは危険な放置」という長年の確信が、席を譲る男の子やゴミを拾う女の子の姿を通じて揺さぶられていくエピソード）
+
+**制作メモ**: 台本の主人公デビッドは1人で出張していたが、サムネイルでは「困惑する外国人観光客2人組」としてビジュアル化されている（1人の記者・技術者という設定より、バックパッカー風の観光客2人組の方が画的インパクトが強いため）。このジャンルで人数や設定が台本と多少異なっても、ビジュアルの説得力を優先して描写することがある。
+
+**PhotoScape X 文字入れ指示**
+```
+■赤い点線の円
+内容：小学生が持つ機器を囲む
+色：赤（点線）
+位置：小学生グループの手元
+
+■赤い矢印
+内容：小学生グループを指す
+色：赤
+位置：画面中央、小学生グループへ向けて
+
+■「⁉」記号（2箇所）
+色：黒文字
+位置：外国人観光客2人それぞれの頭上
+
+■吹き出し「どういう事だ…」
+色：白背景＋黒文字
+位置：手前の観光客の近く
+
+■上部見出し
+内容：「日本の小学生に一体なにが…！？」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：日本の電車内で子供たちが衝撃の行動に
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：外国人観光客が困惑した理由
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
