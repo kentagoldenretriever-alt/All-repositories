@@ -3295,6 +3295,31 @@ aspect ratio, no text, no logos, no watermarks.
 
 **制作メモ**: 「誘拐」という題材のため、画像生成プロンプトは必ず「テレビの社会実験番組の再現シーンである」ことを明示し、実際の暴力・子供の苦痛を連想させる表現（struggling, terrified, crying等）は避けること。子供の顔はプライバシー保護の演出として意図的にモザイク処理する体裁にする。台本では最初に介入したのは日本人女性だが、画像では日本人男性が描かれているため、台本の2人目のエピソード（日本人留学生の男性）に寄せた構成として扱うか、ユーザーの指示があれば女性に差し替える。
 
+**重要な教訓（安全フィルター対策）**: 「子供＋誘拐・連れ去りの緊迫感」をリアルに表現しようとすると、「テレビの演出です」と明記しても画像生成AIの安全システムにほぼ確実に拒否される（本パターンで実際に発生）。子供が関わる誘拐・連れ去り系の題材は、表現をどう工夫してもAI生成が通らないカテゴリと考えてよい。対応策は以下の2つ：
+1. 左側（連れ去られる瞬間）はAI生成せず、実在のドッキリ番組・ニュース映像のスクリーンショット等、実際の素材をPhotoScape Xで合成する
+2. AIで生成するのは「日本人側の驚き・緊迫した反応」のみに絞り、子供や誘拐描写を一切含めない単体プロンプトにする
+
+**画像生成プロンプト（安全版・右側の日本人の反応のみ。子供・誘拐描写を含まない）**
+```
+Photorealistic candid documentary-style photo of a Japanese man in his
+30s with short dark hair and glasses, wearing a black jacket, on a
+Spanish street with parked cars and shop signage softly blurred in the
+background.
+
+He is caught mid-motion, reacting with sudden alarm and urgency — eyes
+wide, eyebrows raised sharply, mouth open as if shouting or calling out,
+body leaning forward as if about to rush toward something happening
+off-frame to the left. His posture conveys genuine shock and immediate
+concern, not calm observation.
+
+Natural real-photo skin texture, candid unposed expression, avoid
+airbrushed CGI look, avoid uncanny valley. Medium shot framing from the
+waist up, generous negative space on the left side of the frame (where
+the staged scene will be composited separately) and around the top for
+text. Shot on 50mm lens, shallow depth of field. 16:9 aspect ratio
+(right half of a split composition), no text, no logos.
+```
+
 **PhotoScape X 文字入れ指示**
 ```
 ■「‼」記号
