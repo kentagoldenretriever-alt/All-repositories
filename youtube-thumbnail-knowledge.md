@@ -2925,7 +2925,30 @@ shrine softly blurred behind her. 16:9 aspect ratio (this will be used as
 the left half of a split composition), no text, no logos.
 ```
 
-**画像生成プロンプト②（母娘の抱擁部分）**
+**画像生成プロンプト②（母娘の抱擁部分・修正版）**
+
+初版は「crying genuine tears」「deep sorrow」「quietly devastating」など、子供＋強い苦痛表現の組み合わせが画像生成AIの安全フィルターに引っかかり生成拒否されたため、感情表現をやや穏やかな言葉に調整した版。
+```
+Photorealistic candid documentary-style photo outdoors, softly blurred
+greenery in the background, natural daylight. A mother in her mid-30s
+with brown hair gently holds her young daughter (the same blonde girl,
+about 7-8 years old, wearing a dark sweater) close, cheek to cheek, in a
+tender, comforting embrace.
+
+Both have eyes glistening with a few gentle tears, expressions soft and
+bittersweet — a quiet moment of love and comfort between mother and
+daughter, not anguish or distress. The mood is tender and emotional, like
+a warm goodbye hug, rather than dramatic grief.
+
+Natural real-photo skin texture, avoid airbrushed CGI look, avoid uncanny
+valley. Medium shot framing from the chest up, generous negative space
+around them for cropping and compositing. Shot on 85mm lens, shallow
+depth of field with both faces in sharp focus and the background softly
+blurred. 16:9 aspect ratio (this will be used as the right half of a
+split composition), no text, no logos.
+```
+
+**画像生成プロンプト②（初版・参考用、生成拒否されたため非推奨）**
 ```
 Photorealistic candid documentary-style photo outdoors, softly blurred
 greenery in the background, natural daylight. A mother in her mid-30s
@@ -2946,6 +2969,8 @@ split composition), no text, no logos.
 **紐づく台本**: 未着信（このパターンは画像のみ先行で作成。台本が届き次第、物語の詳細をここに追記する）
 
 **制作メモ**: パターン3の左右分割構図を「余命宣告・奇跡」系の感動ストーリー向けに応用した派生バージョン。左は希望・祈りを象徴する静けさ、右は悲しみと愛情が混ざった涙という、対照的な2つの感情を1枚で見せる構成。「生声」バッジは実話感を強調する新しい演出要素で、今後ノンフィクション色の強い台本で使い回せる。
+
+**鉄則への追記候補**: 子供を被写体にした画像で「crying」「deep sorrow」「devastating」など強い苦痛・悲嘆を示す英単語を重ねると、画像生成AIの安全フィルターに拒否されやすい（本パターンで実際に発生）。子供が登場する感動系・余命系サムネイルでは、最初から「涙ぐむ（eyes glistening with tears）」「ほろ苦い優しさ（bittersweet, tender）」など穏やかな表現を使い、「苦しみ・悲嘆」そのものではなく「愛情・慰め」を主眼に描写すること。
 
 **PhotoScape X 文字入れ指示**
 ```
