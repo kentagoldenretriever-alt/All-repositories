@@ -2894,6 +2894,91 @@ logos.
 
 ---
 
+## パターン41: 神社で祈る少女×母娘の抱擁左右分割型（余命・奇跡系）
+
+**元ネタ画像の特徴**
+- パターン3の系譜の左右分割構図だが、今回は「料理×家族」ではなく「祈る少女」×「母娘の涙の抱擁」という、余命・奇跡系の台本向けの新しい組み合わせ
+- 左半分：神社の鳥居・瓦屋根の社殿を背景に、金髪の少女（7〜8歳、白いワンピース）が横顔で目を閉じ、両手を合わせて静かに祈っている
+- 右半分：茶髪の母親が、同じ金髪の少女を抱き寄せ頬を寄せ合っている。2人とも涙を流している、深い悲しみと愛情が入り混じった表情
+- 画面左上に「生声」という黒背景＋白文字のバッジ（本人の肉声・実話であることを示す演出ラベル）
+- 上部見出し「「娘が願った最後の7日間」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「余命6ヶ月の少女に起こった日本での奇跡」水色（シアン）文字＋黒フチ
+- 下段2行目「最後に残した言葉に世界が涙」赤文字＋黒フチ
+
+**画像生成プロンプト①（祈る少女部分）**
+```
+Photorealistic candid documentary-style photo at a traditional Japanese
+shrine, a red torii gate and tiled-roof shrine building softly visible in
+the background, warm natural daylight filtering through surrounding
+trees.
+
+A young girl about 7-8 years old with long wavy blonde hair, wearing a
+simple white dress, stands in profile with her eyes gently closed and her
+hands pressed together in quiet prayer. Her expression is serene and
+peaceful, a soft, genuine stillness rather than sadness.
+
+Natural real-photo skin texture, soft natural lighting, avoid airbrushed
+CGI look, avoid uncanny valley. Medium shot framing from the waist up,
+generous negative space around her for cropping and compositing. Shot on
+85mm lens, shallow depth of field with the girl in sharp focus and the
+shrine softly blurred behind her. 16:9 aspect ratio (this will be used as
+the left half of a split composition), no text, no logos.
+```
+
+**画像生成プロンプト②（母娘の抱擁部分）**
+```
+Photorealistic candid documentary-style photo outdoors, softly blurred
+greenery in the background, natural daylight. A mother in her mid-30s
+with brown hair, visibly exhausted and emotional, holds her young
+daughter (the same blonde girl, about 7-8 years old, wearing a dark
+sweater) close, cheek to cheek. Both are crying genuine tears, their
+expressions filled with deep sorrow and tender love intertwined — not
+staged or theatrical, but quietly devastating.
+
+Natural real-photo skin texture, avoid airbrushed CGI look, avoid uncanny
+valley. Medium shot framing from the chest up, generous negative space
+around them for cropping and compositing. Shot on 85mm lens, shallow
+depth of field with both faces in sharp focus and the background softly
+blurred. 16:9 aspect ratio (this will be used as the right half of a
+split composition), no text, no logos.
+```
+
+**紐づく台本**: 未着信（このパターンは画像のみ先行で作成。台本が届き次第、物語の詳細をここに追記する）
+
+**制作メモ**: パターン3の左右分割構図を「余命宣告・奇跡」系の感動ストーリー向けに応用した派生バージョン。左は希望・祈りを象徴する静けさ、右は悲しみと愛情が混ざった涙という、対照的な2つの感情を1枚で見せる構成。「生声」バッジは実話感を強調する新しい演出要素で、今後ノンフィクション色の強い台本で使い回せる。
+
+**PhotoScape X 文字入れ指示**
+```
+■レイアウト
+左に祈る少女の画像、右に母娘の抱擁画像を配置し中央で接合（縦分割2枚合成）
+
+■「生声」バッジ
+内容：生声
+色：黒背景＋白文字
+位置：画面左上
+
+■上部見出し
+内容：「娘が願った最後の7日間」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：余命6ヶ月の少女に起こった日本での奇跡
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：最後に残した言葉に世界が涙
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
