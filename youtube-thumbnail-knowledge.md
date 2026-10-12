@@ -3004,6 +3004,71 @@ split composition), no text, no logos.
 
 ---
 
+## パターン42: 病室の少年単独×窓を見つめる静かな憧れ型（分割なし）
+
+**元ネタ画像の特徴**
+- これまでの左右分割・複数人物型とは異なり、1枚の画像に病室で横たわる少年1人だけを写す、最もシンプルな単独構図
+- 明るい病室、ベッドに横たわる8〜10歳くらいの少年（茶髪、青い病衣）、点滴スタンド、心電図モニター（緑の波形）、ナースコールボタン、ティッシュボックスと水差しがベッド脇に配置されている
+- 少年は窓の外を見つめており、表情は苦痛や悲しみではなく、静かで穏やかな物思い・憧れを感じさせるもの
+- 窓から自然光が差し込み、清潔で明るい病室の雰囲気
+- 国旗アイコン（今回はアメリカ国旗）が下段1行目の文末に小さく添えられている
+- 上部見出し「「僕、死ぬ前に日本に行ってみたい」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「「余命1年」と宣告を受けた少年🇺🇸」赤系文字＋黒フチ
+- 下段2行目「人生最後の日本旅行で起こった悲劇」赤〜オレンジ系文字＋黒フチ（下段2行とも赤系統で統一し、深刻さを強調する配色）
+
+**画像生成プロンプト（安全フィルター対策済み。苦痛・苦悩を示す強い表現を避け、穏やかな物思いの表情として描写）**
+```
+Photorealistic candid documentary-style photo inside a bright, clean
+hospital room, soft natural daylight streaming through a window, medical
+equipment softly visible: a heart-rate monitor with a green waveform
+display, an IV drip stand beside the bed, a nurse call button and a
+tissue box and water pitcher on the bedside table.
+
+A boy about 9 years old with light brown hair, wearing a light blue
+hospital gown, lies propped up on pillows in the hospital bed, an IV line
+gently taped to his hand. He gazes out the window with a calm, thoughtful
+expression — quiet wonder and gentle longing, as if daydreaming about a
+faraway place he wishes to visit, not pain or distress.
+
+Natural real-photo skin texture, soft and warm natural lighting, avoid
+airbrushed CGI look, avoid uncanny valley. Medium-wide framing showing
+the boy, the bed, and the hospital room details, generous negative space
+around the top for text compositing. Shot on 50mm lens, moderate depth of
+field with the boy in sharp focus. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 未着信（このパターンは画像のみ先行で作成。台本が届き次第、物語の詳細をここに追記する）
+
+**制作メモ**: パターン41に続き、子供＋重病という題材のため、プロンプトは最初から「穏やかな物思い・憧れ」を軸に描写し、苦痛・苦悩を示す強い英単語（suffering, dying, agony等）は使わないこと。医療機器や点滴などの設定描写は安全フィルターに引っかかりにくいが、少年の表情・感情を表す形容詞の選び方に注意する。国旗アイコンは台本の国籍に応じて差し替える。
+
+**PhotoScape X 文字入れ指示**
+```
+■国旗アイコン
+内容：アメリカ国旗（小さく、下段1行目の文末に添える）
+位置：下段1行目の右端
+
+■上部見出し
+内容：「僕、死ぬ前に日本に行ってみたい」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：「余命1年」と宣告を受けた少年
+色：赤系＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：人生最後の日本旅行で起こった悲劇
+色：赤〜オレンジ系＋黒フチ（下段1行目と色味を揃えて深刻さを強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
