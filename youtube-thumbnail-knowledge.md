@@ -3069,6 +3069,101 @@ field with the boy in sharp focus. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン43: 豪華公衆トイレ内観×女子高生5人の制服姿×一括驚愕型
+
+**元ネタ画像の特徴**
+- パターン26（6人の美女×TOTOウォシュレット注視型）の系譜だが、今回は豪華な公衆トイレの「内観」が舞台で、5人の女子高生が制服姿で並んでいる構図
+- 背景は豪華な公衆トイレ内部：赤い個室ドアが並び、木目調の壁、桜模様の装飾パネル、赤いカーペット、奥に洗面台エリアが見える
+- 5人のイギリス人女子高生（紺ブレザー、白シャツ、ストライプネクタイ、スカートの制服姿）が並び、全員別の髪型・髪色（ブロンドストレート、ブロンドウェーブ、帽子をかぶったブロンド、茶髪ウェーブ、巻き毛の茶髪）で、驚きの種類と強度がそれぞれ異なる
+  - 左端：指差しをしながら口を開けて驚く表情、「⁉」記号
+  - 2人目：目を見開いて驚く表情、吹き出し「うわー…」
+  - 中央：麦わら帽子をかぶり、両手で口を覆う驚愕の表情、「‼」記号
+  - 4人目：片手で口を覆う驚きの表情、吹き出し「ホテルみたい‼」
+  - 右端：口を大きく開けて驚く表情、「⁉」記号
+- 上部見出し「「日本は不潔な国ですよね？」」黄色文字＋黒フチ、鍵カッコごと表示
+- 下段1行目「国際交流で渋々訪日したイギリスの女子高生」緑文字＋黒フチ
+- 下段2行目「日本の公衆トイレで絶句した理由」赤文字＋黒フチ
+
+**画像生成プロンプト（1枚で5人＋豪華トイレ内観を一括生成。全員別人・表情の種類を変えて描写）**
+```
+Photorealistic candid documentary-style photo inside an unusually
+upscale Japanese public restroom, red-painted stall doors lined up along
+one wall, warm wood-paneled walls with a subtle cherry-blossom pattern
+decoration, a red carpet runner on the floor, and a sink/vanity area
+softly visible further back, bright clean lighting.
+
+Five British teenage girls, about 16-17 years old, all wearing the same
+school uniform (navy blazer, white shirt, striped tie, skirt), stand
+together reacting to the space around them with genuine astonishment.
+Each girl has a clearly distinct face, hairstyle, and hair color (blonde
+straight, blonde wavy, blonde under a straw hat, brunette wavy, brunette
+curly) so they read as five separate individuals, not cloned faces.
+
+Left: pointing with one hand, mouth open in surprise, eyebrows raised.
+Second from left: wide-eyed astonishment, mouth open.
+Center: wearing a straw hat, both hands pressed over her mouth in
+genuine shock.
+Fourth: one hand pressed to her mouth, eyes wide with disbelief.
+Right: mouth wide open in surprise, eyebrows raised high.
+
+Each girl's reaction varies naturally in intensity and head angle, not
+synchronized or mirrored. Natural real-photo skin texture, avoid
+airbrushed CGI look, avoid uncanny valley, avoid identical or evenly-
+spaced lineup — stagger the group naturally. Soft bright indoor lighting.
+Medium-wide framing showing all five girls and the restroom interior
+together, generous negative space around the top for text compositing.
+Shot on 35mm lens, moderate depth of field with everyone reasonably in
+focus. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 「不潔な日本なんか行きたくないわ！…」（ロンドンの名門校に通う17歳のソフィア・ハートレーが、親友オリビアの幼少期の中国での体験談から「アジアは不衛生」という偏見を抱いたまま国際交流プログラムで渋々日本へ。代々木公園の清潔な公衆トイレや、誰に言われるでもなくゴミを拾う少年との出会いを通じて、積み重ねてきた偏見が覆されていくエピソード）
+
+**制作メモ**: 台本自体はソフィア1人の物語だが、サムネイルでは「渋々訪日したイギリスの女子高生グループ」として5人に象徴化してCTRを狙う、このジャンルでよくある手法（パターン29・33・39・40と同様）。今回は「豪華な公衆トイレの内観そのもの」が強いビジュアルフックになっているため、背景のディテール（赤い個室ドア、桜模様の壁、赤カーペット）を具体的に指定することが重要。
+
+**PhotoScape X 文字入れ指示**
+```
+■「⁉」記号（左端）
+色：黒文字
+位置：左端の女子生徒の頭上
+
+■吹き出し「うわー…」
+色：白背景＋黒文字
+位置：2人目の女子生徒の近く
+
+■「‼」記号（中央）
+色：黒文字
+位置：帽子をかぶった中央の女子生徒の頭上
+
+■吹き出し「ホテルみたい‼」
+色：白背景＋黒文字
+位置：4人目の女子生徒の近く
+
+■「⁉」記号（右端）
+色：黒文字
+位置：右端の女子生徒の頭上
+
+■上部見出し
+内容：「日本は不潔な国ですよね？」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：国際交流で渋々訪日したイギリスの女子高生
+色：緑＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：日本の公衆トイレで絶句した理由
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
