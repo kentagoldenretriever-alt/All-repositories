@@ -3253,6 +3253,80 @@ everyone reasonably in focus. 16:9 aspect ratio, no text, no logos.
 
 ---
 
+## パターン45: 海外ドッキリ番組の誘拐再現シーン×毅然とした日本人の介入型
+
+**元ネタ画像の特徴**
+- これまでにない新構図：テレビの社会実験（ドッキリ）番組の「隠しカメラ映像」を模した、やや粗い画質のドキュメンタリー風ショット
+- 左側：フードとマスクを着けた男性（誘拐犯役の俳優という設定）が、子供を両腕で抱え上げて連れ去ろうとする演技シーン。背景はスペインの街並み（駐車中の車、看板、青い標識、街路樹）
+- 右側：日本人男性（黒髪、メガネ、黒いジャケット）が腕を組み、毅然とした表情でその場に立っている。頭上に「‼」記号。手前にはプライバシー保護のため顔にモザイクがかけられた子供が描かれている
+- 画面左下にスペイン国旗、右下に日本国旗のアイコン
+- 上部見出し「「日本人は優しさと勇気も持っている…」」黄色文字＋黒フチ
+- 下段1行目「海外のドッキリ番組で誘拐事件発生！」水色（シアン）文字＋黒フチ、「誘拐事件発生！」部分のみ赤で強調
+- 下段2行目「居合わせた日本人の行動が…。視聴者が涙‼」赤文字＋黒フチ
+
+**画像生成プロンプト（テレビの社会実験番組の再現シーンであることを明示し、実際の暴力・苦痛描写を避けた安全な表現）**
+```
+Photorealistic documentary/hidden-camera style photo, slightly grainy
+surveillance-camera aesthetic, depicting a staged scene from a television
+social-experiment show filmed on a Spanish street (parked cars, shop
+signage, a blue pedestrian sign, street trees in the background).
+
+On the left, an actor playing the role of a stranger, wearing a hooded
+jacket and a face covering, is staged lifting a child into his arms as
+part of a scripted hidden-camera social experiment — this is clearly a
+TV production reenactment, not real violence; the child's expression is
+neutral and calm, as everyone involved is aware this is a scripted
+segment.
+
+On the right, a Japanese man in his 30s with short dark hair and glasses,
+wearing a black jacket, stands with arms crossed, his expression calm but
+resolute and firm, clearly intervening in the staged scenario. In front
+of him, a young child's face is deliberately obscured with a soft blur/
+mosaic effect for privacy, standing safely near the man.
+
+Documentary news-footage quality, naturalistic lighting, avoid airbrushed
+CGI look, avoid uncanny valley. Wide framing showing both the staged
+scene on the left and the intervening man on the right within the same
+frame, generous negative space around the top for text compositing. 16:9
+aspect ratio, no text, no logos, no watermarks.
+```
+
+**紐づく台本**: 「民度が高すぎる…」（ロンドンの社会実験番組プロデューサー、47歳のナサニエル・ハーグリーブスが、「人間は基本的に他人のために動かない」という20年来の確信を持ってマドリードで誘拐再現ドッキリを撮影。617人中1人しか声をかけなかった過去のロンドンでの実験結果を覆し、日本人女性と日本人留学生の男性が毅然と子供を守る行動を見せたことで、長年の確信が揺さぶられるエピソード）
+
+**制作メモ**: 「誘拐」という題材のため、画像生成プロンプトは必ず「テレビの社会実験番組の再現シーンである」ことを明示し、実際の暴力・子供の苦痛を連想させる表現（struggling, terrified, crying等）は避けること。子供の顔はプライバシー保護の演出として意図的にモザイク処理する体裁にする。台本では最初に介入したのは日本人女性だが、画像では日本人男性が描かれているため、台本の2人目のエピソード（日本人留学生の男性）に寄せた構成として扱うか、ユーザーの指示があれば女性に差し替える。
+
+**PhotoScape X 文字入れ指示**
+```
+■「‼」記号
+色：黒文字
+位置：日本人男性の頭上
+
+■国旗アイコン（2箇所）
+内容：スペイン国旗（左下）、日本国旗（右下）
+位置：画面左下、画面右下
+
+■上部見出し
+内容：「日本人は優しさと勇気も持っている…」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：海外のドッキリ番組で誘拐事件発生！
+色：水色（シアン）＋黒フチ、「誘拐事件発生！」のみ赤で強調
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：居合わせた日本人の行動が…。視聴者が涙‼
+色：赤＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
