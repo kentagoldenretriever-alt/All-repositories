@@ -189,16 +189,25 @@ def boom(seed=0):
     return x / np.max(np.abs(x))
 
 
+def smooth(x, k):
+    """移動平均(累積和で高速に計算)。"""
+    c = np.cumsum(np.concatenate([[0.0], x]))
+    lo = np.clip(np.arange(len(x)) - k // 2, 0, len(x))
+    hi = np.clip(np.arange(len(x)) + k // 2 + 1, 0, len(x))
+    return (c[hi] - c[lo]) / (hi - lo)
+
+
 def mix(duration, segs, shots):
     import wave
     w = wave.open(os.path.join(OUT, "narration.wav"))
     narr = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float64) / 32768
     n = len(narr)
     music = bgm(duration)[:n]
+    music = np.pad(music, (0, n - len(music)))
     # ナレーション中はBGMを下げる(ダッキング)
-    env = np.convolve(np.abs(narr), np.ones(4800) / 4800, mode="same")
+    env = smooth(np.abs(narr), 4800)
     duck = np.where(env > 0.01, 0.10, 0.22)
-    duck = np.convolve(duck, np.ones(24000) / 24000, mode="same")
+    duck = smooth(duck, 24000)[:n]
     fx = np.zeros(n)
     times = []
     for s in segs:
@@ -253,7 +262,7 @@ def main():
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-stats", "-f", "concat", "-safe", "0", "-i", lst,
            "-i", audio, "-vf", f"ass={os.path.join(OUT, 'subs.ass')}",
            "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-pix_fmt", "yuv420p",
-           "-c:a", "aac", "-b:a", "192k", "-ac", "2", "-shortest", "-movflags", "+faststart", final]
+           "-af", "loudnorm=I=-15:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "192k", "-ac", "2", "-ar", "48000", "-shortest", "-movflags", "+faststart", final]
     subprocess.run(cmd, check=True)
     print(final)
 
