@@ -4,8 +4,8 @@
 人物の見た目をそろえるため、キャラクターの描写は定数で共通化している。
 """
 
-NOAH = "a thin 10-year-old American boy with short light-brown hair and blue eyes"
-SARAH = "an American mother in her late 30s with long brown hair, tired kind face"
+NOAH = "a thin 10-year-old American boy (male child) with a short boyish haircut, light-brown hair and blue eyes"
+SARAH = "a 40-year-old American woman (adult mother, mature face, fine wrinkles) with shoulder-length brown hair, wearing a cardigan, tired kind face"
 TAKA = "a 68-year-old Japanese fireworks craftsman, tanned face, short gray-streaked hair, thick arms, navy work clothes with rolled sleeves"
 SATO = "a Japanese male doctor in his 40s with glasses and a white coat, calm expression"
 BENNETT = "an American male doctor in his 50s with a white coat and gray hair"
