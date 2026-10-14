@@ -9,8 +9,11 @@ import os
 import re
 import sys
 
+import asyncio
+import hashlib
+import subprocess
+
 import numpy as np
-import pyopenjtalk
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
@@ -51,7 +54,7 @@ READINGS = {
     "胸を衝かれ": "むねをつかれ",
 }
 
-MAX_CHUNK = 46  # 字幕1枚あたりの最大文字数(2行)
+MAX_CHUNK = 34  # 字幕1枚あたりの最大文字数(2行)
 
 GAP_CHUNK = 0.12
 GAP_SENT = 0.35
@@ -62,6 +65,7 @@ def parse(path):
     """script.txt を段落リストに変換: [(scene, speaker, text), ...] と段落区切り。"""
     items = []
     scene = "title"
+    block = 0
     para_break = False
     for raw in open(path, encoding="utf-8"):
         line = raw.strip()
@@ -69,6 +73,7 @@ def parse(path):
             m = re.match(r"#\s*scene:(\w+)", line)
             if m:
                 scene = m.group(1)
+                block += 1
             continue
         if not line:
             para_break = True
@@ -78,7 +83,7 @@ def parse(path):
             speaker, text = m.group(1), m.group(2).strip()
         else:
             speaker, text = "narr", line
-        items.append({"scene": scene, "speaker": speaker, "text": text,
+        items.append({"scene": scene, "block": block, "speaker": speaker, "text": text,
                       "para": para_break})
         para_break = False
     return items
@@ -143,11 +148,43 @@ def tts_text(text):
     return t
 
 
+# Edge TTS(Microsoftのニューラル音声)。参考チャンネルと同じくナレーター1人で全編を読む。
+EDGE_VOICE = os.environ.get("EDGE_VOICE", "ja-JP-NanamiNeural")
+EDGE_RATE = os.environ.get("EDGE_RATE", "+8%")
+CACHE = os.path.join(OUT, "tts_cache")
+
+
+def edge_path(text):
+    key = hashlib.sha1(f"{EDGE_VOICE}|{EDGE_RATE}|{text}".encode()).hexdigest()
+    return os.path.join(CACHE, key + ".mp3")
+
+
+async def edge_prefetch(texts, concurrency=8):
+    import edge_tts
+    os.makedirs(CACHE, exist_ok=True)
+    proxy = os.environ.get("HTTPS_PROXY")
+    sem = asyncio.Semaphore(concurrency)
+
+    async def one(t):
+        path = edge_path(t)
+        if os.path.exists(path) and os.path.getsize(path) > 0:
+            return
+        async with sem:
+            for attempt in range(5):
+                try:
+                    await edge_tts.Communicate(t, EDGE_VOICE, rate=EDGE_RATE, proxy=proxy).save(path)
+                    return
+                except Exception:
+                    await asyncio.sleep(2 ** attempt)
+            raise RuntimeError(f"TTS failed: {t}")
+
+    await asyncio.gather(*(one(t) for t in set(texts)))
+
+
 def synth(text, speaker):
-    half, speed = VOICES[speaker]
-    x, sr = pyopenjtalk.tts(tts_text(text), speed=speed, half_tone=half)
-    assert sr == SR, sr
-    x = x.astype(np.float64)
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", edge_path(tts_text(text)), "-f", "s16le",
+                          "-ac", "1", "-ar", str(SR), "-"], capture_output=True, check=True).stdout
+    x = np.frombuffer(raw, dtype=np.int16).astype(np.float64)
     # 前後の無音を詰める
     th = 200
     idx = np.where(np.abs(x) > th)[0]
@@ -159,6 +196,9 @@ def synth(text, speaker):
 def main():
     os.makedirs(OUT, exist_ok=True)
     items = parse(os.path.join(HERE, "script.txt"))
+    texts = [tts_text(c) for it in items for se in split_sentences(it["text"]) for c in split_chunk(se)]
+    asyncio.run(edge_prefetch(texts))
+    print(f"tts ready: {len(texts)} chunks")
     audio = [np.zeros(int(0.6 * SR))]
     t = 0.6
     segs = []
@@ -174,7 +214,7 @@ def main():
                 dur = len(x) / SR
                 segs.append({"start": round(t, 3), "end": round(t + dur, 3),
                              "text": ch, "speaker": it["speaker"],
-                             "scene": it["scene"]})
+                             "scene": it["scene"], "block": it["block"]})
                 audio.append(x)
                 t += dur
                 gap = GAP_CHUNK if ci < len(chunks) - 1 else GAP_SENT
