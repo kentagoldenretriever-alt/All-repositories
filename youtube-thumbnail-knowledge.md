@@ -3436,34 +3436,25 @@ the background softly blurred. 16:9 aspect ratio, no text, no logos.
   - 下段1行目「BBCが緊急報道を決めた日本の日常映像に」緑系＋黒フチ。
   - 下段2行目「不意に映った光景に世界が騒然」赤系＋黒フチ（最強調）。
 
-**画像生成プロンプト**
-
-①BBCスタジオ分割パネル（左右のキャスター反応ショット）
+**画像生成プロンプト（1枚で生成）**
 ```
-Split-screen composition, two separate news broadcast studios side by side, divided by a thin vertical line down the center.
+A single wide 16:9 photorealistic composite image styled as a news broadcast thumbnail, divided into three vertical sections within one seamless frame: a left studio panel, a center embedded photo panel (with a thin white border/frame around it, like a picture-in-picture video clip), and a right studio panel. Do not render this as three separate disconnected images — it must look like one cohesive broadcast graphic, with the center panel clearly inset and layered on top of the left/right studio background, slightly overlapping both.
 
-LEFT PANEL: A professional British news broadcast studio with warm red-toned lighting and backdrop, "BBC NEWS"-style signage visible in soft focus behind. Two news anchors seated at a modern curved news desk: a woman in her 30s with shoulder-length brown hair wearing a navy blazer, and a man in his 40s with short greying hair wearing a dark suit and tie. Both have genuinely startled, wide-eyed expressions, leaning slightly toward each other as if reacting live to breaking footage, mouths slightly open in surprise. Professional broadcast lighting, shallow depth of field, photorealistic, avoid airbrushed CGI look, avoid uncanny valley, candid documentary-style expression, not posed or symmetrical.
+LEFT SECTION: A professional British news broadcast studio with warm red-toned lighting and backdrop, "BBC NEWS"-style signage visible in soft focus behind. Two news anchors seated at a modern curved news desk: a woman in her 30s with shoulder-length brown hair wearing a navy blazer, and a man in his 40s with short greying hair wearing a dark suit and tie. Both have genuinely startled, wide-eyed expressions, leaning slightly toward each other as if reacting live to breaking footage, mouths slightly open in surprise. Professional broadcast lighting, photorealistic, avoid airbrushed CGI look, avoid uncanny valley, candid documentary-style expression, not posed or symmetrical.
 
-RIGHT PANEL: A professional British news broadcast studio with cool blue-toned lighting and backdrop, matching broadcast style but a different studio set. Two different news anchors at a curved desk: a man in his 50s with grey hair and wire-frame glasses wearing a dark suit, and a woman in her 30s with blonde hair in a tailored blazer. Both reacting with genuine shock, eyebrows raised, hand gesture mid-explanation, leaning forward toward their monitor. Professional broadcast lighting, shallow depth of field, photorealistic, avoid airbrushed CGI look, avoid uncanny valley.
+RIGHT SECTION: A professional British news broadcast studio with cool blue-toned lighting and backdrop, matching broadcast style but a visibly different studio set. Two different news anchors at a curved desk: a man in his 50s with grey hair and wire-frame glasses wearing a dark suit, and a woman in her 30s with blonde hair in a tailored blazer. Both reacting with genuine shock, eyebrows raised, one hand gesturing mid-explanation, leaning forward toward their monitor. Professional broadcast lighting, photorealistic, avoid airbrushed CGI look, avoid uncanny valley.
 
-Both panels: faces must be clearly different from each other (vary face shape, skin tone, hair color/style) to avoid a cloned-face AI look, natural asymmetrical poses, no perfectly mirrored symmetry between panels, 16:9 aspect ratio, leave clear negative space at the very top and bottom of the frame for text overlay, no text, no logos, no on-screen graphics.
-```
+CENTER INSET PANEL (smaller than the two studio sections, framed with a thin white border, positioned centered and slightly overlapping both studio panels): A candid documentary-style photograph of a quiet residential street in Japan. Three Japanese high school students in navy school uniforms, all wearing white cotton work gloves, bending down together on the sidewalk. Two girls with ponytails on either side and one boy in the middle, all crouching to pick up small pieces of litter (a crumpled can, a piece of paper) and placing it into a clear plastic trash bag held by one of them. Calm, focused, unselfconscious expressions, not posed or smiling at camera. Soft natural overcast daylight, muted residential street background softly out of focus.
 
-②中央埋め込み写真（学生服の高校生3人のゴミ拾い）
-```
-A candid documentary-style photograph taken on a quiet residential street in Japan, captured as if from a news broadcast's embedded video clip. Three Japanese high school students in navy sailor-style and standard school uniforms, all wearing white cotton work gloves, bending down together on the sidewalk. Two girls with ponytails on either side and one boy in the middle, all crouching to pick up small pieces of litter (a crumpled can, a piece of paper) and placing it carefully into a clear plastic trash bag held by one of them. Their expressions are calm, focused, unselfconscious — doing this naturally without noticing they're being watched, not smiling at camera, not posed. Soft natural daylight, slightly overcast, muted residential street background with houses and utility poles softly out of focus. Photorealistic, avoid airbrushed CGI look, avoid uncanny valley, slight asymmetry in poses and spacing between the three students, varied hair length and face shape so they don't look like clones, 16:9 aspect ratio, shot on a 50mm lens with shallow depth of field, no text, no logos, no visible brand names on uniforms.
+Overall: faces in the two studio sections must be clearly different from each other (vary face shape, skin tone, hair color/style) to avoid a cloned-face AI look, natural asymmetrical poses, no perfectly mirrored symmetry between left and right, the three students in the center must also have varied hair length and face shape so they don't look like clones. Leave clear negative space at the very top and bottom of the frame for text overlay. No text, no logos, no on-screen graphics, no visible brand names on uniforms.
 ```
 
 **紐づく台本**: イギリス人男性ジョナサン・ベイカー（42歳、リバプールの旅行会社経営者）が、42年間「日本は効率的だが冷たい国」という思い込みから一度も訪日しなかったが、上野駅で女子高生が誰にも見られていない状況で落ちていた空き缶を黙って拾う光景を目撃し、その思い込みが崩れる。その後、東京の小学校を訪問し、生徒主体の清掃活動を通じて「共に生きる力」という価値観を学ぶ、というドキュメンタリー構成の台本。
 
-**制作メモ**: パターン34・36・37などと同じ「海外メディアスタジオの反応×中央に日本の実写映像埋め込み」の変形パターン。今回はBBC側が左右2スタジオに分割され、それぞれ別のキャスター2人組が反応するという2重反応構図が特徴。中央の清掃映像は安全フィルターに引っかかる要素（子供への危険・苦痛描写）が一切ないため、パターン41・45のような問題は想定されない。3枚（左スタジオ・右スタジオ・中央写真）をPhotoScape X側で合成する前提で、画像生成は2プロンプトに分けている（中央写真は別途生成してリサイズ・中央配置する）。
+**制作メモ**: パターン34・36・37などと同じ「海外メディアスタジオの反応×中央に日本の実写映像埋め込み」の変形パターン。今回はBBC側が左右2スタジオに分割され、それぞれ別のキャスター2人組が反応するという2重反応構図が特徴。中央の清掃映像は安全フィルターに引っかかる要素（子供への危険・苦痛描写）が一切ないため、パターン41・45のような問題は想定されない。当初は左スタジオ・右スタジオ・中央写真を3枚に分けて生成しPhotoScape X側で合成する案だったが、ユーザーから「1枚で生成したい」との要望があり、単一プロンプトで3分割構図を一括生成する形に変更（パターン22の単一生成方式と同じ考え方）。
 
 **PhotoScape X 文字入れ指示**
 ```
-■レイアウト合成
-内容：①で生成した左右分割スタジオ画像をベースに、②で生成した中央写真を画面中央に縮小配置し、白または黒の細い枠線をつける
-位置：画面中央、横幅の中央40〜50%程度を占めるサイズ
-
 ■リアクション吹き出し（左スタジオ用）
 内容：⁉
 色：黒背景＋白文字（または白背景＋黒文字）の丸型吹き出し
