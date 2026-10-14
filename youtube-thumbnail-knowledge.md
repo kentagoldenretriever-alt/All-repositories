@@ -3352,6 +3352,76 @@ text. Shot on 50mm lens, shallow depth of field. 16:9 aspect ratio
 
 ---
 
+## パターン46: 警察官が幼児に目線を合わせる心温まる接写型
+
+**元ネタ画像の特徴**
+- パターン35（警察官の交通誘導接写×人物不在型）の派生だが、今回は警察官と幼児の心温まる交流そのものが主役
+- 道路上、白線、パトカーの一部が背景に見える
+- 中央：紺の制服・白い制帽の警察官が腰を落として膝をつき、1〜2歳くらいの幼児と目線の高さを合わせて、優しく目を細めた笑顔で話しかけている。手にはカードやお菓子のパッケージのようなものを持っている
+- 幼児（ダークブルーの服、短い黒髪）は、何かを指差しながら警察官を見上げている
+- 右端に別の警察官の足元がわずかに見切れている
+- 画面左上に日本国旗のアイコン
+- 上部見出し「「日本は神が存在しているのか？！」」黄色文字＋黒フチ
+- 下段1行目「わずか1分の映像が500万回再生」水色（シアン）文字＋黒フチ
+- 下段2行目「日本の異様な光景に世界中が絶句した理由」赤〜ピンク系グラデーション文字＋黒フチ
+
+**画像生成プロンプト（温かい日常シーンのため安全フィルターの問題は起きにくい）**
+```
+Photorealistic candid documentary-style photo on a Japanese street,
+white road markings and the edge of a parked police car softly visible
+in the background, natural daylight.
+
+A Japanese police officer in a navy-blue uniform and white peaked cap
+crouches down on one knee to meet the eye level of a toddler, about 1-2
+years old, wearing a dark blue shirt with short black hair. The officer
+holds a small card or snack package in his hands, smiling warmly with
+gently crinkled eyes, a genuinely kind and patient expression. The
+toddler points with one small hand, looking up at the officer with
+curious, open interest.
+
+At the right edge of the frame, the legs and feet of a second police
+officer are partially visible, softly out of focus.
+
+Natural real-photo skin texture, warm genuine candid expressions, avoid
+airbrushed CGI look, avoid uncanny valley. Soft natural daylight. Medium
+shot framing capturing both the officer and the toddler clearly, generous
+negative space around the top for text compositing. Shot on 50mm lens,
+shallow depth of field with the officer and toddler in sharp focus and
+the background softly blurred. 16:9 aspect ratio, no text, no logos.
+```
+
+**紐づく台本**: 未着信（このパターンは画像のみ先行で作成。台本が届き次第、物語の詳細をここに追記する）
+
+**制作メモ**: パターン35と同じ「警察官×日本の日常の心温まる光景」路線だが、今回は人物不在ではなく警察官と子供の交流そのものを見せる。子供が登場するが内容はポジティブな交流シーンのため、安全フィルターには通常引っかからない（パターン41・45のような「苦痛・危険」系の描写とは異なる点に注意）。
+
+**PhotoScape X 文字入れ指示**
+```
+■国旗アイコン
+内容：日本国旗
+位置：画面左上
+
+■上部見出し
+内容：「日本は神が存在しているのか？！」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：わずか1分の映像が500万回再生
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：日本の異様な光景に世界中が絶句した理由
+色：赤〜ピンク系グラデーション＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
