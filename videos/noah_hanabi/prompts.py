@@ -98,7 +98,7 @@ BLOCKS = [
      "busy Tokyo street with Japanese signs, strong summer sun and heat haze",
      f"{NOAH} sweating and tired in the Tokyo summer heat"],
     # 29 hotel
-    [f"{NOAH} lying alone in a hotel bed holding his head in pain, curtains closed",
+    [f"{NOAH} wearing a blue t-shirt, lying under a blanket in a hotel bed holding his head in pain, curtains closed",
      f"{SARAH} talking with a Japanese hotel receptionist woman who spreads out a map on the counter"],
     # 30 riverside
     ["small Japanese countryside train station in summer, cicadas, blue sky",
@@ -196,7 +196,7 @@ BLOCKS = [
     # 57 clinic_us
     [f"{SARAH} sitting in a doctor's office with hands clasped tightly, tense",
      f"{BENNETT} looking straight at {SARAH} and speaking seriously",
-     f"{SARAH} covering her face and crying with joy in a doctor's office",
+     f"{SARAH} with tears of joy streaming down her face, hand on her chest, in a doctor's office, no mask",
      f"{BENNETT} bowing his head apologetically"],
     # 58 surgery
     ["surgical team operating in a modern operating room, bright surgical lights"],
