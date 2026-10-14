@@ -42,7 +42,7 @@ BLOCKS = [
     ["modern CT scanner in a clean Japanese clinic room, white and bright"],
     # 13 clinic_jp
     ["small Japanese neighborhood clinic waiting room, clean and calm",
-     "Japanese radiologist operating a CT scanner from a control room"],
+     "Japanese radiology technician looking at a monitor in a CT control room"],
     # 14 midwest
     ["small American Midwest town with a factory chimney and fields, overcast sky",
      f"{SARAH} working in a factory line, wearing a work uniform"],
@@ -90,15 +90,15 @@ BLOCKS = [
     # 26 airplane
     [f"{NOAH} looking out of an airplane window with excitement, {SARAH} next to him"],
     # 27 airport
-    [f"{NOAH} and {SARAH} arriving at Narita airport arrival hall, holding hands",
+    ["Narita airport arrival hall with travelers and signs, bright modern interior",
      f"Japanese airport staff crouching to talk kindly to {NOAH} in a wheelchair",
      f"{SARAH} pushing {NOAH} in a wheelchair through a bright Japanese airport"],
     # 28 tokyo
-    [f"{NOAH} in a wheelchair laughing in Akihabara with anime billboards, {SARAH} smiling",
+    [f"{NOAH} sitting in a wheelchair laughing in front of colorful anime billboards in Akihabara",
      "busy Tokyo street with Japanese signs, strong summer sun and heat haze",
      f"{NOAH} sweating and tired in the Tokyo summer heat"],
     # 29 hotel
-    [f"{NOAH} lying in a hotel bed with a headache, curtains closed, {SARAH} sitting beside him",
+    [f"{NOAH} lying alone in a hotel bed holding his head in pain, curtains closed",
      f"{SARAH} talking with a Japanese hotel receptionist woman who spreads out a map on the counter"],
     # 30 riverside
     ["small Japanese countryside train station in summer, cicadas, blue sky",
@@ -113,7 +113,7 @@ BLOCKS = [
     # 33 lanterns
     [f"{NOAH} in a wheelchair holding a red paper lantern, surprised face",
      f"{TAKA} assembling bamboo poles while {NOAH} hands him lanterns",
-     f"{NOAH} talking excitedly to {SARAH} on the way back to the inn at dusk"],
+     f"{NOAH} talking excitedly on a Japanese street at dusk, lanterns behind"],
     # 34 inn_night
     [f"{TAKA} standing at the entrance of a Japanese inn at night holding a small paper bag"],
     # 35 senko
@@ -124,7 +124,7 @@ BLOCKS = [
     # 36 festival_morning
     [f"{NOAH} in a dark blue children's yukata looking at himself in a mirror in a Japanese tatami room, morning light"],
     # 37 festival
-    [f"{SARAH} taking photos of {NOAH} in a yukata with her smartphone",
+    [f"{SARAH} taking a photo with her smartphone at a Japanese festival, smiling with tears",
      "Japanese summer festival street at dusk lined with food stalls, yakisoba, candy apples, paper lanterns"],
     # 38 goldfish
     [f"{NOAH} in a dark blue yukata crouching at a goldfish scooping stall at a Japanese festival, paper lanterns",
@@ -135,10 +135,10 @@ BLOCKS = [
      f"{SARAH} showing a translation app on her smartphone to {TAKA}"],
     # 40 festival_dark
     [f"{NOAH} in a yukata holding his head in pain at a festival at night",
-     f"{SARAH} rushing to {NOAH} who has collapsed on the ground at a festival, people gathering"],
+     f"{SARAH} kneeling on the ground at a night festival, screaming in panic"],
     # 41 ambulance
     ["Japanese ambulance with red lights arriving at a summer festival at night, crowd making way",
-     "Japanese paramedic kneeling and looking into the eyes of a worried American mother"],
+     "Japanese paramedic in uniform kneeling and speaking gently at night, ambulance lights behind"],
     # 42 hospital_corridor
     [f"{SARAH} in a yukata sitting alone in a Japanese hospital corridor, holding papers",
      f"{SATO} coming out of a treatment room and speaking calmly to {SARAH}",
@@ -147,7 +147,7 @@ BLOCKS = [
     [f"{NOAH} lying in a hospital bed with an IV drip at night, looking at the ceiling",
      "hospital window at night showing only the concrete wall of the next building, faint colored glow",
      f"{NOAH} turning his face toward the window in a dark hospital room",
-     f"{SARAH} holding her son's cold hand by a hospital bed at night"],
+     "close-up of a mother's hand holding a child's hand on a hospital bed at night"],
     # 44 hospital_corridor
     [f"{SARAH} crying alone in a dim hospital corridor at night"],
     # 45 goldfish_bag
@@ -194,14 +194,14 @@ BLOCKS = [
     [f"{BENNETT} reading a document from Japan carefully in his office",
      f"{NOAH} smiling bravely in an American hospital bed before a medical test"],
     # 57 clinic_us
-    [f"{SARAH} and {NOAH} sitting in a doctor's office waiting for results, tense",
+    [f"{SARAH} sitting in a doctor's office with hands clasped tightly, tense",
      f"{BENNETT} looking straight at {SARAH} and speaking seriously",
-     f"{SARAH} covering her face and crying with joy, {NOAH} rubbing her back",
+     f"{SARAH} covering her face and crying with joy in a doctor's office",
      f"{BENNETT} bowing his head apologetically"],
     # 58 surgery
     ["surgical team operating in a modern operating room, bright surgical lights"],
     # 59 station
-    [f"{NOAH} with short hair and a small scar walking out of a small Japanese train station in summer with {SARAH}"],
+    ["small Japanese countryside train station platform in summer, blue sky"],
     # 60 riverside
     [f"{NOAH} walking ahead along a Japanese river embankment in summer, turning back to his mother"],
     # 61 workshop
@@ -213,18 +213,18 @@ BLOCKS = [
      f"{NOAH} watching intently without blinking in a workshop"],
     # 63 yukata
     [f"{NOAH} wearing a dark blue yukata whose sleeves are slightly too short, evening",
-     f"{SARAH} looking at her son in a yukata with tears of emotion"],
+     f"{SARAH} smiling with tears of emotion, evening light"],
     # 64 festival
     [f"Japanese kids running to greet {NOAH} at a goldfish stall at a summer festival at dusk"],
     # 65 fireworks_start
-    [f"{NOAH} and {SARAH} sitting on a river embankment at night looking up at the sky, waiting"],
+    ["night riverbank in Japan crowded with people in yukata waiting for fireworks, paper lanterns"],
     # 66 fireworks
     ["giant perfectly round golden firework bursting over a Japanese river at night",
      f"{NOAH}'s face lit by fireworks, looking up in awe, night"],
     # 67 fireworks_gold
     [f"{NOAH} with tears on his cheeks looking up at fireworks at night",
      "golden fireworks reflected in a river at night",
-     f"{SARAH} and {NOAH} sitting together on a riverbank under fireworks, seen from behind"],
+     "silhouettes of a mother and a small boy sitting on a riverbank watching fireworks, seen from behind"],
     # 68 fireworks_crowd
     ["huge crowd of people on both river banks looking up at round fireworks at night, silhouettes"],
     # 69 fireworks_finale
@@ -243,10 +243,10 @@ BLOCKS = [
     # 73 midwest_summer
     [f"{NOAH} healthy and smiling with friends at an American school playground in summer"],
     # 74 riverside
-    [f"{NOAH} and {SARAH} walking along a Japanese river embankment in summer, happy",
+    ["green Japanese river embankment path in summer with blue sky",
      f"{NOAH} talking eagerly to {TAKA} in the fireworks workshop"],
     # 75 photo_wall
-    [f"framed photo on a bedroom wall of {NOAH} in a yukata, {SARAH}, and {TAKA} with Japanese kids by a river",
+    ["framed family photograph hanging on a boy's bedroom wall next to anime posters",
      "a single small firework star pellet on a boy's desk next to anime figures, soft light"],
     # 76 scan_compare
     [f"{SATO} looking at two brain scans, thoughtful"],
@@ -258,7 +258,7 @@ BLOCKS = [
     ["round Japanese fireworks seen from a river bank with many people looking up, night",
      "perfectly symmetrical round firework, close view"],
     # 80 ending
-    [f"{NOAH} and {SARAH} smiling together under summer fireworks"],
+    ["big round fireworks over a Japanese river at night with crowd silhouettes"],
 ]
 
 
