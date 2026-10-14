@@ -4,10 +4,10 @@
 人物の見た目をそろえるため、キャラクターの描写は定数で共通化している。
 """
 
-NOAH = "a thin 10-year-old American boy (male child) with a short boyish haircut, light-brown hair and blue eyes"
-SARAH = "a 40-year-old American woman (adult mother, mature face, fine wrinkles) with shoulder-length brown hair, wearing a cardigan, tired kind face"
-TAKA = "a 68-year-old Japanese fireworks craftsman, tanned face, short gray-streaked hair, thick arms, navy work clothes with rolled sleeves"
-SATO = "a Japanese male doctor in his 40s with glasses and a white coat, calm expression"
+NOAH = "a thin 10-year-old Caucasian American boy (male child, Western face) with a short boyish haircut, light-brown hair and blue eyes"
+SARAH = "a 40-year-old Caucasian American woman (adult mother, Western face, mature, fine wrinkles) with shoulder-length brown hair, wearing a cardigan"
+TAKA = "an elderly Japanese MAN aged 68 (male, grandfather, masculine face with gray stubble), tanned, very short gray hair, thick arms, navy work clothes"
+SATO = "a Japanese MAN doctor in his 40s (male, short black hair, glasses, white coat), calm expression"
 BENNETT = "an American male doctor in his 50s with a white coat and gray hair"
 STYLE = "cinematic photograph, realistic, natural lighting, shallow depth of field, 35mm film look"
 
@@ -152,7 +152,7 @@ BLOCKS = [
     [f"{SARAH} crying alone in a dim hospital corridor at night"],
     # 45 goldfish_bag
     ["a plastic bag with one small red goldfish placed beside a hospital pillow at night",
-     f"{SARAH} sitting beside her sleeping son in a hospital room at night"],
+     f"{SARAH} sitting on a chair watching her sleeping 10-year-old son {NOAH} in a hospital bed at night"],
     # 46 hospital_day
     [f"{TAKA} in work clothes standing at the door of a hospital room holding a paper bag",
      f"{NOAH} sitting up in a hospital bed looking surprised",

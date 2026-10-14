@@ -42,7 +42,7 @@ def main():
             path = os.path.join(OUT, name + ".jpg")
             if os.path.exists(path) and not only:
                 continue
-            ok = fetch(prompt, seed=bi * 100 + k + (int(time.time()) if only else 0), path=path)
+            ok = fetch(prompt, seed=bi * 100 + k + int(os.environ.get("SEED_OFFSET", "0")), path=path)
             print(f"{name} {'ok' if ok else 'FAILED'}", flush=True)
 
 
