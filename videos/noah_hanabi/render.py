@@ -100,17 +100,28 @@ def build_shots(segs, duration):
     return shots
 
 
+def count_frames(path):
+    """書き出し済みカットのフレーム数(中断で途中までしか無いものを検出する)。"""
+    r = subprocess.run(["ffprobe", "-v", "error", "-count_packets", "-select_streams", "v",
+                        "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", path],
+                       capture_output=True, text=True)
+    try:
+        return int(r.stdout.strip())
+    except ValueError:
+        return -1
+
+
 def render_shot(args):
     i, sh = args
     path = os.path.join(SHOTS, f"{i:04d}.mp4")
-    if os.path.exists(path):
-        return path
     dur = sh["end"] - sh["start"]
+    frames = max(1, int(round(dur * FPS)))
+    if os.path.exists(path) and count_frames(path) == frames:
+        return path
     img = os.path.join(OUT, "scenes", f"{sh['scene']}.png")
     # ゆっくりズーム&パン。画像を一度大きく拡大しておき、サブピクセルの揺れを抑える
     z0, z1 = (1.0, 1.08) if i % 2 == 0 else (1.08, 1.0)
     dx = [0.0, 1.0, 0.5][i % 3]
-    frames = max(1, int(round(dur * FPS)))
     zexpr = f"{z0}+({z1}-{z0})*on/{frames}"
     vf = (f"scale=3840:-1,zoompan=z='{zexpr}':"
           f"x='(iw-iw/zoom)*{dx}':y='(ih-ih/zoom)/2':d={frames}:s={VW}x{VH}:fps={FPS},"
