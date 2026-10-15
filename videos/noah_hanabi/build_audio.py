@@ -212,8 +212,10 @@ def main():
              for se in split_sentences(it["text"]) for c in split_chunk(se)]
     asyncio.run(edge_prefetch(texts))
     print(f"tts ready: {len(texts)} chunks")
-    audio = [np.zeros(int(0.6 * SR))]
-    t = 0.6
+    # 冒頭は「ドーン」という効果音から始めるので、ナレーションは少し遅らせる
+    lead = 1.0
+    audio = [np.zeros(int(lead * SR))]
+    t = lead
     segs, inserts = [], []
     for it in items:
         if it["para"] and segs:

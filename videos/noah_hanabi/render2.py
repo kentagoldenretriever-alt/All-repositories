@@ -61,6 +61,7 @@ WrapStyle: 2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,{FONT_NAME},104,&H0000EEFF,&H0000EEFF,&H00000000,&H00000000,0,0,0,0,100,100,6,0,1,9,0,5,40,40,0,1
 Style: Sub,{FONT_NAME},74,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,7,0,1,2,0,5,60,60,0,1
 
 [Events]
@@ -73,6 +74,14 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         text = s["text"]
         if s["speaker"] != "narr" and not text.startswith("「"):
             text = "「" + text + "」"
+        if i == 0:
+            # 冒頭のひと言は、画面中央に大きく出し、手前に近づいてくるように拡大する
+            hold = segs[1]["start"] if len(segs) > 1 else end
+            dur_ms = int((hold - s["start"]) * 1000)
+            lines.append(f"Dialogue: 1,{ts(s['start'])},{ts(hold)},Hook,,0,0,0,,"
+                         f"{{\\pos({VW // 2},{BAR + IMG_H // 2 - 40})\\fscx50\\fscy50\\fad(150,250)"
+                         f"\\t(0,{dur_ms},0.6,\\fscx135\\fscy135)}}{wrap(text, 12)}")
+            continue
         lines.append(f"Dialogue: 0,{ts(s['start'])},{ts(end)},Sub,,0,0,0,,{{\\pos({VW // 2},{cy})}}{wrap(text)}")
 
     open(path, "w", encoding="utf-8").write(head + "\n".join(lines) + "\n")

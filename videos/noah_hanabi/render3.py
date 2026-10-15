@@ -107,6 +107,9 @@ def main():
     for k, sh in enumerate(scene_shots):
         sh["end"] = scene_shots[k + 1]["start"] if k + 1 < len(scene_shots) else duration
     overlays = []
+    boom = os.path.join(assets, "opening_boom.mp3")
+    if os.path.exists(boom):
+        overlays.append({"path": boom, "start": 0.0, "gain": 1.0})
     if ending:
         ending["path"] = os.path.join(assets, f"{ending['name']}.mp4")
         overlays.append({"path": ending["path"], "start": ending["start"], "gain": 0.8})
