@@ -25,22 +25,24 @@ FPS = 30
 VW, VH = 1920, 1080
 IMG_H = 810                     # 1920x810 = 2.37:1
 BAR = (VH - IMG_H) // 2         # 上下の黒帯 135px
-BAND_H = 150                    # 字幕用の半透明帯
+BAND_H = 210                    # 字幕用の半透明帯(2行が入る高さ)
 BAND_Y = BAR + IMG_H - BAND_H
 MIN_SHOT = 7.0                  # 1枚の画像を最低何秒見せるか
 
-FONT_NAME = os.environ.get("SUB_FONT", "Noto Sans CJK JP")
+FONT_NAME = os.environ.get("SUB_FONT", "Noto Sans CJK JP Black")
 
 
-def wrap(text, width=22):
-    """1行22文字を目安に、読点や助詞の後ろで2行に折り返す。"""
+def wrap(text, width=20):
+    """1行20文字を目安に、読点や助詞の後ろで2行に折り返す。"""
     if len(text) <= width:
         return text
     mid = len(text) / 2
     best, score = None, 1e9
     for i in range(5, len(text) - 3):
-        prev = text[i - 1]
-        if prev in "、。」？?！!" or prev in "はがをにでとものへ":
+        prev, nxt = text[i - 1], text[i]
+        hira = "\u3041" <= nxt <= "\u309f"
+        # 句読点の後ろ、または助詞の後ろで次が漢字・カタカナのところだけで改行する
+        if prev in "、。」？?！!" or (prev in "はがをにでとものへ" and not hira):
             sc = abs(i - mid) - (5 if prev in "、。」" else 0)
             if sc < score and max(i, len(text) - i) <= width + 4:
                 best, score = i, sc
@@ -59,7 +61,7 @@ WrapStyle: 2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Sub,{FONT_NAME},56,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,3,0,1,2,0,5,80,80,0,1
+Style: Sub,{FONT_NAME},74,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,7,0,1,2,0,5,60,60,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -118,7 +120,7 @@ def render_shot(args):
           f"zoompan=z='{z0}+({z1}-{z0})*on/{frames}':x='(iw-iw/zoom)*{dx}':y='(ih-ih/zoom)/2':"
           f"d={frames}:s={VW}x{IMG_H}:fps={FPS},"
           f"pad={VW}:{VH}:0:{BAR}:black,"
-          f"drawbox=x=0:y={BAND_Y}:w={VW}:h={BAND_H}:color=black@0.55:t=fill,format=yuv420p")
+          f"drawbox=x=0:y={BAND_Y}:w={VW}:h={BAND_H}:color=black@0.62:t=fill,format=yuv420p")
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", img, "-vf", vf, "-frames:v", str(frames),
            "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", path]
     subprocess.run(cmd, check=True)

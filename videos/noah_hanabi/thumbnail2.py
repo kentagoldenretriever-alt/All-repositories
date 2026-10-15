@@ -44,7 +44,7 @@ def us_flag(w):
 
 def main():
     src = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "out", "images", "b01_0.jpg")
-    bg = Image.open(src).convert("RGB")
+    bg = Image.open(src).convert("L").convert("RGB")  # ヒット動画に合わせてモノクロ
     # 背景を上 62% に敷く
     top_h = int(H * 0.62)
     scale = max(W / bg.width, top_h / bg.height)
@@ -54,21 +54,24 @@ def main():
     canvas.paste(bg.crop((x0, 0, x0 + W, top_h)), (0, 0))
     d = ImageDraw.Draw(canvas)
 
-    quote = "「僕、大人になれないんでしょう？」"
-    f = fit_font(d, quote, W - 30, 86)
-    outlined(d, ((W - d.textlength(quote, font=f)) / 2, 8), quote, f, (255, 238, 0), (0, 0, 0), 9)
+    quote = "「僕、日本に行きたい…」"
+    f = fit_font(d, quote, W - 30, 96)
+    outlined(d, ((W - d.textlength(quote, font=f)) / 2, 6), quote, f, (255, 238, 0), (0, 0, 0), 9)
 
-    line1 = "「余命1年」と告げられた少年"
-    f1 = fit_font(d, line1, W - 170, 74)
-    w1 = d.textlength(line1, font=f1)
-    flag = us_flag(100)
-    x1 = (W - w1 - flag.width - 16) / 2
-    outlined(d, (x1, top_h + 4), line1, f1, (0, 225, 255), (0, 0, 0), 7)
-    canvas.paste(flag, (int(x1 + w1 + 16), top_h + 22))
+    flag = us_flag(170)
+    canvas.paste(flag, (36, 150))
 
-    line2 = "日本人医師の“ある疑問”が奇跡を起こす"
-    f2 = fit_font(d, line2, W - 30, 90)
-    outlined(d, ((W - d.textlength(line2, font=f2)) / 2, top_h + 120), line2, f2, (235, 20, 20), (255, 255, 255), 6)
+    small = "ママ、僕、日本に行きたい…"
+    fs = ImageFont.truetype(BLACK, 34)
+    outlined(d, (W - d.textlength(small, font=fs) - 60, top_h - 70), small, fs, (255, 255, 255), (0, 0, 0), 4)
+
+    line1 = "余命宣告された少年の最後の願いを叶えに"
+    f1 = fit_font(d, line1, W - 20, 84)
+    outlined(d, ((W - d.textlength(line1, font=f1)) / 2, top_h + 8), line1, f1, (0, 230, 255), (0, 0, 0), 7)
+
+    line2 = "訪れた日本で起きた奇跡とは？"
+    f2 = fit_font(d, line2, W - 20, 104)
+    outlined(d, ((W - d.textlength(line2, font=f2)) / 2, top_h + 118), line2, f2, (235, 20, 20), (0, 0, 0), 7)
 
     out = os.path.join(HERE, "out", "thumbnail_v2.png")
     canvas.save(out)
