@@ -79,6 +79,11 @@ def parse(path):
         if not line:
             para_break = True
             continue
+        m = re.match(r"^@insert:(\w+)$", line)
+        if m:
+            items.append({"insert": m.group(1), "scene": scene, "block": block, "para": para_break})
+            para_break = False
+            continue
         m = re.match(r"^([A-Z])\|(.*)$", line)
         if m:
             speaker, text = m.group(1), m.group(2).strip()
@@ -194,19 +199,34 @@ def synth(text, speaker):
     return x
 
 
+def media_duration(path):
+    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path],
+                       capture_output=True, text=True, check=True)
+    return float(r.stdout.strip())
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
     items = parse(os.path.join(HERE, "script.txt"))
-    texts = [tts_text(c) for it in items for se in split_sentences(it["text"]) for c in split_chunk(se)]
+    texts = [tts_text(c) for it in items if "text" in it
+             for se in split_sentences(it["text"]) for c in split_chunk(se)]
     asyncio.run(edge_prefetch(texts))
     print(f"tts ready: {len(texts)} chunks")
     audio = [np.zeros(int(0.6 * SR))]
     t = 0.6
-    segs = []
+    segs, inserts = [], []
     for it in items:
         if it["para"] and segs:
             audio.append(np.zeros(int(GAP_PARA * SR)))
             t += GAP_PARA
+        if "insert" in it:
+            # 素材動画(自前の音声付き)を流す間は、ナレーションを無音にしておく
+            dur = media_duration(os.path.join(HERE, "assets", f"{it['insert']}.mp4"))
+            inserts.append({"name": it["insert"], "start": round(t, 3), "end": round(t + dur, 3)})
+            audio.append(np.zeros(int(dur * SR)))
+            t += dur + GAP_SENT
+            audio.append(np.zeros(int(GAP_SENT * SR)))
+            continue
         sents = split_sentences(it["text"])
         for si, sent in enumerate(sents):
             chunks = split_chunk(sent)
@@ -223,8 +243,18 @@ def main():
                 t += gap
         sys.stdout.write(f"\r{len(segs)} chunks, {t/60:.1f} min")
         sys.stdout.flush()
-    audio.append(np.zeros(int(2.0 * SR)))
-    t += 2.0
+    # 終了画面(グリーンバックの登録ボタン)を最後の「チャンネル登録」の呼びかけから重ねる。
+    # アニメーションが最後まで流れるよう、末尾の無音を延ばす
+    ending = None
+    end_asset = os.path.join(HERE, "assets", "ending_greenscreen.mp4")
+    cta_segs = [sg for sg in segs if "チャンネル登録" in sg["text"]]
+    if os.path.exists(end_asset) and cta_segs:
+        start = cta_segs[-1]["start"]
+        ending = {"name": "ending_greenscreen", "start": start,
+                  "end": round(start + media_duration(end_asset), 3)}
+    tail = max(2.0, (ending["end"] + 0.5 - t) if ending else 0)
+    audio.append(np.zeros(int(tail * SR)))
+    t += tail
     y = np.concatenate(audio)
     peak = np.max(np.abs(y)) or 1
     y = (y / peak * 0.9 * 32767).astype(np.int16)
@@ -235,7 +265,7 @@ def main():
     w.setframerate(SR)
     w.writeframes(y.tobytes())
     w.close()
-    json.dump({"duration": round(len(y) / SR, 3), "segments": segs},
+    json.dump({"duration": round(len(y) / SR, 3), "segments": segs, "inserts": inserts, "ending": ending},
               open(os.path.join(OUT, "segments.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
     print(f"\nduration {len(y)/SR/60:.1f} min, {len(segs)} segments")

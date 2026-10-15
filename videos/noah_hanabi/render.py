@@ -208,7 +208,16 @@ def smooth(x, k):
     return (c[hi] - c[lo]) / (hi - lo)
 
 
-def mix(duration, segs, shots):
+def load_audio(path, n_max=None):
+    """動画・音声ファイルの音声を 48kHz モノラルの配列で読み込む。"""
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-vn", "-f", "s16le", "-ac", "1",
+                          "-ar", str(SR), "-"], capture_output=True, check=True).stdout
+    return np.frombuffer(raw, dtype=np.int16).astype(np.float64) / 32768
+
+
+def mix(duration, segs, shots, inserts=(), overlays=()):
+    """inserts: 素材動画を差し込む区間。BGM と効果音を止め、素材の音声を流す。
+    overlays: 映像に重ねる素材。BGM はそのままで、素材の音声を足す。"""
     import wave
     w = wave.open(os.path.join(OUT, "narration.wav"))
     narr = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float64) / 32768
@@ -240,7 +249,19 @@ def mix(duration, segs, shots):
         s = int(max(0, t0) * SR)
         e = min(n, s + len(b))
         fx[s:e] += b[:e - s] * 0.22
-    y = narr * 0.95 + music * duck + fx
+    gate = np.ones(n)
+    extra = np.zeros(n)
+    for ins in inserts:
+        s0, e0 = int(ins["start"] * SR), min(n, int(ins["end"] * SR))
+        gate[max(0, s0 - 2400):e0 + 2400] = 0.0
+        a = load_audio(ins["path"])
+        extra[s0:s0 + len(a)][:n - s0] += a[:max(0, min(len(a), n - s0))]
+    gate = smooth(gate, 4800)
+    for ov in overlays:
+        s0 = int(ov["start"] * SR)
+        a = load_audio(ov["path"]) * ov.get("gain", 1.0)
+        extra[s0:s0 + len(a)][:n - s0] += a[:max(0, min(len(a), n - s0))]
+    y = narr * 0.95 + (music * duck + fx) * gate + extra
     y = y / max(1.0, np.max(np.abs(y)) / 0.97)
     out = (y * 32767).astype(np.int16)
     path = os.path.join(OUT, "mix.wav")

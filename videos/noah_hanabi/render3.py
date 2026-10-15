@@ -44,12 +44,38 @@ def build_shots(segs, duration, choices):
     return shots
 
 
+def splice_inserts(shots, inserts):
+    """差し込み区間にかかるショットを切り分け、その区間を素材動画のショットに置き換える。"""
+    for ins in inserts:
+        out = []
+        for sh in shots:
+            if sh["end"] <= ins["start"] or sh["start"] >= ins["end"]:
+                out.append(sh)
+                continue
+            if sh["start"] < ins["start"]:
+                out.append({**sh, "end": ins["start"]})
+            if not any(o.get("insert") == ins["path"] for o in out):
+                out.append({"insert": ins["path"], "start": ins["start"], "end": ins["end"]})
+            if sh["end"] > ins["end"]:
+                out.append({**sh, "start": ins["end"]})
+        shots = out
+    return shots
+
+
 def render_shot(args):
     i, sh = args
     path = os.path.join(SHOTS, f"{i:04d}.mp4")
     dur = sh["end"] - sh["start"]
     frames = max(1, int(round(dur * FPS)))
     if os.path.exists(path) and count_frames(path) == frames:
+        return path
+    if "insert" in sh:
+        # 差し込み素材は黒帯や字幕帯を付けず、そのまま全画面で流す
+        vf = f"fps={FPS},scale={VW}:{VH}:force_original_aspect_ratio=decrease,pad={VW}:{VH}:-1:-1:black,setsar=1,format=yuv420p"
+        cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", sh["insert"], "-an", "-vf", vf + ",tpad=stop_mode=clone:stop=-1",
+               "-frames:v", str(frames), "-c:v", "libx264", "-preset", "veryfast", "-crf", "18",
+               "-pix_fmt", "yuv420p", path]
+        subprocess.run(cmd, check=True)
         return path
     src = os.path.join(CLIPS, f"{sh['clip']}.mp4")
     vf = (f"fps={FPS},scale={VW}:{IMG_H}:force_original_aspect_ratio=increase,crop={VW}:{IMG_H},setsar=1,"
@@ -67,7 +93,10 @@ def main():
     segs, duration = data["segments"], data["duration"]
     choices = json.load(open(os.path.join(OUT, "clip_choices.json")))
     os.makedirs(SHOTS, exist_ok=True)
-    shots = build_shots(segs, duration, choices)
+    assets = os.path.join(os.path.dirname(OUT), "assets")
+    inserts = [{**i, "path": os.path.join(assets, f"{i['name']}.mp4")} for i in data.get("inserts", [])]
+    ending = data.get("ending")
+    shots = splice_inserts(build_shots(segs, duration, choices), inserts)
     print(f"{len(shots)} shots, {duration/60:.1f} min", flush=True)
     ass = os.path.join(OUT, "subs_v3.ass")
     write_ass(segs, ass)
@@ -77,7 +106,11 @@ def main():
             scene_shots.append({"scene": s["scene"], "start": s["start"]})
     for k, sh in enumerate(scene_shots):
         sh["end"] = scene_shots[k + 1]["start"] if k + 1 < len(scene_shots) else duration
-    audio = mix(duration, segs, scene_shots)
+    overlays = []
+    if ending:
+        ending["path"] = os.path.join(assets, f"{ending['name']}.mp4")
+        overlays.append({"path": ending["path"], "start": ending["start"], "gain": 0.8})
+    audio = mix(duration, segs, scene_shots, inserts=inserts, overlays=overlays)
     print("audio mixed", flush=True)
     with ThreadPoolExecutor(4) as ex:
         paths = list(ex.map(render_shot, enumerate(shots)))
@@ -85,8 +118,18 @@ def main():
     lst = os.path.join(OUT, "shots_v3.txt")
     open(lst, "w").write("".join(f"file '{p}'\n" for p in paths))
     final = os.path.join(OUT, "noah_hanabi_v3.mp4")
+    if ending:
+        # 終了画面: グリーンバックを抜いて、最後の呼びかけに合わせて重ねる
+        inputs = ["-i", ending["path"]]
+        graph = (f"[0:v]ass={ass}:fontsdir={FONTS}[base];"
+                 f"[2:v]fps={FPS},scale={VW}:{VH},chromakey=0x01FC00:0.18:0.06,"
+                 f"setpts=PTS+{ending['start']}/TB[ov];"
+                 f"[base][ov]overlay=eof_action=pass:format=auto[v]")
+        vargs = inputs + ["-filter_complex", graph, "-map", "[v]", "-map", "1:a"]
+    else:
+        vargs = ["-vf", f"ass={ass}:fontsdir={FONTS}"]
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-stats", "-f", "concat", "-safe", "0", "-i", lst,
-           "-i", audio, "-vf", f"ass={ass}:fontsdir={FONTS}",
+           "-i", audio] + vargs + [
            "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-pix_fmt", "yuv420p",
            "-af", "loudnorm=I=-15:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "192k", "-ac", "2", "-ar", "48000",
            "-shortest", "-movflags", "+faststart", final]
