@@ -61,6 +61,7 @@ WrapStyle: 2
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cta,{FONT_NAME},84,&H00FFFFFF,&H00FFFFFF,&H001A1AE6,&H001A1AE6,0,0,0,0,100,100,6,0,3,22,0,5,0,0,0,1
 Style: Sub,{FONT_NAME},74,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,7,0,1,2,0,5,60,60,0,1
 
 [Events]
@@ -74,6 +75,9 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         if s["speaker"] != "narr" and not text.startswith("「"):
             text = "「" + text + "」"
         lines.append(f"Dialogue: 0,{ts(s['start'])},{ts(end)},Sub,,0,0,0,,{{\\pos({VW // 2},{cy})}}{wrap(text)}")
+        if "チャンネル登録" in text:
+            # 登録を呼びかけている間は、画面上部に赤い「チャンネル登録」ボタンを出す
+            lines.append(f"Dialogue: 1,{ts(s['start'])},{ts(end)},Cta,,0,0,0,,{{\\pos({VW // 2},{BAR + 170})\\fad(200,200)}}チャンネル登録")
     open(path, "w", encoding="utf-8").write(head + "\n".join(lines) + "\n")
 
 
