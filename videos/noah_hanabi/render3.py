@@ -67,7 +67,10 @@ def render_shot(args):
     path = os.path.join(SHOTS, f"{i:04d}.mp4")
     dur = sh["end"] - sh["start"]
     frames = max(1, int(round(dur * FPS)))
-    if os.path.exists(path) and count_frames(path) == frames:
+    fresh = os.path.exists(path) and count_frames(path) == frames
+    if fresh and "insert" in sh and os.path.getmtime(sh["insert"]) > os.path.getmtime(path):
+        fresh = False  # 差し込み素材が差し替えられたら作り直す
+    if fresh:
         return path
     if "insert" in sh:
         # 差し込み素材は黒帯や字幕帯を付けず、そのまま全画面で流す
