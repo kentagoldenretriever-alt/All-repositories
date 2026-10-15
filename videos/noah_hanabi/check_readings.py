@@ -9,9 +9,6 @@ import os
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
-import subprocess
-
-import numpy as np
 import pyopenjtalk
 
 import build_audio
@@ -35,10 +32,7 @@ def main():
     for i, s in enumerate(segs):
         spoken = build_audio.tts_text(s["text"])
         path = build_audio.edge_path(spoken)
-        raw = subprocess.run(["ffmpeg", "-v", "error", "-i", path, "-f", "s16le", "-ac", "1", "-ar", "16000", "-"],
-                             capture_output=True, check=True).stdout
-        audio = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768
-        res, _ = model.transcribe(audio, language="ja", beam_size=1, vad_filter=False,
+        res, _ = model.transcribe(path, language="ja", beam_size=1, vad_filter=False,
                                   initial_prompt="新幹線 TGV アラン クレマン 田中 美咲 修一 レア")
         heard = "".join(r.text for r in res)
         a, b = kana(spoken), kana(heard)
