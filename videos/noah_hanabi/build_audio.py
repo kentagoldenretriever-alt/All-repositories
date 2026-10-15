@@ -115,6 +115,31 @@ def split_sentences(text):
     return [s for s in out if s]
 
 
+def word_cut(text):
+    """単語の境目のうち、文の真ん中に近い位置を返す。
+
+    助詞・助動詞の直後を優先し、次の語が助詞・助動詞・補助的な動詞(「いる」など)なら避ける。
+    """
+    import pyopenjtalk
+    nodes, pos = [], 0
+    for node in pyopenjtalk.run_frontend(text):
+        idx = text.find(node["string"], pos)
+        if idx < 0:
+            continue
+        pos = idx + len(node["string"])
+        nodes.append((pos, node))
+    cands = []
+    for k, (end, node) in enumerate(nodes[:-1]):
+        nxt = nodes[k + 1][1]
+        if not 4 <= end <= len(text) - 4:
+            continue
+        if nxt["pos"] in ("助詞", "助動詞") or nxt.get("pos_group1") in ("非自立", "接尾"):
+            continue
+        bonus = 6 if node["pos"] in ("助詞", "助動詞") else 0
+        cands.append((abs(end - len(text) / 2) - bonus, end))
+    return min(cands)[1] if cands else len(text) // 2
+
+
 def split_chunk(sent):
     """長い文を読点で分割して字幕1枚に収める。"""
     if len(sent) <= MAX_CHUNK:
@@ -129,11 +154,11 @@ def split_chunk(sent):
             buf += p
     if buf:
         chunks.append(buf)
-    # それでも長いものは機械的に半分にする
+    # それでも長いものは、単語の切れ目(できれば助詞の後ろ)で真ん中に近いところから分ける
     final = []
     for c in chunks:
         while len(c) > MAX_CHUNK:
-            cut = len(c) // 2
+            cut = word_cut(c)
             final.append(c[:cut])
             c = c[cut:]
         final.append(c)
