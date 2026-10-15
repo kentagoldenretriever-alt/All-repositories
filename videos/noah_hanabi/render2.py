@@ -16,11 +16,13 @@ from concurrent.futures import ThreadPoolExecutor
 from prompts import BLOCKS
 from render import count_frames, mix, ts
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+CODE_DIR = os.path.dirname(os.path.abspath(__file__))
+# 別の動画を作るときは PROJECT_DIR に、その動画のフォルダ(script.txt などがある場所)を指定する
+HERE = os.environ.get("PROJECT_DIR", CODE_DIR)
 OUT = os.path.join(HERE, "out")
 IMAGES = os.path.join(OUT, "images")
 SHOTS = os.path.join(OUT, "shots_v2")
-FONTS = os.path.join(HERE, "fonts")
+FONTS = os.path.join(CODE_DIR, "fonts")
 FPS = 30
 VW, VH = 1920, 1080
 IMG_H = 810                     # 1920x810 = 2.37:1
@@ -74,13 +76,18 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         text = s["text"]
         if s["speaker"] != "narr" and not text.startswith("「"):
             text = "「" + text + "」"
-        if i == 0:
-            # 冒頭のひと言は、画面中央に大きく出し、手前に近づいてくるように拡大する
-            hold = segs[1]["start"] if len(segs) > 1 else end
-            dur_ms = int((hold - s["start"]) * 1000)
-            lines.append(f"Dialogue: 1,{ts(s['start'])},{ts(hold)},Hook,,0,0,0,,"
-                         f"{{\\pos({VW // 2},{BAR + IMG_H // 2 - 40})\\fscx50\\fscy50\\fad(150,250)"
-                         f"\\t(0,{dur_ms},0.6,\\fscx135\\fscy135)}}{wrap(text, 12)}")
+        if s.get("block", 1) == segs[0].get("block", 1):
+            # 冒頭の決めゼリフは、画面中央に大きく出し、手前に近づいてくるように拡大する
+            if i == 0:
+                first = [x for x in segs if x.get("block", 1) == s.get("block", 1)]
+                hold = segs[len(first)]["start"] if len(segs) > len(first) else end
+                dur_ms = int((hold - s["start"]) * 1000)
+                hook = "".join(x["text"] for x in first)
+                if s["speaker"] != "narr" and not hook.startswith("「"):
+                    hook = "「" + hook + "」"
+                lines.append(f"Dialogue: 1,{ts(s['start'])},{ts(hold)},Hook,,0,0,0,,"
+                             f"{{\\pos({VW // 2},{BAR + IMG_H // 2 - 40})\\fscx50\\fscy50\\fad(150,250)"
+                             f"\\t(0,{dur_ms},0.6,\\fscx135\\fscy135)}}{wrap(hook, 12)}")
             continue
         lines.append(f"Dialogue: 0,{ts(s['start'])},{ts(end)},Sub,,0,0,0,,{{\\pos({VW // 2},{cy})}}{wrap(text)}")
 

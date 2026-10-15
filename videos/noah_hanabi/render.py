@@ -11,7 +11,9 @@ from concurrent.futures import ThreadPoolExecutor
 
 import numpy as np
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+CODE_DIR = os.path.dirname(os.path.abspath(__file__))
+# 別の動画を作るときは PROJECT_DIR に、その動画のフォルダ(script.txt などがある場所)を指定する
+HERE = os.environ.get("PROJECT_DIR", CODE_DIR)
 OUT = os.path.join(HERE, "out")
 SHOTS = os.path.join(OUT, "shots")
 SR = 48000

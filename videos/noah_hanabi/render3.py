@@ -13,7 +13,10 @@ from concurrent.futures import ThreadPoolExecutor
 import render2
 from render import count_frames, mix
 from render2 import BAND_H, BAND_Y, BAR, FONTS, FPS, IMG_H, MIN_SHOT, OUT, VH, VW, write_ass
-from video_queries import BLOCK_QUERIES
+import sys as _sys
+if os.environ.get("PROJECT_DIR"):
+    _sys.path.insert(0, os.environ["PROJECT_DIR"])
+from video_queries import BLOCK_QUERIES  # noqa: E402
 
 CLIPS = os.path.join(OUT, "clips")
 SHOTS = os.path.join(OUT, "shots_v3")

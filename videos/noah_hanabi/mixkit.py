@@ -10,7 +10,9 @@ import time
 import urllib.parse
 import urllib.request
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+CODE_DIR = os.path.dirname(os.path.abspath(__file__))
+# 別の動画を作るときは PROJECT_DIR に、その動画のフォルダ(script.txt などがある場所)を指定する
+HERE = os.environ.get("PROJECT_DIR", CODE_DIR)
 CACHE = os.path.join(HERE, "out", "mixkit_cache")
 CLIPS = os.path.join(HERE, "out", "clips")
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120 Safari/537.36"}
