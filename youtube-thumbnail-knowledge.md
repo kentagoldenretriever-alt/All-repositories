@@ -3498,6 +3498,80 @@ Overall: faces in the two studio sections must be clearly different from each ot
 ## 追記フォーマット（次回以降このまま使う）
 
 ```
+## パターン48: 電車内×母娘3人の帰国×母親の涙ぐむ横顔型
+
+**元ネタ画像の特徴**
+- 電車車内（青いシート、窓から景色が流れる）に座る女性3人の構図。
+  - 窓際：40代の母親。やや疲れた表情で窓の外を見つめ、目に涙を浮かべている。グレーのカーディガン。顔の横に白背景＋黒文字の吹き出し「ごめんね…」。
+  - 中央：10代後半の娘。黒髪ロングストレート、紺色パーカー。視線を伏せて俯いている。
+  - 右：10代前半〜半ばの娘。黒髪ロング、メガネ着用、紺色パーカー。同じく俯いて暗い表情。
+- 画面左上に国旗アイコン、右上にもう1つの国旗アイコン（出発国↔帰国先を示す演出）。
+- 文字：
+  - 上部見出し「「もう日本に帰れないの？」」黄色＋黒フチ、鍵カッコ込み、画面最上部中央。
+  - 下段1行目「在留資格が切れて（国名）人一家が帰国」水色（シアン）＋黒フチ。
+  - 下段2行目「（国名）到着数分で全員が絶望」赤系＋黒フチ（最強調）。
+
+**台本との不一致・修正点**: 元ネタ画像は中国国旗＋「中国人一家」表記だが、台本の主人公は韓国・ソウル出身のソヨン（42歳）とその娘2人（長女ジユ17歳、次女ハウン14歳）であり、夫ジュンホの転職で来日→在留資格更新を怠り一時帰国、というストーリー。国籍は中国ではなく韓国が正しいため、台本優先で以下のように修正する。
+- 国旗：中国国旗 → 韓国国旗（画面左上）、日本国旗はそのまま（画面右上）
+- 下段1行目：「在留資格が切れて中国人一家が帰国」→「在留資格が切れて韓国人一家が帰国」
+- 下段2行目：「中国到着数分で全員が絶望」→「韓国到着数分で全員が絶望」
+- なお台本では実際の移動手段は飛行機（仁川国際空港着陸）だが、サムネイルの電車シーンは象徴的な「帰国の道のり」の演出として流用可能（空港連絡列車や国内移動シーンとして違和感なく成立するため、構図はそのまま電車内で問題なし）。
+
+**画像生成プロンプト**
+```
+A candid documentary-style photograph taken inside a train carriage, blue upholstered seats, soft motion-blurred scenery visible through the window. Three Asian women seated in a row, photographed from a slightly low angle as if taken by a fellow passenger.
+
+By the window: a Korean woman in her early 40s with a low ponytail, wearing a grey cardigan over a black top. She gazes out the window with a tired, guilt-tinged expression, eyes glistening with a few gentle tears, lips slightly parted as if about to apologize. Soft naturalistic sorrow, not exaggerated or theatrical.
+
+Middle seat: her elder daughter, around 17 years old, long straight black hair, wearing a navy hoodie, looking down at her lap with a quiet, withdrawn expression.
+
+Right seat: her younger daughter, around 14 years old, long black hair, wearing glasses and a navy hoodie, also looking down, subdued and uneasy.
+
+All three have distinct, naturally different face shapes and expressions (avoid identical or cloned faces despite being mother and daughters), natural asymmetrical seating posture, not perfectly posed. Soft overcast daylight through the train window, photorealistic, avoid airbrushed CGI look, avoid uncanny valley, candid unposed moment, shallow depth of field with the background softly blurred, 16:9 aspect ratio, leave clear negative space at the very top and bottom of the frame for text overlay, no text, no logos.
+```
+
+**紐づく台本**: 韓国・ソウル出身のソヨン（42歳）は、夫ジュンホの転職を機に10年前に家族で来日。「韓国の方が日本より快適」という信念を10年間一度も疑わず、日本の食品回収のニュースも「大げさだ」と笑い飛ばしてきた。在留資格の更新を怠ったことで、長女ジユ（17歳）・次女ハウン（14歳）を連れて一時帰国することになり、これを「本当の韓国の素晴らしさを娘たちに見せる好機」と前向きに捉える。しかし10年ぶりの韓国で、市場の衛生環境、水が黒く濁る野菜、水分を注入された肉、母親の荒れた手などを目の当たりにし、娘2人は帰国直後に食あたりで体調を崩す。次女は「日本に帰りたい」と涙をこぼし、ソヨンは自身の10年間の思い込みが崩れていくのを感じる。最終的に日本へ戻り、「安全は誰かが作っているもの」という娘の言葉を受けて、当たり前だと思っていた日本の食の安全の仕組みに感謝するようになる、というドキュメンタリー構成。
+
+**制作メモ**: パターン32・34・38と同様の「元ネタ画像と台本の国籍不一致」パターン。今回は中国→韓国への修正。電車内で母娘3人という構図は、父親（ジュンホ）が就労ビザで日本に残り同行しないという台本の設定とも矛盾なく合致する（男性が画面に写っていない理由付けとして好都合）。母親の表情は「涙ぐむ」程度の穏やかな悲しみに留めており、パターン41・45で学んだ「子供＋強い苦悩表現」の安全フィルター回避ノウハウに準じて、本人（成人）が涙ぐむ描写のみのため通常問題なく生成できる想定。
+
+**PhotoScape X 文字入れ指示**
+```
+■国旗アイコン（左上）
+内容：韓国国旗
+位置：画面左上
+
+■国旗アイコン（右上）
+内容：日本国旗
+位置：画面右上
+
+■吹き出し
+内容：ごめんね…
+色：白背景＋黒文字
+フォント：手書き風または丸ゴシック
+位置：母親（窓際の女性）の顔の右横あたり
+
+■上部見出し
+内容：「もう日本に帰れないの？」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：在留資格が切れて韓国人一家が帰国
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：韓国到着数分で全員が絶望
+色：赤系＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## パターンN: ○○型
 
 **元ネタ画像の特徴**
