@@ -3517,7 +3517,7 @@ Overall: faces in the two studio sections must be clearly different from each ot
 - 下段2行目：「中国到着数分で全員が絶望」→「韓国到着数分で全員が絶望」
 - なお台本では実際の移動手段は飛行機（仁川国際空港着陸）だが、サムネイルの電車シーンは象徴的な「帰国の道のり」の演出として流用可能（空港連絡列車や国内移動シーンとして違和感なく成立するため、構図はそのまま電車内で問題なし）。
 
-**画像生成プロンプト**
+**画像生成プロンプト（旧版・安全システム拒否のため非推奨）**
 ```
 A candid documentary-style photograph taken inside a train carriage, blue upholstered seats, soft motion-blurred scenery visible through the window. Three Asian women seated in a row, photographed from a slightly low angle as if taken by a fellow passenger.
 
@@ -3530,9 +3530,24 @@ Right seat: her younger daughter, around 14 years old, long black hair, wearing 
 All three have distinct, naturally different face shapes and expressions (avoid identical or cloned faces despite being mother and daughters), natural asymmetrical seating posture, not perfectly posed. Soft overcast daylight through the train window, photorealistic, avoid airbrushed CGI look, avoid uncanny valley, candid unposed moment, shallow depth of field with the background softly blurred, 16:9 aspect ratio, leave clear negative space at the very top and bottom of the frame for text overlay, no text, no logos.
 ```
 
+**画像生成プロンプト（修正版・推奨）**
+```
+A candid documentary-style photograph taken inside a train carriage, blue upholstered seats, soft motion-blurred scenery visible through the window. Three Asian women seated in a row, photographed from a slightly low angle as if taken by a fellow passenger.
+
+By the window: a Korean woman in her early 40s with a low ponytail, wearing a grey cardigan over a black top. She gazes out the window with a soft, bittersweet expression, eyes glistening with a few gentle tears, a small wistful smile as if quietly apologizing to herself.
+
+Middle seat: her elder daughter, around 17 years old, long straight black hair, wearing a navy hoodie, sitting calmly with her eyes lowered in quiet thought, a composed and gentle expression.
+
+Right seat: her younger daughter, around 14 years old, long black hair, wearing glasses and a navy hoodie, also looking down thoughtfully, a calm and pensive expression, peaceful rather than distressed.
+
+All three have distinct, naturally different face shapes and expressions (avoid identical or cloned faces despite being mother and daughters), natural asymmetrical seating posture, not perfectly posed. Soft overcast daylight through the train window, photorealistic, avoid airbrushed CGI look, avoid uncanny valley, candid unposed moment, shallow depth of field with the background softly blurred, 16:9 aspect ratio, leave clear negative space at the very top and bottom of the frame for text overlay, no text, no logos.
+```
+
 **紐づく台本**: 韓国・ソウル出身のソヨン（42歳）は、夫ジュンホの転職を機に10年前に家族で来日。「韓国の方が日本より快適」という信念を10年間一度も疑わず、日本の食品回収のニュースも「大げさだ」と笑い飛ばしてきた。在留資格の更新を怠ったことで、長女ジユ（17歳）・次女ハウン（14歳）を連れて一時帰国することになり、これを「本当の韓国の素晴らしさを娘たちに見せる好機」と前向きに捉える。しかし10年ぶりの韓国で、市場の衛生環境、水が黒く濁る野菜、水分を注入された肉、母親の荒れた手などを目の当たりにし、娘2人は帰国直後に食あたりで体調を崩す。次女は「日本に帰りたい」と涙をこぼし、ソヨンは自身の10年間の思い込みが崩れていくのを感じる。最終的に日本へ戻り、「安全は誰かが作っているもの」という娘の言葉を受けて、当たり前だと思っていた日本の食の安全の仕組みに感謝するようになる、というドキュメンタリー構成。
 
-**制作メモ**: パターン32・34・38と同様の「元ネタ画像と台本の国籍不一致」パターン。今回は中国→韓国への修正。電車内で母娘3人という構図は、父親（ジュンホ）が就労ビザで日本に残り同行しないという台本の設定とも矛盾なく合致する（男性が画面に写っていない理由付けとして好都合）。母親の表情は「涙ぐむ」程度の穏やかな悲しみに留めており、パターン41・45で学んだ「子供＋強い苦悩表現」の安全フィルター回避ノウハウに準じて、本人（成人）が涙ぐむ描写のみのため通常問題なく生成できる想定。
+**制作メモ**: パターン32・34・38と同様の「元ネタ画像と台本の国籍不一致」パターン。今回は中国→韓国への修正。電車内で母娘3人という構図は、父親（ジュンホ）が就労ビザで日本に残り同行しないという台本の設定とも矛盾なく合致する（男性が画面に写っていない理由付けとして好都合）。
+
+**安全フィルター拒否と修正の経緯**: 旧版プロンプトは「再度試しましたが、画像生成の安全システムに拒否され、生成できませんでした（具体的な拒否理由は示されず）」というエラーで生成失敗。母親の涙は穏やかな表現だったが、未成年の娘2人を「withdrawn（沈んだ）」「subdued and uneasy（うなだれて落ち着かない）」と描写していた点が、パターン41・45で確認済みの「未成年＋強い苦悩・不穏な感情表現」の安全フィルターに再度抵触したと推定される。修正版では母親の表情を「bittersweet（ほろ苦い）」「wistful smile（物思いにふける微笑み）」に、娘2人の表情を「calm」「composed」「pensive」「peaceful rather than distressed」という穏やかな言葉に全面的に置き換えた。この教訓は「鉄則への追記候補」として既存の子供関連の安全フィルター回避ルールに統合済み（未成年が映る構図では、涙や沈んだ表情であっても必ず穏やかな形容詞のみを使うこと）。
 
 **PhotoScape X 文字入れ指示**
 ```
