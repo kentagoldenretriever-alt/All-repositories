@@ -3710,7 +3710,7 @@ All three family members have naturally different face shapes and features (avoi
 
 ---
 
-## パターン51: 中国の駅ホーム×カップル2人の笑顔×中国国旗型（渡航前パート）
+## パターン51: 中国の駅ホーム×美女4人の笑顔×中国国旗型（渡航前パート）
 
 **元ネタ画像の特徴**
 - 中国の鉄道駅のホームを背景にした構図。奥に緑色の中国鉄道車両（車体に「中国铁路」のロゴ）、プラットフォーム番号「13」の案内板、制服姿の女性駅員が右端に立っている。
@@ -3721,15 +3721,15 @@ All three family members have naturally different face shapes and features (avoi
   - 下段1行目「中国観光から初来日したスペイン人」赤系＋黒フチ。
   - 下段2行目「新幹線を降りて3秒後に常識が覆った理由」赤系＋黒フチ（下段1行目と同系色でやや大きめ）。
 
-**台本との不一致・修正点**: 元ネタ画像は女性4人組だが、台本の主人公はスペイン出身（イギリス在住）のハビエル（32歳・男性）とその恋人ソフィア（29歳・女性）のカップル2人のみ。人数・性別構成が台本と一致しないため、台本優先で「男性1人＋女性1人」のカップル構成に修正する。シーンは台本前半、中国を訪れた際の駅ホームという設定（新幹線で日本に降り立った後に常識が覆るという台本の展開と対比させるための「渡航前・中国パート」のビジュアル）。
+**台本とのキャスティングについて（経緯）**: 当初、台本の主人公がスペイン出身のハビエル（32歳・男性）とソフィア（29歳・女性）のカップル2人であることを理由に、元ネタの「女性4人組」を台本優先で「男女カップル2人」に修正していた。しかし実際に生成したところ、ユーザーから「参考と違う、美女4人じゃないの？」とフィードバックがあり、このカットはサムネイルのクリック訴求力（美女4人の賑やかな集合構図）を重視すべき背景/雰囲気ショットであり、台本の登場人物数と厳密に一致させる必要はないとの判断により、元ネタ通りの「女性4人組」構成に差し戻した。制作方針の「元ネタの上位互換を常に目指す」を踏まえ、人数・構図は元ネタに忠実に、クオリティ面（表情のバリエーション、肌の質感、クローン顔回避など）で上位互換を狙う方向性とする。中国国旗アイコンはそのまま維持。
 
-**画像生成プロンプト**
+**画像生成プロンプト（修正版・女性4人構成に差し戻し）**
 ```
-A candid documentary-style photograph taken on a Chinese train station platform, a green Chinese railway train with "中国铁路" lettering on its side visible in the background, a platform number sign reading "13", and a female train staff member in uniform standing near the train doors in the background, softly out of focus.
+A candid documentary-style photograph taken on a Chinese train station platform, a green Chinese railway train with "中国铁路" lettering on its side visible in the background, a platform number sign reading "13", and a female train staff member in uniform standing near the train doors in the background, softly out of focus. A crowd of other travelers with rolling suitcases fills the platform behind them, conveying a busy, bustling station atmosphere.
 
-In the foreground, a couple walking together along the platform: a man in his early 30s, Spanish, with short dark brown hair and light stubble, wearing a casual white t-shirt and carrying a backpack, and his girlfriend, a woman in her late 20s, with long wavy brown hair, wearing a casual summer outfit and a small shoulder bag. Both have slightly overwhelmed, wide-eyed expressions — caught mid-reaction to the bustling, chaotic crowd around them on the platform, genuinely startled rather than posed. Background crowd of other travelers softly blurred, conveying a busy, slightly disorderly station atmosphere.
+In the foreground, four attractive young women in their 20s walking together side by side along the platform, laughing and smiling warmly as if sharing a joke. Each woman must have a distinctly different face shape, hair color/style, and skin tone (avoid identical or cloned faces despite similar ages) — varied hairstyles such as loose waves, a top knot bun, sunglasses pushed up or worn, straight long hair. Casual stylish travel outfits in different colors (white blouse, black top, floral blouse, white tank top), each carrying a small travel bag or backpack. Two of them have a genuinely startled, wide-eyed "did you see that?" reaction expression, slightly turned toward something off-frame; the other two are mid-laugh, candid and natural, not posed or symmetrical.
 
-Natural documentary lighting, photorealistic, avoid airbrushed CGI look, avoid uncanny valley, candid unposed moment, distinct and naturally different face shapes for the two people, asymmetrical candid poses, 16:9 aspect ratio, leave clear negative space at the very top and bottom of the frame for text overlay, no text, no logos, no visible brand names.
+Natural documentary lighting, photorealistic, avoid airbrushed CGI look, avoid uncanny valley, candid unposed moment, natural asymmetrical walking poses, 16:9 aspect ratio, leave clear negative space at the very top and bottom of the frame for text overlay, no text, no logos, no visible brand names.
 ```
 
 **紐づく台本**: イギリス在住のスペイン人カップル、ハビエル（32歳）とソフィア（29歳）は、長年憧れてきた中国旅行を主目的に、日本は「ついでに立ち寄る程度」という軽い気持ちでアジア旅行に出発する。しかし中国では、空港職員の素っ気ない対応、ぼったくりタクシー、行列への割り込み、不潔なホテル、油でベタつく雑な料理など、期待とは正反対の現実に直面し、旅への期待は音を立てて崩れていく。半ば諦めた気持ちで降り立った日本では一転、空港の静けさと清潔さ、駅員の丁寧な案内、白手袋のタクシー運転手、駅のベンチに置き忘れた財布が中身そのままで届けられた出来事、道に迷った2人を自分の通勤時間を割いてまで案内してくれた見知らぬ男性、そして京都の庭園や老舗和食店での体験を通じて、2人は自分たちの「中国こそ本命、日本はついで」という思い上がった価値観そのものが崩れ去ったことに気づく、という比較旅行記ドキュメンタリー構成。
@@ -3745,7 +3745,7 @@ Natural documentary lighting, photorealistic, avoid airbrushed CGI look, avoid u
 ■リアクション文字
 内容：⁉
 色：赤文字、小さめ
-位置：2人の顔の横（それぞれ1つずつ）
+位置：4人のうち2人（左から1人目と2人目）の顔の横、それぞれ1つずつ
 
 ■上部見出し
 内容：「天と地どころの差ではない…」
