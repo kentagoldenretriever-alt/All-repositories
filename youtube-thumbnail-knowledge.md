@@ -3652,6 +3652,64 @@ Overall: faces in the two studio sections must be clearly different from each ot
 
 ---
 
+## パターン50: 空港×外国人家族3人の3分割号泣喜び型
+
+**元ネタ画像の特徴**
+- 空港を背景にした3人家族を、斜めの白線で3分割する構図（パターン22・31と同系統の3分割トリプティック）。
+  - 左：30代の女性（ウェーブのかかった茶髪）。両手を顎の下で組み、柔らかく幸せそうな笑顔でカメラの外を見つめている。
+  - 中央：7〜8歳くらいの女の子（茶色いロングヘア）。満面の笑顔で声を上げて笑いながら、片手に白い新幹線のおもちゃ、もう片手に搭乗券らしきチケットを持っている。
+  - 右：40代の男性（無精髭）。感極まった様子で片手で目元を拭いながら、泣き笑いの表情。もう片方の手にはパスポートと搭乗券を持っている。背景に飛行機の機体が見える。
+  - 3人とも背景は空港ロビー（ぼかし処理、行き交う人々や窓の外の滑走路）。
+- 文字：
+  - 上部見出し「「これが夢に見た日本か…!!」」黄色＋黒フチ、鍵カッコ込み、画面最上部中央。
+  - 下段1行目「旅行先が🇯🇵（日本国旗アイコン）だと知り号泣した外国人家族」水色（シアン）＋黒フチ。国旗アイコンは文中に埋め込み。
+  - 下段2行目「初来日し別世界だと驚愕した理由」赤系＋黒フチ（最強調）。
+
+**台本**: 未着信（届き次第、内容を確認してこの欄と国籍設定を更新する）。
+
+**画像生成プロンプト（1枚で生成）**
+```
+A single wide 16:9 photorealistic image divided into three vertical sections by thin diagonal white dividing lines, all within one seamless frame, set in a softly blurred international airport terminal background (departure gate area, travelers walking in the distance, large windows showing tarmac and aircraft outside).
+
+LEFT SECTION: A woman in her early 30s with wavy light brown hair, wearing a cream-colored top, hands clasped gently together near her chin, a warm, softly joyful smile, eyes slightly glistening with happy emotion, looking off-camera as if just told wonderful news.
+
+CENTER SECTION: A girl around 7-8 years old with long light brown hair, laughing brightly and openly, genuine childlike joy, holding a small white bullet-train (shinkansen) toy model in one hand and a boarding pass/ticket in the other, slightly turned toward the camera.
+
+RIGHT SECTION: A man in his 40s with short stubble, visibly overcome with emotion, one hand wiping tears from his eye, laughing through tears (a joyful, not sorrowful, emotional release), holding a passport and boarding pass in his other hand, a backpack strap visible on his shoulder, an airplane visible in the soft-focus background behind him.
+
+All three family members have naturally different face shapes and features (avoid a cloned-face AI look), natural candid asymmetrical poses, not perfectly posed or symmetrical, warm natural airport lighting, photorealistic, avoid airbrushed CGI look, avoid uncanny valley. Leave clear negative space at the very top and bottom of the frame for text overlay. No text, no logos, no visible airline branding.
+```
+
+**制作メモ**: パターン22・31と同じ「3分割・斜め白線区切り・単一生成」のフォーマットを踏襲。国籍設定は台本未着信のため中立的な「外国人家族」として作成しており、台本到着後に国名・出身地などの固有情報が判明した場合は、このパターンの記述を直接更新する（他の多くのパターンで発生している国籍不一致の修正と同じ要領）。父親の「号泣」は喜びの感情（感動の涙）であり、恐怖・苦痛系の描写ではないため、安全フィルターには通常引っかからない想定。
+
+**PhotoScape X 文字入れ指示**
+```
+■上部見出し
+内容：「これが夢に見た日本か…!!」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：旅行先が[日本国旗アイコン]だと知り号泣した外国人家族
+色：水色（シアン）＋黒フチ、国旗アイコン部分のみ白地に日の丸の絵文字/画像を挿入
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：初来日し別世界だと驚愕した理由
+色：赤系＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+
+■分割線
+内容：画面を3等分する斜めの白い細線を2本
+位置：左右パネルの境界（やや斜め、ハの字型）
+```
+
+---
+
 ## パターンN: ○○型
 
 **元ネタ画像の特徴**
