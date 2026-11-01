@@ -3587,6 +3587,71 @@ All three have distinct, naturally different face shapes and expressions (avoid 
 
 ---
 
+## パターン49: 米国ニューススタジオ2人×中央に交通監視カメラ風の日本の路上映像×驚愕型
+
+**元ネタ画像の特徴**
+- 米国系ニュース番組風のスタジオを左右に配置する構図（BBCのような局名ロゴ表示はなし、温かみのある茶系/木目調の落ち着いたスタジオトーン）。
+  - 左：男性キャスター（40代、グレーのスーツ＋ストライプネクタイ、茶髪）。顔の横に黒背景・白文字（または白背景・黒文字）の「??!」吹き出し。
+  - 右：女性キャスター（30〜40代、ブロンドのロングヘア、グレーのジャケット＋赤いトップス）。同じく「??!」吹き出し。
+  - 2人とも眉を上げ、驚いたような表情でカメラ目線。
+- 画面中央に、白枠付きの監視カメラ/ドライブレコーダー風の映像が埋め込まれている：日本の片側2車線の道路を見下ろす角度のショット。奥に山並みと曇り空、ガードレール沿いの歩道に複数の歩行者。手前にミニバン・白い乗用車・黒い乗用車が並び、道路脇にガソリンスタンドのスタッフと思われる人物が道路に出て手を上げ、交通を誘導している様子。
+- 文字：
+  - 上部見出し「「なぜ日本ではこれが成立するんだ…？」」黄色＋黒フチ、鍵カッコ込み、画面最上部中央。
+  - 下段1行目「″日本では日常″のたった15秒の映像」水色（シアン）＋黒フチ。
+  - 下段2行目「990万再生され世界が絶句した光景とは」赤〜ピンク系グラデーション＋黒フチ（最強調）。
+
+**画像生成プロンプト（1枚で生成）**
+```
+A single wide 16:9 photorealistic composite image styled as a news broadcast thumbnail, divided into three sections within one seamless frame: a left studio panel, a center embedded video-clip panel (framed with a thin white border, like a picture-in-picture CCTV/dashcam clip), and a right studio panel. Render it as one cohesive broadcast graphic, with the center panel inset and layered on top of the left/right studio background, slightly overlapping both.
+
+LEFT SECTION: A warm, wood-toned American news broadcast studio (no visible network logo), soft warm lighting. A male news anchor in his 40s with brown hair, wearing a grey suit and a striped tie, seated or standing at a news desk. Genuinely puzzled, eyebrows raised, mouth slightly open in a "how is this possible" expression, looking toward the camera. Professional broadcast lighting, photorealistic, avoid airbrushed CGI look, avoid uncanny valley, candid expression, not posed symmetrically.
+
+RIGHT SECTION: The same warm-toned American broadcast studio style, slightly different camera angle. A female news anchor in her 30s-40s with long blonde hair, wearing a grey blazer over a red top. Genuinely astonished expression, eyebrows raised, looking toward the camera as if reacting to the same footage. Professional broadcast lighting, photorealistic, avoid airbrushed CGI look, avoid uncanny valley.
+
+CENTER INSET PANEL (smaller than the two studio sections, framed with a thin white border, positioned centered and slightly overlapping both studio panels): A wide-angle CCTV or dashcam-style shot looking down a two-lane Japanese street, overcast sky, distant mountains in the background. Guardrails line the sidewalk, with several pedestrians walking along it. In the foreground, a few parked and moving cars (a minivan, a white sedan, a dark sedan) on the street near a gas station. A gas station attendant in a uniform has stepped onto the edge of the road with one hand raised, signaling to guide a customer's car safely out into traffic while an oncoming car slows down. Slightly desaturated, naturalistic surveillance-camera color grading, faint motion blur on the moving cars.
+
+Overall: faces in the two studio sections must be clearly different from each other (vary face shape, hair color/style) to avoid a cloned-face AI look, natural asymmetrical poses, no perfectly mirrored symmetry between left and right. Leave clear negative space at the very top and bottom of the frame for text overlay. No text, no logos, no on-screen graphics, no visible brand names or license plate numbers.
+```
+
+**紐づく台本**: アメリカ人ジャーナリストのモーガン（30歳、8年のキャリアで30カ国を取材）が、日本の「働き方改革」取材を命じられる。半年前のソウル取材での交通マナーの悪さの記憶から「日本もきっと同じだろう」と確信していたが、来日直後にSNSで見つけたガソリンスタンドの15秒の映像（従業員が道路に出て手を上げ、客の車をスムーズに合流させた上で、去っていく車・止まってくれた車の両方に深々とお辞儀をする）に衝撃を受ける。実際に現地を訪れて同じ光景を目撃し、さらにコンビニの接客、横断歩道で車が必ず止まる文化、小学生の登校時のお辞儀の儀礼、救急車に道を譲る一斉行動などを取材する中で、当初の「日本社会は窮屈」という仮説が覆り、最終的に「効率より思いやり」という題名の記事を執筆する、という取材ドキュメンタリー構成。
+
+**制作メモ**: パターン47の「海外スタジオ2人組×中央に日本の実写映像埋め込み」構図の継続パターン。今回はBBC局ではなく局名ロゴなしの一般的な米国ニュース番組風スタジオで、キャスターは男女1人ずつ（左右で対になるBBC版の4人構成とは異なり2人のみ）。中央映像は台本の核となる「ガソリンスタンドの15秒バイラル動画」のシーンを採用。パターン47の学び（3枚separately生成よりPhotoScape合成の手間を省くため単一プロンプトでの一括生成が望ましい）を踏襲し、最初から1枚統合プロンプトで作成。安全フィルターに抵触する要素（暴力・危険・未成年の苦痛描写）は含まれないため、通常問題なく生成できる想定。
+
+**PhotoScape X 文字入れ指示**
+```
+■リアクション吹き出し（左キャスター用）
+内容：??!
+色：黒背景＋白文字（または白背景＋黒文字）の丸型吹き出し
+位置：左キャスターの顔の横、やや上
+
+■リアクション吹き出し（右キャスター用）
+内容：??!
+色：黒背景＋白文字（または白背景＋黒文字）の丸型吹き出し
+位置：右キャスターの顔の横、やや上
+
+■上部見出し
+内容：「なぜ日本ではこれが成立するんだ…？」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：″日本では日常″のたった15秒の映像
+色：水色（シアン）＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+備考：二重鍵カッコ風の引用符（″ ″）ごと表示する
+
+■下段2行目
+内容：990万再生され世界が絶句した光景とは
+色：赤〜ピンク系グラデーション＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## パターンN: ○○型
 
 **元ネタ画像の特徴**
