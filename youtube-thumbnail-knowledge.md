@@ -3710,7 +3710,7 @@ All three family members have naturally different face shapes and features (avoi
 
 ---
 
-## パターン51: 中国の駅ホーム×美女4人の笑顔×中国国旗型（渡航前パート）
+## パターン51: 中国の駅ホーム×スペイン人セクシー美女4人の笑顔×中国国旗型（渡航前パート）
 
 **元ネタ画像の特徴**
 - 中国の鉄道駅のホームを背景にした構図。奥に緑色の中国鉄道車両（車体に「中国铁路」のロゴ）、プラットフォーム番号「13」の案内板、制服姿の女性駅員が右端に立っている。
@@ -3721,13 +3721,13 @@ All three family members have naturally different face shapes and features (avoi
   - 下段1行目「中国観光から初来日したスペイン人」赤系＋黒フチ。
   - 下段2行目「新幹線を降りて3秒後に常識が覆った理由」赤系＋黒フチ（下段1行目と同系色でやや大きめ）。
 
-**台本とのキャスティングについて（経緯）**: 当初、台本の主人公がスペイン出身のハビエル（32歳・男性）とソフィア（29歳・女性）のカップル2人であることを理由に、元ネタの「女性4人組」を台本優先で「男女カップル2人」に修正していた。しかし実際に生成したところ、ユーザーから「参考と違う、美女4人じゃないの？」とフィードバックがあり、このカットはサムネイルのクリック訴求力（美女4人の賑やかな集合構図）を重視すべき背景/雰囲気ショットであり、台本の登場人物数と厳密に一致させる必要はないとの判断により、元ネタ通りの「女性4人組」構成に差し戻した。制作方針の「元ネタの上位互換を常に目指す」を踏まえ、人数・構図は元ネタに忠実に、クオリティ面（表情のバリエーション、肌の質感、クローン顔回避など）で上位互換を狙う方向性とする。中国国旗アイコンはそのまま維持。
+**台本とのキャスティングについて（経緯）**: 当初、台本の主人公がスペイン出身のハビエル（32歳・男性）とソフィア（29歳・女性）のカップル2人であることを理由に、元ネタの「女性4人組」を台本優先で「男女カップル2人」に修正していた。しかし実際に生成したところ、ユーザーから「参考と違う、美女4人じゃないの？」とフィードバックがあり、このカットはサムネイルのクリック訴求力（美女4人の賑やかな集合構図）を重視すべき背景/雰囲気ショットであり、台本の登場人物数と厳密に一致させる必要はないとの判断により、元ネタ通りの「女性4人組」構成に差し戻した。さらにユーザーから「みんな、スペイン人のセクシー美女で生成してください」との追加指示があり、4人全員をスペイン人らしい地中海系の外見・セクシーで魅力的な美女として明記する形にプロンプトを更新した。制作方針の「元ネタの上位互換を常に目指す」を踏まえ、人数・構図は元ネタに忠実に、クオリティ面（表情のバリエーション、肌の質感、クローン顔回避など）で上位互換を狙う方向性とする。中国国旗アイコンはそのまま維持。
 
-**画像生成プロンプト（修正版・女性4人構成に差し戻し）**
+**画像生成プロンプト（修正版・スペイン人セクシー美女4人指定）**
 ```
 A candid documentary-style photograph taken on a Chinese train station platform, a green Chinese railway train with "中国铁路" lettering on its side visible in the background, a platform number sign reading "13", and a female train staff member in uniform standing near the train doors in the background, softly out of focus. A crowd of other travelers with rolling suitcases fills the platform behind them, conveying a busy, bustling station atmosphere.
 
-In the foreground, four attractive young women in their 20s walking together side by side along the platform, laughing and smiling warmly as if sharing a joke. Each woman must have a distinctly different face shape, hair color/style, and skin tone (avoid identical or cloned faces despite similar ages) — varied hairstyles such as loose waves, a top knot bun, sunglasses pushed up or worn, straight long hair. Casual stylish travel outfits in different colors (white blouse, black top, floral blouse, white tank top), each carrying a small travel bag or backpack. Two of them have a genuinely startled, wide-eyed "did you see that?" reaction expression, slightly turned toward something off-frame; the other two are mid-laugh, candid and natural, not posed or symmetrical.
+In the foreground, four strikingly beautiful young Spanish women in their mid-20s, sun-kissed Mediterranean skin tone, walking together side by side along the platform, laughing and smiling warmly as if sharing a joke. Each woman must have a distinctly different face shape, hair color/style, and body type (avoid identical or cloned faces despite similar ethnic background) — varied hairstyles such as loose beach waves, a messy top knot bun, sunglasses pushed up or worn, long straight dark hair. Stylish, fashionable, slightly form-fitting summer travel outfits in different colors and styles (a white blouse, a fitted black top, a floral off-shoulder blouse, a white tank top), each carrying a small designer-style travel bag or backpack. Confident, glamorous yet natural beauty, sun-kissed glow, not overly airbrushed. Two of them have a genuinely startled, wide-eyed "did you see that?" reaction expression, slightly turned toward something off-frame; the other two are mid-laugh, candid and natural, not posed or symmetrical.
 
 Natural documentary lighting, photorealistic, avoid airbrushed CGI look, avoid uncanny valley, candid unposed moment, natural asymmetrical walking poses, 16:9 aspect ratio, leave clear negative space at the very top and bottom of the frame for text overlay, no text, no logos, no visible brand names.
 ```
