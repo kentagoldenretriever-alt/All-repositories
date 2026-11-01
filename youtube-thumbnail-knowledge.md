@@ -3769,6 +3769,69 @@ Natural documentary lighting, photorealistic, avoid airbrushed CGI look, avoid u
 
 ---
 
+## パターン52: 交通監視カメラ風×救急車に道を譲る渋滞×人物不在型
+
+**元ネタ画像の特徴**
+- 人物は一切写っていない、交通監視カメラ/ドライブレコーダー風の見下ろし角度の路上ショット。
+- 片側2車線の日本の道路に、赤色灯を点灯させた救急車（側面に「日本医科大学付属病院」の文字）が走行中。周囲には資材を積んだトラック、白いSUV、緑色のクレーン車/建設作業車などが並んで停車・徐行している。
+- 道路中央に、車列の間にぽっかり空いた空間があり、そこに赤い点線の楕円（ドッジドサークル）が強調として配置されている。
+- 赤い矢印が、白いSUVを指している（進路を譲ろうとしている車として注目させる演出）。
+- 画面右側のクレーン車付近に黒背景・白文字の「⁉」リアクション記号。
+- 文字：
+  - 上部見出し「「全世界で唯一日本だけです…」」黄色＋黒フチ、鍵カッコ込み、画面最上部中央。
+  - 下段1行目「イギリスBBCが緊急放送した日本特集に」緑系＋黒フチ。
+  - 下段2行目「偶然映った光景に世界が驚愕」赤系＋黒フチ（最強調）。
+
+**画像生成プロンプト**
+```
+A wide-angle traffic/CCTV-style photograph looking down at a slight elevated angle onto a busy two-lane Japanese street, overcast daytime lighting, muted naturalistic surveillance-camera color grading. No people visible in the frame — only vehicles.
+
+An ambulance with its red emergency lights flashing is driving down the center of the lane, Japanese text reading a hospital name faintly visible on its side panel. Around it, a line of vehicles has pulled slightly to the sides to make way: a flatbed truck loaded with construction materials, a white SUV positioned slightly off to one side, a green mobile crane / construction vehicle further along the road, and a few other passenger cars further back. A noticeable open gap in traffic has formed in the lane just ahead of the ambulance, as if the surrounding cars have just yielded space for it to pass through smoothly. Traffic cones and road signage visible near the roadside, a cyclist faintly visible in the distance on the right side of the frame.
+
+Photorealistic, naturalistic daylight, slight motion blur on the moving ambulance, avoid airbrushed CGI look, avoid uncanny valley, candid real-world traffic-camera framing (not a cinematic composition), 16:9 aspect ratio, leave clear negative space at the very top and bottom of the frame for text overlay, no readable text or logos on vehicles, no visible license plate numbers.
+```
+
+**紐づく台本**: イギリスBBCのスタジオに、中国人男性リーウェイ（32歳、上海の貿易会社社員）とフランス人女性クロエ（28歳、パリのファッション誌編集者）を含む世界各国から集まった約100人の観客が招かれ、「日本の日常」というタイトルの特別番組で、日本人が何気なく過ごす日常の映像を次々と鑑賞する。新宿駅の秩序立った朝のラッシュ、渋滞中の道路で車が自然に道を開けて救急車を通す光景（このサムネイルのシーン）、小学校の給食と掃除、東日本大震災の避難所で助け合う被災者、席を譲る若者、落ちていたコインを拾って届ける客など、数々の映像を通じて、当初は日本ばかりが称賛されることに複雑な感情を抱いていたリーウェイとクロエが、徐々に心を動かされていく。収録後、2人はそれぞれの国で小さな思いやりの行動を実践し始め、司会のデイビッドも含め、番組をきっかけに世界中の視聴者の行動が少しずつ変わっていく、というヒューマンドキュメンタリー構成。
+
+**制作メモ**: パターン18・34・35と同じ「人物不在・交通/風景のみ」構図の系統。台本内で描写される「渋滞中に車が自然に道を開けて救急車を通す」という具体的なエピソードをそのままサムネイルの中心ビジュアルとして採用した。人物が写らないため安全フィルターの問題は想定されない。赤矢印・赤点線サークル・「⁉」リアクション記号はAI生成後にPhotoScape側で追加する前提（他の交通シーン系パターンと同様、生成段階では強調記号を含めず、素材となる路上写真のみを生成する）。
+
+**PhotoScape X 文字入れ指示**
+```
+■赤矢印
+内容：白いSUVを指す赤い矢印
+位置：白いSUVの右上あたり
+
+■赤点線サークル
+内容：車列の間に空いた車線部分を囲む赤い点線の楕円
+位置：救急車の少し前方、道路中央の空間
+
+■リアクション記号
+内容：⁉
+色：黒背景＋白文字の丸型吹き出し
+位置：画面右側、緑のクレーン車の上あたり
+
+■上部見出し
+内容：「全世界で唯一日本だけです…」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：イギリスBBCが緊急放送した日本特集に
+色：緑系＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：偶然映った光景に世界が驚愕
+色：赤系＋黒フチ（最も強調）
+フォント：極太ゴシック、下段1行目よりやや大きめ
+位置：下部帯の2行目
+```
+
+---
+
 ## パターンN: ○○型
 
 **元ネタ画像の特徴**
