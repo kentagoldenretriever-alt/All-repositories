@@ -3710,6 +3710,65 @@ All three family members have naturally different face shapes and features (avoi
 
 ---
 
+## パターン51: 中国の駅ホーム×カップル2人の笑顔×中国国旗型（渡航前パート）
+
+**元ネタ画像の特徴**
+- 中国の鉄道駅のホームを背景にした構図。奥に緑色の中国鉄道車両（車体に「中国铁路」のロゴ）、プラットフォーム番号「13」の案内板、制服姿の女性駅員が右端に立っている。
+- 手前に女性4人が横並びで歩きながら笑い合っている（茶髪のロングヘア、カジュアルな旅行スタイル）。うち2人の顔の横に「⁉」の小さな赤文字リアクションが添えられている。
+- 画面右下に中国国旗アイコン。
+- 文字：
+  - 上部見出し「「天と地どころの差ではない…」」黄色＋黒フチ、鍵カッコ込み、画面最上部中央。
+  - 下段1行目「中国観光から初来日したスペイン人」赤系＋黒フチ。
+  - 下段2行目「新幹線を降りて3秒後に常識が覆った理由」赤系＋黒フチ（下段1行目と同系色でやや大きめ）。
+
+**台本との不一致・修正点**: 元ネタ画像は女性4人組だが、台本の主人公はスペイン出身（イギリス在住）のハビエル（32歳・男性）とその恋人ソフィア（29歳・女性）のカップル2人のみ。人数・性別構成が台本と一致しないため、台本優先で「男性1人＋女性1人」のカップル構成に修正する。シーンは台本前半、中国を訪れた際の駅ホームという設定（新幹線で日本に降り立った後に常識が覆るという台本の展開と対比させるための「渡航前・中国パート」のビジュアル）。
+
+**画像生成プロンプト**
+```
+A candid documentary-style photograph taken on a Chinese train station platform, a green Chinese railway train with "中国铁路" lettering on its side visible in the background, a platform number sign reading "13", and a female train staff member in uniform standing near the train doors in the background, softly out of focus.
+
+In the foreground, a couple walking together along the platform: a man in his early 30s, Spanish, with short dark brown hair and light stubble, wearing a casual white t-shirt and carrying a backpack, and his girlfriend, a woman in her late 20s, with long wavy brown hair, wearing a casual summer outfit and a small shoulder bag. Both have slightly overwhelmed, wide-eyed expressions — caught mid-reaction to the bustling, chaotic crowd around them on the platform, genuinely startled rather than posed. Background crowd of other travelers softly blurred, conveying a busy, slightly disorderly station atmosphere.
+
+Natural documentary lighting, photorealistic, avoid airbrushed CGI look, avoid uncanny valley, candid unposed moment, distinct and naturally different face shapes for the two people, asymmetrical candid poses, 16:9 aspect ratio, leave clear negative space at the very top and bottom of the frame for text overlay, no text, no logos, no visible brand names.
+```
+
+**紐づく台本**: イギリス在住のスペイン人カップル、ハビエル（32歳）とソフィア（29歳）は、長年憧れてきた中国旅行を主目的に、日本は「ついでに立ち寄る程度」という軽い気持ちでアジア旅行に出発する。しかし中国では、空港職員の素っ気ない対応、ぼったくりタクシー、行列への割り込み、不潔なホテル、油でベタつく雑な料理など、期待とは正反対の現実に直面し、旅への期待は音を立てて崩れていく。半ば諦めた気持ちで降り立った日本では一転、空港の静けさと清潔さ、駅員の丁寧な案内、白手袋のタクシー運転手、駅のベンチに置き忘れた財布が中身そのままで届けられた出来事、道に迷った2人を自分の通勤時間を割いてまで案内してくれた見知らぬ男性、そして京都の庭園や老舗和食店での体験を通じて、2人は自分たちの「中国こそ本命、日本はついで」という思い上がった価値観そのものが崩れ去ったことに気づく、という比較旅行記ドキュメンタリー構成。
+
+**制作メモ**: パターン25・32・34・38と同系統の「元ネタ画像と台本のキャスティング不一致」パターン。今回は人数（4人→2人）と性別構成（女性のみ→男女カップル）の両方を台本に合わせて修正した。この画像は台本の時系列上「中国パート」（旅の前半・まだ日本に来る前）を描写しており、サムネイルの下段2行目にある「新幹線を降りて3秒後に常識が覆った理由」という日本到着後の衝撃は、このカット自体には写っていない「これから起こること」を示唆する煽り文句として機能する構成になっている。中国国旗アイコンはそのまま維持（このカットが中国パートであることと整合するため修正不要）。
+
+**PhotoScape X 文字入れ指示**
+```
+■国旗アイコン
+内容：中国国旗
+位置：画面右下
+
+■リアクション文字
+内容：⁉
+色：赤文字、小さめ
+位置：2人の顔の横（それぞれ1つずつ）
+
+■上部見出し
+内容：「天と地どころの差ではない…」
+色：黄色＋黒フチ4px
+フォント：極太ゴシック
+位置：画面最上部、横幅いっぱい中央揃え
+備考：鍵カッコ「」ごと表示する
+
+■下段1行目
+内容：中国観光から初来日したスペイン人
+色：赤系＋黒フチ
+フォント：極太ゴシック
+位置：下部帯の1行目
+
+■下段2行目
+内容：新幹線を降りて3秒後に常識が覆った理由
+色：赤系＋黒フチ（下段1行目と同系色、やや大きめ）
+フォント：極太ゴシック
+位置：下部帯の2行目
+```
+
+---
+
 ## パターンN: ○○型
 
 **元ネタ画像の特徴**
